@@ -1,0 +1,6 @@
+[report]
+include =
+    src/renocopro/*
+omit =
+    */test*
+    */upgrades/*
