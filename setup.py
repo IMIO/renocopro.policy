@@ -46,6 +46,7 @@ setup(
         'plone.api>=1.8.4',
         'plone.restapi',
         'plone.app.dexterity',
+        'collective.taxonomy',
     ],
     extras_require={
         'test': [
