@@ -47,6 +47,7 @@ setup(
         'plone.restapi',
         'plone.app.dexterity',
         'collective.taxonomy',
+        'collective.geolocationbehavior',
     ],
     extras_require={
         'test': [
