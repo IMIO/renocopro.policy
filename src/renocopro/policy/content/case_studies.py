@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from renocopro.policy import _
-
 from plone import schema
 from plone.app.textfield import RichText
 from plone.dexterity.content import Container
+from plone.formwidget.geolocation.field import GeolocationField
 from plone.supermodel import model
 from plone.supermodel.directives import fieldset
+from renocopro.policy import _
 from zope.interface import implements
 
 
@@ -21,8 +21,7 @@ class ICaseStudies(model.Schema):
         "building identity form",
         label=_(u"Building identity form"),
         fields=[
-            "longitude",
-            "latitude",
+            "localisation",
             "types_of_work",
             "type_of_building",
             "renovation_year",
@@ -35,9 +34,7 @@ class ICaseStudies(model.Schema):
         ],
     )
 
-    longitude = schema.Float(title=_(u"Longitude"), required=False)
-
-    latitude = schema.Float(title=_(u"Latitude"), required=False)
+    localisation = GeolocationField(title=_(u"Localisation"), required=True)
 
     types_of_work = schema.Choice(
         title=_(u"Types of work"),

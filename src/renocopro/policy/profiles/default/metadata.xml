@@ -3,7 +3,7 @@
   <version>1000</version>
   <dependencies>
     <dependency>profile-collective.taxonomy:default</dependency>
-    <dependency>profile-collective.geolocationbehavior:default</dependency>
+    <dependency>profile-plone.formwidget.geolocation:default</dependency>
     <dependency>profile-collective.documentation:default</dependency>
   </dependencies>
 </metadata>

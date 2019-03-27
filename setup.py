@@ -47,7 +47,7 @@ setup(
         'plone.restapi',
         'plone.app.dexterity',
         'collective.taxonomy',
-        'collective.geolocationbehavior',
+        'plone.formwidget.geolocation',
         'collective.documentation',
     ],
     extras_require={

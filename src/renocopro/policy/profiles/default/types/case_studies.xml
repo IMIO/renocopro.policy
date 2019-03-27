@@ -19,7 +19,7 @@
  </property>
  <property name="default_view_fallback">False</property>
  <property name="add_permission">cmf.AddPortalContent</property>
- <property name="klass">renocopro.policy.content.case_studies.ICaseStudies</property>
+ <property name="klass">renocopro.policy.content.case_studies.CaseStudies</property>
  <property name="behaviors">
   <element value="plone.app.content.interfaces.INameFromTitle"/>
   <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage"/>
