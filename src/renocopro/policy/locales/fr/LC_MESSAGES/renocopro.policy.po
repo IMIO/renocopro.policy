@@ -1,6 +1,3 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,11 +12,11 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: renocopro.policy\n"
+"Domain: DOMAIN\n"
 
 #: ../content/case_studies.py:22
 msgid "Building identity form"
-msgstr ""
+msgstr "Fiche d'identité du batîment"
 
 #: ../profiles/default/types/case_studies.xml
 msgid "Case Studies"
@@ -27,55 +24,55 @@ msgstr ""
 
 #: ../content/case_studies.py:102
 msgid "Consumption, type of system implemented, performance achieved,... "
-msgstr ""
+msgstr "Consommation, type de système mis en place, performances atteintes, ..."
 
 #: ../content/case_studies.py:123
 msgid "Cost"
-msgstr ""
+msgstr "Coûts"
 
 #: ../content/case_studies.py:60
 msgid "Cost of renovation"
-msgstr ""
+msgstr "Coût de rénovation"
 
 #: ../content/case_studies.py:62
 msgid "Cost/m2"
-msgstr ""
+msgstr "Coût/m2"
 
 #: ../content/case_studies.py:94
 msgid "Describe the decision-making methods, levers and obstacles related to condominium decision-making"
-msgstr ""
+msgstr "Décrire les modes décisionnels, les leviers et freins liés à la décision en copropriété"
 
 #: ../content/case_studies.py:18
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #: ../content/case_studies.py:123
 msgid "Details of the big posts"
-msgstr ""
+msgstr "Détails des gros posts"
 
 #: ../content/case_studies.py:56
 msgid "Duration of the work"
-msgstr ""
+msgstr "Durée des travaux"
 
 #: ../content/case_studies.py:109
 msgid "EnR & Systems"
-msgstr ""
+msgstr "EnR & Systems"
 
 #: ../content/case_studies.py:101
 msgid "Energy"
-msgstr ""
+msgstr "Energie"
 
 #: ../content/case_studies.py:115
 msgid "Environment"
-msgstr ""
+msgstr "Environnement"
 
 #: ../content/case_studies.py:110
 msgid "Heating, ecs, cooling, ventilation, EnR"
-msgstr ""
+msgstr "Chauffage, ecs, rafraîchissement, ventilation, EnR"
 
 #: ../content/case_studies.py:93
 msgid "Human relations"
-msgstr ""
+msgstr "Relations humaines"
 
 #: ../configure.zcml:29
 msgid "Installs the renocopro.policy add-on."
@@ -83,54 +80,54 @@ msgstr ""
 
 #: ../content/case_studies.py:40
 msgid "Latitude"
-msgstr ""
+msgstr "Latitude"
 
 #: ../content/case_studies.py:89
 msgid "Listing of all work done"
-msgstr ""
+msgstr "Listing de tous les travaux réalisés"
 
 #: ../content/case_studies.py:38
 msgid "Longitude"
-msgstr ""
+msgstr "Longitude"
 
 #: ../content/case_studies.py:58
 msgid "Net surface area"
-msgstr ""
+msgstr "Surface nette"
 
 #: ../content/case_studies.py:65
 msgid "Number of housing units"
-msgstr ""
+msgstr "Nombre d'unités de logement"
 
 #: ../content/case_studies.py:76
 msgid "Other"
-msgstr ""
+msgstr "Autres"
 
 #: ../content/case_studies.py:69
 #: ../setuphandlers.py:50
 msgid "Other functions"
-msgstr ""
+msgstr "Autres fonctions"
 
 #: ../content/case_studies.py:120
 msgid "Products"
-msgstr ""
+msgstr "Produits"
 
 #: ../content/case_studies.py:54
 msgid "Renovation year"
-msgstr ""
+msgstr "Année de rénovation"
 
 #: ../content/case_studies.py:16
 msgid "Title"
-msgstr ""
+msgstr "Titre"
 
 #: ../content/case_studies.py:49
 #: ../setuphandlers.py:43
 msgid "Type of building"
-msgstr ""
+msgstr "Type de batiment"
 
 #: ../content/case_studies.py:43
 #: ../setuphandlers.py:36
 msgid "Types of work"
-msgstr ""
+msgstr "Types de travaux"
 
 #: ../configure.zcml:38
 msgid "Uninstalls the renocopro.policy add-on."
@@ -138,11 +135,11 @@ msgstr ""
 
 #: ../content/case_studies.py:116
 msgid "Vegetation, water management"
-msgstr ""
+msgstr "Végétalisation, gestion de l'eau"
 
 #: ../content/case_studies.py:89
 msgid "Work"
-msgstr ""
+msgstr "Travaux"
 
 #: ../configure.zcml:29
 msgid "renocopro.policy"

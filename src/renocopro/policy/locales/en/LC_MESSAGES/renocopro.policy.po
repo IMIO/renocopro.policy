@@ -1,0 +1,150 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-03-27 12:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ../content/case_studies.py:22
+msgid "Building identity form"
+msgstr ""
+
+#: ../profiles/default/types/case_studies.xml
+msgid "Case Studies"
+msgstr ""
+
+#: ../content/case_studies.py:102
+msgid "Consumption, type of system implemented, performance achieved,... "
+msgstr ""
+
+#: ../content/case_studies.py:123
+msgid "Cost"
+msgstr ""
+
+#: ../content/case_studies.py:60
+msgid "Cost of renovation"
+msgstr ""
+
+#: ../content/case_studies.py:62
+msgid "Cost/m2"
+msgstr ""
+
+#: ../content/case_studies.py:94
+msgid "Describe the decision-making methods, levers and obstacles related to condominium decision-making"
+msgstr ""
+
+#: ../content/case_studies.py:18
+msgid "Description"
+msgstr ""
+
+#: ../content/case_studies.py:123
+msgid "Details of the big posts"
+msgstr ""
+
+#: ../content/case_studies.py:56
+msgid "Duration of the work"
+msgstr ""
+
+#: ../content/case_studies.py:109
+msgid "EnR & Systems"
+msgstr ""
+
+#: ../content/case_studies.py:101
+msgid "Energy"
+msgstr ""
+
+#: ../content/case_studies.py:115
+msgid "Environment"
+msgstr ""
+
+#: ../content/case_studies.py:110
+msgid "Heating, ecs, cooling, ventilation, EnR"
+msgstr ""
+
+#: ../content/case_studies.py:93
+msgid "Human relations"
+msgstr ""
+
+#: ../configure.zcml:29
+msgid "Installs the renocopro.policy add-on."
+msgstr ""
+
+#: ../content/case_studies.py:40
+msgid "Latitude"
+msgstr ""
+
+#: ../content/case_studies.py:89
+msgid "Listing of all work done"
+msgstr ""
+
+#: ../content/case_studies.py:38
+msgid "Longitude"
+msgstr ""
+
+#: ../content/case_studies.py:58
+msgid "Net surface area"
+msgstr ""
+
+#: ../content/case_studies.py:65
+msgid "Number of housing units"
+msgstr ""
+
+#: ../content/case_studies.py:76
+msgid "Other"
+msgstr ""
+
+#: ../content/case_studies.py:69
+#: ../setuphandlers.py:50
+msgid "Other functions"
+msgstr ""
+
+#: ../content/case_studies.py:120
+msgid "Products"
+msgstr ""
+
+#: ../content/case_studies.py:54
+msgid "Renovation year"
+msgstr ""
+
+#: ../content/case_studies.py:16
+msgid "Title"
+msgstr ""
+
+#: ../content/case_studies.py:49
+#: ../setuphandlers.py:43
+msgid "Type of building"
+msgstr ""
+
+#: ../content/case_studies.py:43
+#: ../setuphandlers.py:36
+msgid "Types of work"
+msgstr ""
+
+#: ../configure.zcml:38
+msgid "Uninstalls the renocopro.policy add-on."
+msgstr ""
+
+#: ../content/case_studies.py:116
+msgid "Vegetation, water management"
+msgstr ""
+
+#: ../content/case_studies.py:89
+msgid "Work"
+msgstr ""
+
+#: ../configure.zcml:29
+msgid "renocopro.policy"
+msgstr ""
+
+#: ../configure.zcml:38
+msgid "renocopro.policy (uninstall)"
+msgstr ""
