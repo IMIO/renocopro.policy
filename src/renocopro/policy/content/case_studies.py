@@ -21,7 +21,7 @@ class ICaseStudies(model.Schema):
         "building identity form",
         label=_(u"Building identity form"),
         fields=[
-            "localisation",
+            "location",
             "types_of_work",
             "type_of_building",
             "renovation_year",
@@ -34,7 +34,7 @@ class ICaseStudies(model.Schema):
         ],
     )
 
-    localisation = GeolocationField(title=_(u"Localisation"), required=True)
+    location = GeolocationField(title=_(u"Location"), required=False)
 
     types_of_work = schema.Choice(
         title=_(u"Types of work"),

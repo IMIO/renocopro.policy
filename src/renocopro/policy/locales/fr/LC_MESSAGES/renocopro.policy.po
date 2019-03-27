@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-03-27 12:55+0000\n"
+"POT-Creation-Date: 2019-03-27 13:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,23 +22,23 @@ msgstr "Fiche d'identité du batîment"
 msgid "Case Studies"
 msgstr ""
 
-#: ../content/case_studies.py:102
+#: ../content/case_studies.py:99
 msgid "Consumption, type of system implemented, performance achieved,... "
 msgstr "Consommation, type de système mis en place, performances atteintes, ..."
 
-#: ../content/case_studies.py:123
+#: ../content/case_studies.py:120
 msgid "Cost"
 msgstr "Coûts"
 
-#: ../content/case_studies.py:60
+#: ../content/case_studies.py:57
 msgid "Cost of renovation"
 msgstr "Coût de rénovation"
 
-#: ../content/case_studies.py:62
+#: ../content/case_studies.py:59
 msgid "Cost/m2"
 msgstr "Coût/m2"
 
-#: ../content/case_studies.py:94
+#: ../content/case_studies.py:91
 msgid "Describe the decision-making methods, levers and obstacles related to condominium decision-making"
 msgstr "Décrire les modes décisionnels, les leviers et freins liés à la décision en copropriété"
 
@@ -46,31 +46,31 @@ msgstr "Décrire les modes décisionnels, les leviers et freins liés à la déc
 msgid "Description"
 msgstr "Description"
 
-#: ../content/case_studies.py:123
+#: ../content/case_studies.py:120
 msgid "Details of the big posts"
 msgstr "Détails des gros posts"
 
-#: ../content/case_studies.py:56
+#: ../content/case_studies.py:53
 msgid "Duration of the work"
 msgstr "Durée des travaux"
 
-#: ../content/case_studies.py:109
+#: ../content/case_studies.py:106
 msgid "EnR & Systems"
 msgstr "EnR & Systems"
 
-#: ../content/case_studies.py:101
+#: ../content/case_studies.py:98
 msgid "Energy"
 msgstr "Energie"
 
-#: ../content/case_studies.py:115
+#: ../content/case_studies.py:112
 msgid "Environment"
 msgstr "Environnement"
 
-#: ../content/case_studies.py:110
+#: ../content/case_studies.py:107
 msgid "Heating, ecs, cooling, ventilation, EnR"
 msgstr "Chauffage, ecs, rafraîchissement, ventilation, EnR"
 
-#: ../content/case_studies.py:93
+#: ../content/case_studies.py:90
 msgid "Human relations"
 msgstr "Relations humaines"
 
@@ -78,40 +78,36 @@ msgstr "Relations humaines"
 msgid "Installs the renocopro.policy add-on."
 msgstr ""
 
-#: ../content/case_studies.py:40
-msgid "Latitude"
-msgstr "Latitude"
-
-#: ../content/case_studies.py:89
+#: ../content/case_studies.py:86
 msgid "Listing of all work done"
 msgstr "Listing de tous les travaux réalisés"
 
-#: ../content/case_studies.py:38
-msgid "Longitude"
-msgstr "Longitude"
+#: ../content/case_studies.py:37
+msgid "Location"
+msgstr "Localisation"
 
-#: ../content/case_studies.py:58
+#: ../content/case_studies.py:55
 msgid "Net surface area"
 msgstr "Surface nette"
 
-#: ../content/case_studies.py:65
+#: ../content/case_studies.py:62
 msgid "Number of housing units"
 msgstr "Nombre d'unités de logement"
 
-#: ../content/case_studies.py:76
+#: ../content/case_studies.py:73
 msgid "Other"
 msgstr "Autres"
 
-#: ../content/case_studies.py:69
+#: ../content/case_studies.py:66
 #: ../setuphandlers.py:50
 msgid "Other functions"
 msgstr "Autres fonctions"
 
-#: ../content/case_studies.py:120
+#: ../content/case_studies.py:117
 msgid "Products"
 msgstr "Produits"
 
-#: ../content/case_studies.py:54
+#: ../content/case_studies.py:51
 msgid "Renovation year"
 msgstr "Année de rénovation"
 
@@ -119,12 +115,12 @@ msgstr "Année de rénovation"
 msgid "Title"
 msgstr "Titre"
 
-#: ../content/case_studies.py:49
+#: ../content/case_studies.py:46
 #: ../setuphandlers.py:43
 msgid "Type of building"
 msgstr "Type de batiment"
 
-#: ../content/case_studies.py:43
+#: ../content/case_studies.py:40
 #: ../setuphandlers.py:36
 msgid "Types of work"
 msgstr "Types de travaux"
@@ -133,11 +129,11 @@ msgstr "Types de travaux"
 msgid "Uninstalls the renocopro.policy add-on."
 msgstr ""
 
-#: ../content/case_studies.py:116
+#: ../content/case_studies.py:113
 msgid "Vegetation, water management"
 msgstr "Végétalisation, gestion de l'eau"
 
-#: ../content/case_studies.py:89
+#: ../content/case_studies.py:86
 msgid "Work"
 msgstr "Travaux"
 
