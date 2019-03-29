@@ -2,4 +2,35 @@
 <registry>
 <!-- -*- extra stuff goes here -*- -->
 
+    <records prefix="plone.app.mosaic.app_tiles.case_studies"
+        interface="plone.app.mosaic.interfaces.ITile">
+        <value key="name">tile.case_studies</value>
+        <value key="label">Case studies</value>
+        <value key="category">advanced</value>
+        <value key="tile_type">app</value>
+        <value key="default_value"></value>
+        <value key="read_only">false</value>
+        <value key="settings">true</value>
+        <value key="favorite">false</value>
+        <value key="rich_text">false</value>
+        <value key="weight">10</value>
+    </records>
+
+    <records prefix="plone.resources/renocopro"
+        interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+        <value key="css">
+            <element>++plone++renocopro.policy/less/style.less</element>
+        </value>
+    </records>
+    <records prefix="plone.bundles/renocopro"
+        interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+        <value key="resources">
+            <element>renocopro</element>
+        </value>
+        <value key="enabled">True</value>
+        <value key="compile">True</value>
+        <value key="csscompilation">++plone++renocopro.policy/css/style.css</value>
+        <value key="last_compilation"></value>
+    </records>
+
 </registry>

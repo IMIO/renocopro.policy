@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:i18n="http://namespaces.zope.org/i18n">
+
+    <include package="plone.app.mosaic" />
+
+    <plone:tile
+        name="tile.case_studies"
+        title="Case studies"
+        description="A tile which displays a list of case studies"
+        add_permission="cmf.ModifyPortalContent"
+        class=".case_studies.CaseStudiesTile"
+        for="*"
+        permission="zope.Public"
+        schema=".case_studies.ICaseStudiesTile"
+        template="templates/case_studies.pt"
+        />
+
+</configure>

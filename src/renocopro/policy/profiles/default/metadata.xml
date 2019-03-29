@@ -5,5 +5,6 @@
     <dependency>profile-collective.taxonomy:default</dependency>
     <dependency>profile-plone.formwidget.geolocation:default</dependency>
     <dependency>profile-collective.documentation:default</dependency>
+    <dependency>profile-plone.app.mosaic:default</dependency>
   </dependencies>
 </metadata>

@@ -49,6 +49,7 @@ setup(
         'collective.taxonomy',
         'plone.formwidget.geolocation',
         'collective.documentation',
+        "plone.app.mosaic",
     ],
     extras_require={
         'test': [

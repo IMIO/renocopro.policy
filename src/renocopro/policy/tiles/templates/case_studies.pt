@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      i18n:domain="renocopro.policy">
+  <body>
+    <section class="case-studies" tal:define="cases view/contents">
+      <ul>
+        <li tal:repeat="case cases">
+          <a href="" tal:attributes="href case/getURL" tal:define="item case/getObject">
+              <div class="case-studies-image"
+                 tal:attributes="style string:background-image:url(${case/getURL}/@@images/image)" />
+              <div class="case-studies-title" tal:content="item/title" />
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </body>
+</html>
