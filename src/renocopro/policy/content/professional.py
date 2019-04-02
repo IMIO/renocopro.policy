@@ -10,7 +10,7 @@ from zope.interface import implements
 from plone.supermodel.directives import fieldset
 
 
-class IProfessionnel(model.Schema):
+class IProfessional(model.Schema):
 
     title = schema.TextLine(title=_(u"Name of the company/organization"), required=True)
 
@@ -62,13 +62,7 @@ class IProfessionnel(model.Schema):
 
     vat = schema.TextLine(title=_(u"VAT"), required=False)
 
-    fieldset(
-        "activities",
-        label=_(u"activities"),
-        fields=[
-            "activity",
-        ],
-    )
+    fieldset("activities", label=_(u"activities"), fields=["activity"])
 
     activity = schema.Text(
         title=_(u"Specific activities in the field of condominium renovation"),
@@ -76,5 +70,5 @@ class IProfessionnel(model.Schema):
     )
 
 
-class Professionnel(Container):
-    implements(IProfessionnel)
+class Professional(Container):
+    implements(IProfessional)

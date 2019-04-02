@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-04-02 07:57+0000\n"
+"POT-Creation-Date: 2019-04-02 09:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,6 +14,10 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
+#: ../content/realization.py:17
+msgid "Address of the co-ownership"
+msgstr ""
+
 #: ../content/case_studies.py:22
 msgid "Building identity form"
 msgstr ""
@@ -22,7 +26,8 @@ msgstr ""
 msgid "Case Studies"
 msgstr ""
 
-#: ../content/professionnel.py:51
+#: ../content/professional.py:51
+#: ../content/realization.py:23
 msgid "City"
 msgstr ""
 
@@ -30,7 +35,11 @@ msgstr ""
 msgid "Consumption, type of system implemented, performance achieved,... "
 msgstr ""
 
-#: ../content/professionnel.py:31
+#: ../content/realization.py:29
+msgid "Contact details of the syndic"
+msgstr ""
+
+#: ../content/professional.py:31
 msgid "Contact person"
 msgstr ""
 
@@ -54,8 +63,12 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: ../content/professionnel.py:24
+#: ../content/professional.py:24
 msgid "Description of the company's activity"
+msgstr ""
+
+#: ../content/realization.py:42
+msgid "Description of the work carried out"
 msgstr ""
 
 #: ../content/case_studies.py:120
@@ -66,7 +79,11 @@ msgstr ""
 msgid "Duration of the work"
 msgstr ""
 
-#: ../content/professionnel.py:59
+#: ../content/realization.py:35
+msgid "Email"
+msgstr ""
+
+#: ../content/professional.py:59
 msgid "Email of the contact person"
 msgstr ""
 
@@ -82,7 +99,7 @@ msgstr ""
 msgid "Environment"
 msgstr ""
 
-#: ../content/professionnel.py:47
+#: ../content/professional.py:47
 msgid "First name"
 msgstr ""
 
@@ -94,15 +111,19 @@ msgstr ""
 msgid "Human relations"
 msgstr ""
 
+#: ../content/realization.py:46
+msgid "Innovative aspects implemented"
+msgstr ""
+
 #: ../configure.zcml:30
 msgid "Installs the renocopro.policy add-on."
 msgstr ""
 
-#: ../content/professionnel.py:45
+#: ../content/professional.py:45
 msgid "Last name"
 msgstr ""
 
-#: ../content/professionnel.py:18
+#: ../content/professional.py:18
 #: ../setuphandlers.py:57
 msgid "Legal status"
 msgstr ""
@@ -112,12 +133,20 @@ msgid "Listing of all work done"
 msgstr ""
 
 #: ../content/case_studies.py:37
-#: ../content/professionnel.py:27
+#: ../content/professional.py:27
 msgid "Location"
 msgstr ""
 
-#: ../content/professionnel.py:15
+#: ../content/realization.py:33
+msgid "Name"
+msgstr ""
+
+#: ../content/professional.py:15
 msgid "Name of the company/organization"
+msgstr ""
+
+#: ../content/realization.py:13
+msgid "Name of the project"
 msgstr ""
 
 #: ../content/case_studies.py:55
@@ -129,6 +158,7 @@ msgid "Number of housing units"
 msgstr ""
 
 #: ../content/case_studies.py:73
+#: ../content/realization.py:39
 msgid "Other"
 msgstr ""
 
@@ -137,7 +167,11 @@ msgstr ""
 msgid "Other functions"
 msgstr ""
 
-#: ../content/professionnel.py:56
+#: ../content/realization.py:37
+msgid "Phone / Mobile phone"
+msgstr ""
+
+#: ../content/professional.py:56
 msgid "Phone / Mobile phone of the contact person"
 msgstr ""
 
@@ -145,16 +179,29 @@ msgstr ""
 msgid "Products"
 msgstr ""
 
+#: ../profiles/default/types/professional.xml
+msgid "Professional"
+msgstr ""
+
+#: ../profiles/default/types/realization.xml
+msgid "Realization"
+msgstr ""
+
 #: ../content/case_studies.py:51
 msgid "Renovation year"
 msgstr ""
 
-#: ../content/professionnel.py:74
+#: ../content/professional.py:74
 msgid "Specific activities in the field of condominium renovation"
 msgstr ""
 
-#: ../content/professionnel.py:49
+#: ../content/professional.py:49
+#: ../content/realization.py:21
 msgid "Street"
+msgstr ""
+
+#: ../content/realization.py:47
+msgid "Technical point of view, financing, management of the co-ownership"
 msgstr ""
 
 #: ../content/case_studies.py:16
@@ -175,7 +222,7 @@ msgstr ""
 msgid "Uninstalls the renocopro.policy add-on."
 msgstr ""
 
-#: ../content/professionnel.py:63
+#: ../content/professional.py:63
 msgid "VAT"
 msgstr ""
 
@@ -187,11 +234,12 @@ msgstr ""
 msgid "Work"
 msgstr ""
 
-#: ../content/professionnel.py:53
+#: ../content/professional.py:53
+#: ../content/realization.py:25
 msgid "Zip code"
 msgstr ""
 
-#: ../content/professionnel.py:67
+#: ../content/professional.py:67
 msgid "activities"
 msgstr ""
 
@@ -203,6 +251,6 @@ msgstr ""
 msgid "renocopro.policy (uninstall)"
 msgstr ""
 
-#: ../content/professionnel.py:61
+#: ../content/professional.py:61
 msgid "website"
 msgstr ""

@@ -19,33 +19,28 @@ class RenocoproPolicyLayer(PloneSandboxLayer):
         # The z3c.autoinclude feature is disabled in the Plone fixture base
         # layer.
         import plone.restapi
+
         self.loadZCML(package=plone.restapi)
         self.loadZCML(package=renocopro.policy)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'renocopro.policy:default')
+        applyProfile(portal, "renocopro.policy:default")
 
 
 RENOCOPRO_POLICY_FIXTURE = RenocoproPolicyLayer()
 
 
 RENOCOPRO_POLICY_INTEGRATION_TESTING = IntegrationTesting(
-    bases=(RENOCOPRO_POLICY_FIXTURE,),
-    name='RenocoproPolicyLayer:IntegrationTesting',
+    bases=(RENOCOPRO_POLICY_FIXTURE,), name="RenocoproPolicyLayer:IntegrationTesting"
 )
 
 
 RENOCOPRO_POLICY_FUNCTIONAL_TESTING = FunctionalTesting(
-    bases=(RENOCOPRO_POLICY_FIXTURE,),
-    name='RenocoproPolicyLayer:FunctionalTesting',
+    bases=(RENOCOPRO_POLICY_FIXTURE,), name="RenocoproPolicyLayer:FunctionalTesting"
 )
 
 
 RENOCOPRO_POLICY_ACCEPTANCE_TESTING = FunctionalTesting(
-    bases=(
-        RENOCOPRO_POLICY_FIXTURE,
-        REMOTE_LIBRARY_BUNDLE_FIXTURE,
-        z2.ZSERVER_FIXTURE,
-    ),
-    name='RenocoproPolicyLayer:AcceptanceTesting',
+    bases=(RENOCOPRO_POLICY_FIXTURE, REMOTE_LIBRARY_BUNDLE_FIXTURE, z2.ZSERVER_FIXTURE),
+    name="RenocoproPolicyLayer:AcceptanceTesting",
 )

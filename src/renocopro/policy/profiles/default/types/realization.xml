@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<object name="professionnel" meta_type="Dexterity FTI" i18n:domain="plone"
+<object name="realization" meta_type="Dexterity FTI" i18n:domain="renocopro.policy"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
- <property name="title" i18n:translate="">Professionnel</property>
+ <property name="title" i18n:translate="">Realization</property>
  <property name="description" i18n:translate=""/>
  <property name="icon_expr">string:${portal_url}/document_icon.png</property>
- <property name="factory">professionnel</property>
+ <property name="factory">realization</property>
  <property
-    name="add_view_expr">string:${folder_url}/++add++professionnel</property>
+    name="add_view_expr">string:${folder_url}/++add++realization</property>
  <property name="link_target"/>
  <property name="immediate_view">view</property>
  <property name="global_allow">True</property>
@@ -19,11 +19,12 @@
  </property>
  <property name="default_view_fallback">False</property>
  <property name="add_permission">cmf.AddPortalContent</property>
- <property name="klass">renocopro.policy.content.professionnel.Professionnel</property>
+ <property name="klass">renocopro.policy.content.realization.Realization</property>
  <property name="behaviors">
   <element value="plone.app.content.interfaces.INameFromTitle"/>
+  <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage"/>
  </property>
- <property name="schema">renocopro.policy.content.professionnel.IProfessionnel</property>
+ <property name="schema">renocopro.policy.content.realization.IRealization</property>
  <property name="model_source"/>
  <property name="model_file"/>
  <property name="schema_policy">dexterity</property>
