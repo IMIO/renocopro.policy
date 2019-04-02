@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-03-27 13:58+0000\n"
+"POT-Creation-Date: 2019-04-02 07:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,9 +22,17 @@ msgstr "Fiche d'identité du batîment"
 msgid "Case Studies"
 msgstr ""
 
+#: ../content/professionnel.py:51
+msgid "City"
+msgstr "Ville"
+
 #: ../content/case_studies.py:99
 msgid "Consumption, type of system implemented, performance achieved,... "
 msgstr "Consommation, type de système mis en place, performances atteintes, ..."
+
+#: ../content/professionnel.py:31
+msgid "Contact person"
+msgstr "Personne de contact"
 
 #: ../content/case_studies.py:120
 msgid "Cost"
@@ -46,6 +54,10 @@ msgstr "Décrire les modes décisionnels, les leviers et freins liés à la déc
 msgid "Description"
 msgstr "Description"
 
+#: ../content/professionnel.py:24
+msgid "Description of the company's activity"
+msgstr "Description de l'activité de l'entreprise"
+
 #: ../content/case_studies.py:120
 msgid "Details of the big posts"
 msgstr "Détails des gros posts"
@@ -53,6 +65,10 @@ msgstr "Détails des gros posts"
 #: ../content/case_studies.py:53
 msgid "Duration of the work"
 msgstr "Durée des travaux"
+
+#: ../content/professionnel.py:59
+msgid "Email of the contact person"
+msgstr "Email de la personne de contact"
 
 #: ../content/case_studies.py:106
 msgid "EnR & Systems"
@@ -66,6 +82,10 @@ msgstr "Energie"
 msgid "Environment"
 msgstr "Environnement"
 
+#: ../content/professionnel.py:47
+msgid "First name"
+msgstr "Prénom"
+
 #: ../content/case_studies.py:107
 msgid "Heating, ecs, cooling, ventilation, EnR"
 msgstr "Chauffage, ecs, rafraîchissement, ventilation, EnR"
@@ -74,17 +94,31 @@ msgstr "Chauffage, ecs, rafraîchissement, ventilation, EnR"
 msgid "Human relations"
 msgstr "Relations humaines"
 
-#: ../configure.zcml:29
+#: ../configure.zcml:30
 msgid "Installs the renocopro.policy add-on."
 msgstr ""
+
+#: ../content/professionnel.py:45
+msgid "Last name"
+msgstr "Nom"
+
+#: ../content/professionnel.py:18
+#: ../setuphandlers.py:57
+msgid "Legal status"
+msgstr "Statut juridique"
 
 #: ../content/case_studies.py:86
 msgid "Listing of all work done"
 msgstr "Listing de tous les travaux réalisés"
 
 #: ../content/case_studies.py:37
+#: ../content/professionnel.py:27
 msgid "Location"
 msgstr "Localisation"
+
+#: ../content/professionnel.py:15
+msgid "Name of the company/organization"
+msgstr "Nom de l'entreprise / organisme"
 
 #: ../content/case_studies.py:55
 msgid "Net surface area"
@@ -103,6 +137,10 @@ msgstr "Autres"
 msgid "Other functions"
 msgstr "Autres fonctions"
 
+#: ../content/professionnel.py:56
+msgid "Phone / Mobile phone of the contact person"
+msgstr "éléphone / GSM de la personne de contact"
+
 #: ../content/case_studies.py:117
 msgid "Products"
 msgstr "Produits"
@@ -110,6 +148,14 @@ msgstr "Produits"
 #: ../content/case_studies.py:51
 msgid "Renovation year"
 msgstr "Année de rénovation"
+
+#: ../content/professionnel.py:74
+msgid "Specific activities in the field of condominium renovation"
+msgstr "Activités spécifiques dans le domaine de la rénovation des copropriétés"
+
+#: ../content/professionnel.py:49
+msgid "Street"
+msgstr "Rue"
 
 #: ../content/case_studies.py:16
 msgid "Title"
@@ -125,9 +171,13 @@ msgstr "Type de batiment"
 msgid "Types of work"
 msgstr "Types de travaux"
 
-#: ../configure.zcml:38
+#: ../configure.zcml:39
 msgid "Uninstalls the renocopro.policy add-on."
 msgstr ""
+
+#: ../content/professionnel.py:63
+msgid "VAT"
+msgstr "TVA"
 
 #: ../content/case_studies.py:113
 msgid "Vegetation, water management"
@@ -137,10 +187,22 @@ msgstr "Végétalisation, gestion de l'eau"
 msgid "Work"
 msgstr "Travaux"
 
-#: ../configure.zcml:29
+#: ../content/professionnel.py:53
+msgid "Zip code"
+msgstr "Code postal"
+
+#: ../content/professionnel.py:67
+msgid "activities"
+msgstr "Activités"
+
+#: ../configure.zcml:30
 msgid "renocopro.policy"
 msgstr ""
 
-#: ../configure.zcml:38
+#: ../configure.zcml:39
 msgid "renocopro.policy (uninstall)"
 msgstr ""
+
+#: ../content/professionnel.py:61
+msgid "website"
+msgstr "Site internet"
