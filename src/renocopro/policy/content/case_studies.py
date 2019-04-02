@@ -15,7 +15,7 @@ class ICaseStudies(model.Schema):
 
     title = schema.TextLine(title=_(u"Title"), required=True)
 
-    description = RichText(title=_(u"Description"), required=False)
+    rich_description = RichText(title=_(u"Description"), required=False)
 
     fieldset(
         "building identity form",

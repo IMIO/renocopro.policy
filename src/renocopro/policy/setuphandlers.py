@@ -52,21 +52,36 @@ def add_taxonomies():
         "default_language": "fr",
     }
 
+    data_legal_status = {
+        "taxonomy": "legal_status",
+        "field_title": translate(_("Legal status"), target_language=current_lang),
+        "field_description": "",
+        "default_language": "fr",
+    }
+
     portal = api.portal.get()
     sm = portal.getSiteManager()
     types_of_work_item = "collective.taxonomy.types_of_work"
     type_of_building_item = "collective.taxonomy.type_of_building"
     other_functions_item = "collective.taxonomy.other_functions"
+    legal_status_item = "collective.taxonomy.legal_status"
     utility_types_of_work = sm.queryUtility(ITaxonomy, name=types_of_work_item)
     utility_type_of_building = sm.queryUtility(ITaxonomy, name=type_of_building_item)
     utility_other_functions = sm.queryUtility(ITaxonomy, name=other_functions_item)
+    utility_legal_status = sm.queryUtility(ITaxonomy, name=legal_status_item)
 
-    if utility_types_of_work and utility_type_of_building and utility_other_functions:
+    if (
+        utility_types_of_work
+        and utility_type_of_building
+        and utility_other_functions
+        and utility_legal_status
+    ):
         return
 
     create_taxonomy_object(data_types_of_work)
     create_taxonomy_object(data_type_of_building)
     create_taxonomy_object(data_other_functions)
+    create_taxonomy_object(data_legal_status)
 
     # remove taxonomy test
     item = "collective.taxonomy.test"
