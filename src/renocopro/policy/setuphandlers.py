@@ -12,6 +12,8 @@ from zope.i18n import translate
 from zope.i18n.interfaces import ITranslationDomain
 from zope.interface import implementer
 from zope.schema.interfaces import IVocabularyFactory
+from eea.facetednavigation.layout.layout import FacetedLayout
+
 
 from renocopro.policy import _
 
@@ -122,6 +124,9 @@ def add_stucture():
         obj, True, "/faceted/config/news.xml"
     )
     set_constrain_types(obj, ['News Item'])
+    news_layout = FacetedLayout(obj)
+    news_layout.update_layout(layout="faceted-news")
+    _publish(obj)
 
 
 def add_behavior(type_name, behavior_name):
@@ -156,3 +161,8 @@ def set_constrain_types(obj, list_contraint):
     behavior.setConstrainTypesMode(1)
     behavior.setImmediatelyAddableTypes(list_contraint)
     behavior.setLocallyAllowedTypes(list_contraint)
+
+
+def _publish(obj):
+    if api.content.get_state(obj) != "published":
+        api.content.transition(obj, transition="publish")
