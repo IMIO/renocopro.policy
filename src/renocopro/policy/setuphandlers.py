@@ -1,14 +1,19 @@
 # -*- coding: utf-8 -*-
-from renocopro.policy import _
+import os
 
 from Products.CMFPlone.interfaces import INonInstallable
+from Products.CMFPlone.interfaces.constrains import ISelectableConstrainTypes
 from collective.taxonomy.factory import registerTaxonomy
 from collective.taxonomy.interfaces import ITaxonomy
 from plone import api
+from plone.dexterity.interfaces import IDexterityFTI
+from zope.component import queryUtility
 from zope.i18n import translate
 from zope.i18n.interfaces import ITranslationDomain
 from zope.interface import implementer
 from zope.schema.interfaces import IVocabularyFactory
+
+from renocopro.policy import _
 
 
 @implementer(INonInstallable)
@@ -20,7 +25,12 @@ class HiddenProfiles(object):
 
 def post_install(context):
     """Post install script"""
+    api.content.delete(obj=api.portal.get()['events'])
+    api.content.delete(obj=api.portal.get()['news'])
+    api.content.delete(obj=api.portal.get()['Members'])
+
     add_taxonomies()
+    add_stucture()
 
 
 def uninstall(context):
@@ -104,3 +114,45 @@ def create_taxonomy_object(data_tax):
 
     del data_tax["taxonomy"]
     taxonomy.registerBehavior(**data_tax)
+
+
+def add_stucture():
+    obj = create_content("Folder", _(u"News"), api.portal.get())
+    _activate_dashboard_navigation(
+        obj, True, "/faceted/config/news.xml"
+    )
+    set_constrain_types(obj, ['News Item'])
+
+
+def add_behavior(type_name, behavior_name):
+    """Add a behavior to a type"""
+    fti = queryUtility(IDexterityFTI, name=type_name)
+    if not fti:
+        return
+    behaviors = list(fti.behaviors)
+    if behavior_name not in behaviors:
+        behaviors.append(behavior_name)
+    fti._updateProperty("behaviors", tuple(behaviors))
+
+
+def _activate_dashboard_navigation(context, configuration=False, path=None):
+    subtyper = context.restrictedTraverse("@@faceted_subtyper")
+    if subtyper.is_faceted:
+        return
+    subtyper.enable()
+    if configuration and path:
+        context.unrestrictedTraverse("@@faceted_exportimport").import_xml(
+            import_file=open(os.path.dirname(__file__) + path)
+        )
+
+
+def create_content(type_content, title, parent):
+    new_obj = api.content.create(type=type_content, title=title, container=parent)
+    return new_obj
+
+
+def set_constrain_types(obj, list_contraint):
+    behavior = ISelectableConstrainTypes(obj)
+    behavior.setConstrainTypesMode(1)
+    behavior.setImmediatelyAddableTypes(list_contraint)
+    behavior.setLocallyAllowedTypes(list_contraint)

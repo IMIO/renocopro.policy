@@ -52,6 +52,7 @@ setup(
         "plone.formwidget.geolocation",
         "collective.documentation",
         "plone.app.mosaic",
+        "eea.facetednavigation",
     ],
     extras_require={
         "test": [
