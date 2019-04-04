@@ -2,3 +2,7 @@ graft src/renocopro
 graft docs
 include *.rst
 global-exclude *.pyc
+include *.GPL
+exclude .gitlab-ci.yml
+exclude .pre-commit-config.yaml
+exclude requirements.txt
