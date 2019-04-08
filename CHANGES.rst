@@ -5,7 +5,8 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add professional_form
+  [vpiret]
 
 
 1.0a1 (2019-04-04)
