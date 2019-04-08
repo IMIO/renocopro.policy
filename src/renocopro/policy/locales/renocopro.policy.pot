@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-04-02 09:02+0000\n"
+"POT-Creation-Date: 2019-04-08 10:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,6 +43,7 @@ msgid "Contact details of the syndic"
 msgstr ""
 
 #: ../content/professional.py:31
+#: ../form/professional_form.py:24
 msgid "Contact person"
 msgstr ""
 
@@ -56,6 +57,10 @@ msgstr ""
 
 #: ../content/case_studies.py:59
 msgid "Cost/m2"
+msgstr ""
+
+#: ../form/professional_form.py:16
+msgid "Default"
 msgstr ""
 
 #: ../content/case_studies.py:91
@@ -118,7 +123,7 @@ msgstr ""
 msgid "Innovative aspects implemented"
 msgstr ""
 
-#: ../configure.zcml:30
+#: ../configure.zcml:32
 msgid "Installs the renocopro.policy add-on."
 msgstr ""
 
@@ -127,7 +132,7 @@ msgid "Last name"
 msgstr ""
 
 #: ../content/professional.py:18
-#: ../setuphandlers.py:57
+#: ../setuphandlers.py:71
 msgid "Legal status"
 msgstr ""
 
@@ -156,6 +161,15 @@ msgstr ""
 msgid "Net surface area"
 msgstr ""
 
+#: ../form/professional_form.py:66
+msgid "New professional submission"
+msgstr ""
+
+#: ../faceted/configure.zcml:15
+#: ../setuphandlers.py:126
+msgid "News"
+msgstr ""
+
 #: ../content/case_studies.py:62
 msgid "Number of housing units"
 msgstr ""
@@ -166,7 +180,7 @@ msgid "Other"
 msgstr ""
 
 #: ../content/case_studies.py:66
-#: ../setuphandlers.py:50
+#: ../setuphandlers.py:64
 msgid "Other functions"
 msgstr ""
 
@@ -182,6 +196,7 @@ msgstr ""
 msgid "Products"
 msgstr ""
 
+#: ../form/professional_form.py:47
 #: ../profiles/default/types/professional.xml
 msgid "Professional"
 msgstr ""
@@ -194,7 +209,11 @@ msgstr ""
 msgid "Renovation year"
 msgstr ""
 
-#: ../content/professional.py:74
+#: ../form/professional_form.py:95
+msgid "Send"
+msgstr ""
+
+#: ../content/professional.py:68
 msgid "Specific activities in the field of condominium renovation"
 msgstr ""
 
@@ -212,16 +231,16 @@ msgid "Title"
 msgstr ""
 
 #: ../content/case_studies.py:46
-#: ../setuphandlers.py:43
+#: ../setuphandlers.py:57
 msgid "Type of building"
 msgstr ""
 
 #: ../content/case_studies.py:40
-#: ../setuphandlers.py:36
+#: ../setuphandlers.py:50
 msgid "Types of work"
 msgstr ""
 
-#: ../configure.zcml:39
+#: ../configure.zcml:41
 msgid "Uninstalls the renocopro.policy add-on."
 msgstr ""
 
@@ -242,15 +261,21 @@ msgstr ""
 msgid "Zip code"
 msgstr ""
 
-#: ../content/professional.py:67
+#: ../content/professional.py:65
+#: ../form/professional_form.py:40
 msgid "activities"
 msgstr ""
 
-#: ../configure.zcml:30
+#. Default: "A new professional has been created you can access it at the following url:\n              ${url}\n              "
+#: ../form/professional_form.py:54
+msgid "email_body_professional_submission"
+msgstr ""
+
+#: ../configure.zcml:32
 msgid "renocopro.policy"
 msgstr ""
 
-#: ../configure.zcml:39
+#: ../configure.zcml:41
 msgid "renocopro.policy (uninstall)"
 msgstr ""
 

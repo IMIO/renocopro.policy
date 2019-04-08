@@ -5,6 +5,12 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
+- Update translation
+  [vpiret]
+
+- Add collective.behavior.gallery on dependency
+  [vpiret]
+
 - Add case studies viewlet
   [vpiret]
 
