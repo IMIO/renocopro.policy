@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<object name="case-studies" meta_type="Dexterity Container">
+ <criteria>
+  <criterion name="c0">
+   <property name="widget">text</property>
+   <property name="title">Recherche</property>
+   <property name="index">SearchableText</property>
+   <property name="onlyallelements">True</property>
+   <property name="wildcard">False</property>
+   <property name="position">top</property>
+   <property name="section">default</property>
+   <property name="hidden">False</property>
+  </criterion>
+  <criterion name="c2">
+   <property name="widget">select</property>
+   <property name="title">Types de travaux</property>
+   <property name="index">taxonomy_types_of_work</property>
+   <property name="vocabulary">collective.taxonomy.types_of_work</property>
+   <property name="catalog"></property>
+   <property name="position">top</property>
+   <property name="section">default</property>
+   <property name="hidden">False</property>
+   <property name="count">False</property>
+   <property name="sortcountable">False</property>
+   <property name="hidezerocount">False</property>
+   <property name="sortreversed">False</property>
+  </criterion>
+  <criterion name="c3">
+   <property name="widget">select</property>
+   <property name="title">Type de batiment</property>
+   <property name="index">type_of_building</property>
+   <property name="vocabulary">collective.taxonomy.type_of_building</property>
+   <property name="catalog"></property>
+   <property name="position">top</property>
+   <property name="section">default</property>
+   <property name="hidden">False</property>
+   <property name="count">False</property>
+   <property name="sortcountable">False</property>
+   <property name="hidezerocount">False</property>
+   <property name="sortreversed">False</property>
+  </criterion>
+  <criterion name="c1">
+   <property name="widget">checkbox</property>
+   <property name="title">Portal type</property>
+   <property name="index">portal_type</property>
+   <property name="operator">and</property>
+   <property
+      name="vocabulary">eea.faceted.vocabularies.FacetedPortalTypes</property>
+   <property name="catalog"></property>
+   <property name="default">
+    <element value="case_studies"/>
+   </property>
+   <property name="position">right</property>
+   <property name="section">default</property>
+   <property name="hidden">True</property>
+   <property name="count">True</property>
+   <property name="hidezerocount">False</property>
+   <property name="maxitems">5</property>
+   <property name="sortreversed">True</property>
+  </criterion>
+ </criteria>
+</object>

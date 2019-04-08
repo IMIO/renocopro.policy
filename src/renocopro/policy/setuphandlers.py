@@ -14,7 +14,6 @@ from zope.interface import implementer
 from zope.schema.interfaces import IVocabularyFactory
 from eea.facetednavigation.layout.layout import FacetedLayout
 
-
 from renocopro.policy import _
 
 
@@ -122,28 +121,27 @@ def create_taxonomy_object(data_tax):
 
 def add_stucture(portal):
     # Folder case studies
-    if "case-studies" in portal:
-        return
-    obj = create_content("Folder", _(u"Case studies"), portal)
-    set_constrain_types(obj, ["case_studies"])
-    _publish(obj)
+    if "case-studies" not in portal:
+        obj = create_content("Folder", _(u"Case studies"), portal)
+        _activate_dashboard_navigation(obj, True, "/faceted/config/case_studies.xml")
+        set_constrain_types(obj, ["case_studies"])
+        _publish(obj)
 
     # Folder professionals
-    if "professionals" in portal:
-        return
-    obj = create_content("Folder", _(u"Professionals"), portal)
-    set_constrain_types(obj, ["professional"])
-    _publish(obj)
+    if "professionals" not in portal:
+        obj = create_content("Folder", _(u"Professionals"), portal)
+        _activate_dashboard_navigation(obj, True, "/faceted/config/professionals.xml")
+        set_constrain_types(obj, ["professional"])
+        _publish(obj)
 
     # Folder news
-    if "news" in portal:
-        return
-    obj = create_content("Folder", _(u"News"), portal)
-    _activate_dashboard_navigation(obj, True, "/faceted/config/news.xml")
-    set_constrain_types(obj, ["News Item"])
-    news_layout = FacetedLayout(obj)
-    news_layout.update_layout(layout="faceted-news")
-    _publish(obj)
+    if "news" not in portal:
+        obj = create_content("Folder", _(u"News"), portal)
+        _activate_dashboard_navigation(obj, True, "/faceted/config/news.xml")
+        set_constrain_types(obj, ["News Item"])
+        news_layout = FacetedLayout(obj)
+        news_layout.update_layout(layout="faceted-news")
+        _publish(obj)
 
 
 def add_behavior(type_name, behavior_name):

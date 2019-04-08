@@ -5,6 +5,9 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
+- Add simple faceted navigation for case_studies and professionals
+  [vpiret]
+
 - Add base structure
   [vpiret]
 
