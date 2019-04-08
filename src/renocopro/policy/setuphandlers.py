@@ -121,6 +121,21 @@ def create_taxonomy_object(data_tax):
 
 
 def add_stucture(portal):
+    # Folder case studies
+    if "case-studies" in portal:
+        return
+    obj = create_content("Folder", _(u"Case studies"), portal)
+    set_constrain_types(obj, ["case_studies"])
+    _publish(obj)
+
+    # Folder professionals
+    if "professionals" in portal:
+        return
+    obj = create_content("Folder", _(u"Professionals"), portal)
+    set_constrain_types(obj, ["professional"])
+    _publish(obj)
+
+    # Folder news
     if "news" in portal:
         return
     obj = create_content("Folder", _(u"News"), portal)
