@@ -53,6 +53,7 @@ setup(
         "collective.documentation",
         "plone.app.mosaic",
         "eea.facetednavigation",
+        "collective.behavior.gallery",
     ],
     extras_require={
         "test": [

@@ -7,5 +7,6 @@
     <dependency>profile-collective.documentation:default</dependency>
     <dependency>profile-plone.app.mosaic:default</dependency>
     <dependency>profile-eea.facetednavigation:default</dependency>
+    <dependency>profile-collective.behavior.gallery:default</dependency>
   </dependencies>
 </metadata>
