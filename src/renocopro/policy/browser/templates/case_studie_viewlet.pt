@@ -1,0 +1,5 @@
+<lu tal:repeat="case view/get_cases">
+  <li>
+    <a href="" tal:content="case/Title" tal:attributes="href string:${case/getURL}"></a>
+  </li>
+</lu>

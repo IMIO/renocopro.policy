@@ -18,4 +18,13 @@
       directory="static"
       />
 
+  <browser:viewlet
+      for="..content.case_studies.ICaseStudies"
+      name="viewlet.case_studie_viewlet"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+      class=".viewlet.CaseStudieViewlet"
+      permission="zope.Public"
+      layer="..interfaces.IRenocoproPolicyLayer"
+      />
+
 </configure>

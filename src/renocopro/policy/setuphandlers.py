@@ -27,7 +27,7 @@ class HiddenProfiles(object):
 
 def post_install(context):
     """Post install script"""
-    objects_to_remove = ('events', 'news', 'Members')
+    objects_to_remove = ("events", "news", "Members")
     portal = api.portal.get()
     for obj in objects_to_remove:
         if obj in portal:
@@ -121,13 +121,11 @@ def create_taxonomy_object(data_tax):
 
 
 def add_stucture(portal):
-    if 'news' in portal:
+    if "news" in portal:
         return
     obj = create_content("Folder", _(u"News"), portal)
-    _activate_dashboard_navigation(
-        obj, True, "/faceted/config/news.xml"
-    )
-    set_constrain_types(obj, ['News Item'])
+    _activate_dashboard_navigation(obj, True, "/faceted/config/news.xml")
+    set_constrain_types(obj, ["News Item"])
     news_layout = FacetedLayout(obj)
     news_layout.update_layout(layout="faceted-news")
     _publish(obj)

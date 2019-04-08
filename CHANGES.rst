@@ -5,6 +5,9 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
+- Add case studies viewlet
+  [vpiret]
+
 - Add professional_form
   [vpiret]
 
