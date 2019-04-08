@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
 <rolemap>
   <permissions>
-  <!-- -*- extra stuff goes here -*- -->
-
+    <permission name="Renocopro: Propose a professional"
+                acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Authenticated" />
+    </permission>
   </permissions>
 </rolemap>

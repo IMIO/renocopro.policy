@@ -12,12 +12,13 @@
     Better import explicite packages or configurations ;)
   -->
   <!--<includeDependencies package="." />-->
+  <include file="permissions.zcml" />
 
   <include package=".browser" />
   <include package=".tiles" />
   <include package=".faceted" />
+  <include package=".form" />
 
-  <include file="permissions.zcml" />
 
   <include file="upgrades.zcml" />
 
