@@ -4,13 +4,13 @@ from plone import schema
 from plone.app.textfield import RichText
 from plone.dexterity.content import Container
 from plone.formwidget.geolocation.field import GeolocationField
-from plone.supermodel import model
 from plone.supermodel.directives import fieldset
-from renocopro.policy import _
 from zope.interface import implements
+from renocopro.policy import _
+from renocopro.policy.content.interfaces import IRenocopro
 
 
-class ICaseStudies(model.Schema):
+class ICaseStudies(IRenocopro):
     """ICaseStudies"""
 
     title = schema.TextLine(title=_(u"Title"), required=True)

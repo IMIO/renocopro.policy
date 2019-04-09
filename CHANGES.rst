@@ -5,6 +5,9 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
+- Add browser view for gallery
+  [vpiret]
+
 - Upgrade faceted for case_studies
   [vpiret]
 

@@ -3,13 +3,13 @@
 from plone import schema
 from plone.app.textfield import RichText
 from plone.dexterity.content import Container
-from plone.supermodel import model
 from plone.supermodel.directives import fieldset
-from renocopro.policy import _
 from zope.interface import implements
+from renocopro.policy import _
+from renocopro.policy.content.interfaces import IRenocopro
 
 
-class IRealization(model.Schema):
+class IRealization(IRenocopro):
     title = schema.TextLine(title=_(u"Name of the project"), required=True)
 
     fieldset(

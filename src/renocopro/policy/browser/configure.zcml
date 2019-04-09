@@ -27,4 +27,12 @@
       layer="..interfaces.IRenocoproPolicyLayer"
       />
 
+  <browser:page
+    for="..content.interfaces.IRenocopro"
+    name="gallery_view"
+    permission="zope2.View"
+    class=".gallery.GalleryView"
+    template="templates/gallery.pt"
+    />
+
 </configure>
