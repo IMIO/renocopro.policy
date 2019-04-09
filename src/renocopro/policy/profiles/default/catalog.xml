@@ -1,7 +1,17 @@
 <?xml version="1.0"?>
 <object name="portal_catalog">
   <index name="type_of_building" meta_type="KeywordIndex">
-  <indexed_attr value="type_of_building" />
- </index>
- <column value="type_of_building" />
+    <indexed_attr value="type_of_building" />
+  </index>
+  <column value="type_of_building" />
+
+  <index name="types_of_work" meta_type="KeywordIndex">
+    <indexed_attr value="types_of_work" />
+  </index>
+  <column value="types_of_work" />
+
+  <index name="renovation_year" meta_type="FieldIndex">
+    <indexed_attr value="renovation_year" />
+  </index>
+  <column value="renovation_year" />
 </object>

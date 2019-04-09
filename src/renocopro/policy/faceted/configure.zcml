@@ -8,10 +8,26 @@
 
   <faceted:view
     name="faceted-news"
-    template="news.pt"
+    template="templates/news.pt"
     title="News"
     permission="zope2.View"
     class=".news.NewsView"
+    />
+
+  <faceted:view
+    name="faceted-casestudies"
+    template="templates/case_studies.pt"
+    title="Case studies"
+    permission="zope2.View"
+    class=".case_studies.CaseStudiesView"
+    />
+
+  <faceted:view
+    name="faceted-professionals"
+    template="templates/professionals.pt"
+    title="Professionals"
+    permission="zope2.View"
+    class=".professionals.ProfessionalsView"
     />
 
 </configure>
