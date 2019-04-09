@@ -7,7 +7,6 @@ from zope.schema.interfaces import IVocabularyFactory
 
 
 class CaseStudiesView(BrowserView):
-
     def get_types_of_work_by_token(self, token):
         factory = getUtility(IVocabularyFactory, "collective.taxonomy.types_of_work")
         vocabulary = factory(self.context)
