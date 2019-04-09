@@ -35,4 +35,11 @@
     template="templates/gallery.pt"
     />
 
+  <browser:page
+    name="renocopro_settings"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    class=".controlpanel.RenocoproSettingsControlPanel"
+    permission="cmf.ManagePortal"
+    />
+
 </configure>

@@ -11,15 +11,15 @@ class GalleryView(BrowserView):
         brains = api.content.find(
             context=self.context,
             depth=1,
-            portal_type='Image',
-            sort_on='getObjPositionInParent'
+            portal_type="Image",
+            sort_on="getObjPositionInParent",
         )
         return [b.getObject() for b in brains]
 
-    def image_url(self, obj, default_scale='preview'):
-        url = ''
-        images = obj.restrictedTraverse('@@images')
-        image = images.scale('image', scale=default_scale)
+    def image_url(self, obj, default_scale="preview"):
+        url = ""
+        images = obj.restrictedTraverse("@@images")
+        image = images.scale("image", scale=default_scale)
         if image:
             url = image.url
         return url

@@ -13,14 +13,19 @@
   -->
   <!--<includeDependencies package="." />-->
   <include file="permissions.zcml" />
+  <include file="upgrades.zcml" />
+
+  <include package="collective.taxonomy" />
+  <include package="plone.formwidget.geolocation" />
+  <include package="collective.documentation" />
+  <include package="plone.app.mosaic" />
+  <include package="eea.facetednavigation" />
+  <include package="collective.behavior.gallery" />
 
   <include package=".browser" />
   <include package=".tiles" />
   <include package=".faceted" />
   <include package=".form" />
-
-
-  <include file="upgrades.zcml" />
 
   <genericsetup:registerProfile
       name="default"

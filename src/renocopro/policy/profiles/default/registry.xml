@@ -33,4 +33,5 @@
         <value key="last_compilation"></value>
     </records>
 
+    <records interface="renocopro.policy.browser.controlpanel.IRenocoproSettingsSchema" />
 </registry>

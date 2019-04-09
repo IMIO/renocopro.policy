@@ -5,6 +5,9 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
+- Add control panel for renocopro
+  [vpiret]
+
 - Add browser view for gallery
   [vpiret]
 
