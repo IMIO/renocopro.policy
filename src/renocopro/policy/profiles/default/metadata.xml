@@ -2,6 +2,7 @@
 <metadata>
   <version>1000</version>
   <dependencies>
+    <dependency>profile-renocopro.theme:default</dependency>
     <dependency>profile-collective.taxonomy:default</dependency>
     <dependency>profile-plone.formwidget.geolocation:default</dependency>
     <dependency>profile-collective.documentation:default</dependency>

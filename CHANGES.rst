@@ -5,6 +5,9 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
+- Add reconocopro.theme to dependencies
+  [AuroreMariscal]
+
 - Add control panel for renocopro
   [vpiret]
 

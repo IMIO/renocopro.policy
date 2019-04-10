@@ -54,6 +54,7 @@ setup(
         "plone.app.mosaic",
         "eea.facetednavigation",
         "collective.behavior.gallery",
+        "renocopro.theme",
     ],
     extras_require={
         "test": [
