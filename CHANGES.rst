@@ -5,6 +5,9 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
+- Adapt template to case studies
+  [AuroreMariscal]
+
 - Add reconocopro.theme to dependencies
   [AuroreMariscal]
 

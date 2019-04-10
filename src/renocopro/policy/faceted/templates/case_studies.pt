@@ -37,22 +37,20 @@
                              url brain/getURL|string:#;
                              is_image python: brain.getObject().image"
                  tal:attributes="href url;
-                               title description">
+                                 title title">
 
-
-
-                <img style="border: none" tal:condition="is_image"
-                      tal:attributes="src  string:${brain/getURL}/@@images/image"/>
-
-                <p class=""
-                      tal:content="brain/pretty_title_or_id|string:">Title</p>
-                <p class=""
-                      tal:content="types_of_work" tal:condition="types_of_work">types_of_work</p>
-                <p class=""
-                      tal:content="type_of_building" tal:condition="type_of_building">type_of_building</p>
-                <p class=""
-                      tal:content="renovation_year" tal:condition="renovation_year">renovation_year</p>
-
+                <div class="items-content">
+                  <div class="image">
+                    <img style="border: none" tal:condition="is_image"
+                         tal:attributes="src  string:${brain/getURL}/@@images/image"/>
+                  </div>
+                  <div class="text">
+                    <h4 tal:content="brain/pretty_title_or_id|string:">Title</h4>
+                    <span tal:content="types_of_work" tal:condition="types_of_work">types_of_work</span>
+                    <span tal:content="type_of_building" tal:condition="type_of_building">type_of_building</span>
+                    <span tal:content="renovation_year" tal:condition="renovation_year">renovation_year</span>
+                  </div>
+                </div>
               </a>
             </div>
 
