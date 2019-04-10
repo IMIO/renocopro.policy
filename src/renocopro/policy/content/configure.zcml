@@ -1,0 +1,11 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="renocopro.policy">
+
+  <subscriber
+    for=".professional.IProfessional
+         zope.lifecycleevent.IObjectModifiedEvent"
+    handler=".event.send_notification"
+    />
+</configure>
+

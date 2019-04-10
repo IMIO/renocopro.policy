@@ -5,6 +5,9 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
+- Add notification for professional modifications
+  [vpiret]
+
 - Adapt template to case studies
   [AuroreMariscal]
 

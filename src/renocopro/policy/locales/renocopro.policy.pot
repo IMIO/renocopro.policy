@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-04-08 10:50+0000\n"
+"POT-Creation-Date: 2019-04-10 09:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,10 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: renocopro.policy\n"
+
+#: ../browser/controlpanel.py:24
+msgid ""
+msgstr ""
 
 #: ../content/realization.py:17
 msgid "Address of the co-ownership"
@@ -29,9 +33,18 @@ msgstr ""
 msgid "Case Studies"
 msgstr ""
 
+#: ../faceted/configure.zcml:23
+#: ../setuphandlers.py:125
+msgid "Case studies"
+msgstr ""
+
 #: ../content/professional.py:51
 #: ../content/realization.py:23
 msgid "City"
+msgstr ""
+
+#: ../browser/controlpanel.py:23
+msgid "Configuration for renocopro product"
 msgstr ""
 
 #: ../content/case_studies.py:99
@@ -91,6 +104,10 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
+#: ../browser/controlpanel.py:12
+msgid "Email address of the professional manager"
+msgstr ""
+
 #: ../content/professional.py:59
 msgid "Email of the contact person"
 msgstr ""
@@ -119,11 +136,15 @@ msgstr ""
 msgid "Human relations"
 msgstr ""
 
+#: ../browser/controlpanel.py:13
+msgid "If there are multiple email addresses, separate them with semicolons"
+msgstr ""
+
 #: ../content/realization.py:46
 msgid "Innovative aspects implemented"
 msgstr ""
 
-#: ../configure.zcml:32
+#: ../configure.zcml:38
 msgid "Installs the renocopro.policy add-on."
 msgstr ""
 
@@ -132,7 +153,7 @@ msgid "Last name"
 msgstr ""
 
 #: ../content/professional.py:18
-#: ../setuphandlers.py:71
+#: ../setuphandlers.py:70
 msgid "Legal status"
 msgstr ""
 
@@ -165,8 +186,12 @@ msgstr ""
 msgid "New professional submission"
 msgstr ""
 
+#: ../content/event.py:45
+msgid "New professionnal modification"
+msgstr ""
+
 #: ../faceted/configure.zcml:15
-#: ../setuphandlers.py:126
+#: ../setuphandlers.py:139
 msgid "News"
 msgstr ""
 
@@ -180,7 +205,7 @@ msgid "Other"
 msgstr ""
 
 #: ../content/case_studies.py:66
-#: ../setuphandlers.py:64
+#: ../setuphandlers.py:63
 msgid "Other functions"
 msgstr ""
 
@@ -201,8 +226,17 @@ msgstr ""
 msgid "Professional"
 msgstr ""
 
+#: ../faceted/configure.zcml:31
+#: ../setuphandlers.py:132
+msgid "Professionals"
+msgstr ""
+
 #: ../profiles/default/types/realization.xml
 msgid "Realization"
+msgstr ""
+
+#: ../profiles/default/controlpanel.xml
+msgid "Renocopro Settings"
 msgstr ""
 
 #: ../content/case_studies.py:51
@@ -231,16 +265,16 @@ msgid "Title"
 msgstr ""
 
 #: ../content/case_studies.py:46
-#: ../setuphandlers.py:57
+#: ../setuphandlers.py:56
 msgid "Type of building"
 msgstr ""
 
 #: ../content/case_studies.py:40
-#: ../setuphandlers.py:50
+#: ../setuphandlers.py:49
 msgid "Types of work"
 msgstr ""
 
-#: ../configure.zcml:41
+#: ../configure.zcml:47
 msgid "Uninstalls the renocopro.policy add-on."
 msgstr ""
 
@@ -271,11 +305,16 @@ msgstr ""
 msgid "email_body_professional_submission"
 msgstr ""
 
-#: ../configure.zcml:32
+#. Default: "The professional ${name} received modifications in the fields:\n          ${fields}\n          \n          you can access it at the following url:\n          ${url}\n          "
+#: ../content/event.py:26
+msgid "email_body_project_submission"
+msgstr ""
+
+#: ../configure.zcml:38
 msgid "renocopro.policy"
 msgstr ""
 
-#: ../configure.zcml:41
+#: ../configure.zcml:47
 msgid "renocopro.policy (uninstall)"
 msgstr ""
 

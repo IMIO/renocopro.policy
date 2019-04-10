@@ -23,6 +23,7 @@
   <include package="collective.behavior.gallery" />
 
   <include package=".browser" />
+  <include package=".content" />
   <include package=".tiles" />
   <include package=".faceted" />
   <include package=".form" />

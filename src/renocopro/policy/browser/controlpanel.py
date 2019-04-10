@@ -8,7 +8,7 @@ from zope.interface import Interface
 
 class IRenocoproSettingsSchema(Interface):
 
-    profassional_manager_email = schema.TextLine(
+    professional_manager_email = schema.TextLine(
         title=_(u"Email address of the professional manager"),
         description=_(
             u"If there are multiple email addresses, separate them with semicolons"

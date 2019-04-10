@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-04-08 10:50+0000\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,10 +26,19 @@ msgstr "Fiche d'identité du batîment"
 msgid "Case Studies"
 msgstr "Études de cas"
 
+#: ../faceted/configure.zcml:23
+#: ../setuphandlers.py:125
+msgid "Case studies"
+msgstr "Études de cas"
+
 #: ../content/professional.py:51
 #: ../content/realization.py:23
 msgid "City"
 msgstr "Ville"
+
+#: ../browser/controlpanel.py:23
+msgid "Configuration for renocopro product"
+msgstr "Configuration du produit renocopro"
 
 #: ../content/case_studies.py:99
 msgid "Consumption, type of system implemented, performance achieved,... "
@@ -88,6 +97,10 @@ msgstr "Durée des travaux"
 msgid "Email"
 msgstr "Email"
 
+#: ../browser/controlpanel.py:12
+msgid "Email address of the professional manager"
+msgstr "Adresse mail du manager pour les professionnels"
+
 #: ../content/professional.py:59
 msgid "Email of the contact person"
 msgstr "Email de la personne de contact"
@@ -116,11 +129,15 @@ msgstr "Chauffage, ecs, rafraîchissement, ventilation, EnR"
 msgid "Human relations"
 msgstr "Relations humaines"
 
+#: ../browser/controlpanel.py:13
+msgid "If there are multiple email addresses, separate them with semicolons"
+msgstr "S'il y a plusieurs adresses mail, séparez-les par des points-virgules."
+
 #: ../content/realization.py:46
 msgid "Innovative aspects implemented"
 msgstr "Aspects innovants mis en oeuvre"
 
-#: ../configure.zcml:32
+#: ../configure.zcml:38
 msgid "Installs the renocopro.policy add-on."
 msgstr ""
 
@@ -129,7 +146,7 @@ msgid "Last name"
 msgstr "Nom"
 
 #: ../content/professional.py:18
-#: ../setuphandlers.py:71
+#: ../setuphandlers.py:70
 msgid "Legal status"
 msgstr "Statut juridique"
 
@@ -162,8 +179,12 @@ msgstr "Surface nette"
 msgid "New professional submission"
 msgstr "Nouvelle soumission d'un professionnel"
 
+#: ../content/event.py:45
+msgid "New professionnal modification"
+msgstr "Nouvelle modification d'un professionnel"
+
 #: ../faceted/configure.zcml:15
-#: ../setuphandlers.py:126
+#: ../setuphandlers.py:139
 msgid "News"
 msgstr "Actualités"
 
@@ -177,7 +198,7 @@ msgid "Other"
 msgstr "Autres"
 
 #: ../content/case_studies.py:66
-#: ../setuphandlers.py:64
+#: ../setuphandlers.py:63
 msgid "Other functions"
 msgstr "Autres fonctions"
 
@@ -187,7 +208,7 @@ msgstr "Téléphone / GSM"
 
 #: ../content/professional.py:56
 msgid "Phone / Mobile phone of the contact person"
-msgstr "éléphone / GSM de la personne de contact"
+msgstr "Téléphone / GSM de la personne de contact"
 
 #: ../content/case_studies.py:117
 msgid "Products"
@@ -198,9 +219,18 @@ msgstr "Produits"
 msgid "Professional"
 msgstr "Professionnel"
 
+#: ../faceted/configure.zcml:31
+#: ../setuphandlers.py:132
+msgid "Professionals"
+msgstr "Professionnels"
+
 #: ../profiles/default/types/realization.xml
 msgid "Realization"
 msgstr "Réalisation"
+
+#: ../profiles/default/controlpanel.xml
+msgid "Renocopro Settings"
+msgstr "Configuration de renocopro"
 
 #: ../content/case_studies.py:51
 msgid "Renovation year"
@@ -228,16 +258,16 @@ msgid "Title"
 msgstr "Titre"
 
 #: ../content/case_studies.py:46
-#: ../setuphandlers.py:57
+#: ../setuphandlers.py:56
 msgid "Type of building"
 msgstr "Type de batiment"
 
 #: ../content/case_studies.py:40
-#: ../setuphandlers.py:50
+#: ../setuphandlers.py:49
 msgid "Types of work"
 msgstr "Types de travaux"
 
-#: ../configure.zcml:41
+#: ../configure.zcml:47
 msgid "Uninstalls the renocopro.policy add-on."
 msgstr ""
 
@@ -266,13 +296,20 @@ msgstr "Activités"
 #. Default: "A new professional has been created you can access it at the following url:\n              ${url}\n              "
 #: ../form/professional_form.py:54
 msgid "email_body_professional_submission"
-msgstr "Un nouveau 'professionnel' a été créé, vous pouvez y accéder à l'adresse suivante :\n ${url}"
+msgstr ""
+"Un nouveau 'professionnel' a été créé, vous pouvez y accéder à l'adresse suivante :\n"
+" ${url}"
 
-#: ../configure.zcml:32
+#. Default: "The professional ${name} received modifications in the fields:\n          ${fields}\n          \n          you can access it at the following url:\n          ${url}\n          "
+#: ../content/event.py:26
+msgid "email_body_project_submission"
+msgstr "Le professionel ${name} à reçu des modifications sur les champs:\n          ${fields}\n          \n          vous pouvez y accéder en suivant cet url:\n          ${url}\n          ""
+
+#: ../configure.zcml:38
 msgid "renocopro.policy"
 msgstr ""
 
-#: ../configure.zcml:41
+#: ../configure.zcml:47
 msgid "renocopro.policy (uninstall)"
 msgstr ""
 
