@@ -13,7 +13,7 @@ class IRenocoproSettingsSchema(Interface):
         description=_(
             u"If there are multiple email addresses, separate them with semicolons"
         ),
-        rquired=False,
+        required=False,
     )
 
 
