@@ -24,7 +24,7 @@ def send_notification(obj, event):
 
     body = translate(
         _(
-            u"email_body_project_submission",
+            u"email_body_professionnal_modification",
             default=u"""The professional ${name} received modifications in the fields:
           ${fields}
 

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-04-10 09:38+0000\n"
+"POT-Creation-Date: 2019-04-12 08:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,14 @@ msgstr ""
 
 #: ../content/realization.py:17
 msgid "Address of the co-ownership"
+msgstr ""
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "Back to created"
+msgstr ""
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "Black to published"
 msgstr ""
 
 #: ../content/case_studies.py:22
@@ -186,7 +194,7 @@ msgstr ""
 msgid "New professional submission"
 msgstr ""
 
-#: ../content/event.py:45
+#: ../content/event.py:46
 msgid "New professionnal modification"
 msgstr ""
 
@@ -217,8 +225,16 @@ msgstr ""
 msgid "Phone / Mobile phone of the contact person"
 msgstr ""
 
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "Previous transition"
+msgstr ""
+
 #: ../content/case_studies.py:117
 msgid "Products"
+msgstr ""
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "Professinal Workflow"
 msgstr ""
 
 #: ../form/professional_form.py:47
@@ -231,8 +247,20 @@ msgstr ""
 msgid "Professionals"
 msgstr ""
 
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "Provides access to workflow history"
+msgstr ""
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "Publish"
+msgstr ""
+
 #: ../profiles/default/types/realization.xml
 msgid "Realization"
+msgstr ""
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "Remove"
 msgstr ""
 
 #: ../profiles/default/controlpanel.xml
@@ -258,6 +286,10 @@ msgstr ""
 
 #: ../content/realization.py:47
 msgid "Technical point of view, financing, management of the co-ownership"
+msgstr ""
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "The ID of the user who performed the last transition"
 msgstr ""
 
 #: ../content/case_studies.py:16
@@ -286,6 +318,10 @@ msgstr ""
 msgid "Vegetation, water management"
 msgstr ""
 
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "When the previous transition was performed"
+msgstr ""
+
 #: ../content/case_studies.py:86
 msgid "Work"
 msgstr ""
@@ -300,14 +336,34 @@ msgstr ""
 msgid "activities"
 msgstr ""
 
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "back_to_created"
+msgstr ""
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "created"
+msgstr ""
+
 #. Default: "A new professional has been created you can access it at the following url:\n              ${url}\n              "
 #: ../form/professional_form.py:54
 msgid "email_body_professional_submission"
 msgstr ""
 
-#. Default: "The professional ${name} received modifications in the fields:\n          ${fields}\n          \n          you can access it at the following url:\n          ${url}\n          "
+#. Default: "The professional ${name} received modifications in the fields:\n          ${fields}\n\n          you can access it at the following url:\n          ${url}\n          "
 #: ../content/event.py:26
-msgid "email_body_project_submission"
+msgid "email_body_professionnal_modification"
+msgstr ""
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "published"
+msgstr ""
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "remove"
+msgstr ""
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "removed"
 msgstr ""
 
 #: ../configure.zcml:38

@@ -5,6 +5,9 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
+- Add workflow for professional
+  [vpiret]
+
 - Add notification for professional modifications
   [vpiret]
 

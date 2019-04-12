@@ -18,6 +18,14 @@ msgstr ""
 msgid "Address of the co-ownership"
 msgstr "Adresse de la copropriété"
 
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "Back to created"
+msgstr "Retour à l'état 'Créé'"
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "Black to published"
+msgstr "Retour à l'état 'Publié'"
+
 #: ../content/case_studies.py:22
 msgid "Building identity form"
 msgstr "Fiche d'identité du batîment"
@@ -179,7 +187,7 @@ msgstr "Surface nette"
 msgid "New professional submission"
 msgstr "Nouvelle soumission d'un professionnel"
 
-#: ../content/event.py:45
+#: ../content/event.py:46
 msgid "New professionnal modification"
 msgstr "Nouvelle modification d'un professionnel"
 
@@ -210,9 +218,17 @@ msgstr "Téléphone / GSM"
 msgid "Phone / Mobile phone of the contact person"
 msgstr "Téléphone / GSM de la personne de contact"
 
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "Previous transition"
+msgstr "Transition précédente"
+
 #: ../content/case_studies.py:117
 msgid "Products"
 msgstr "Produits"
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "Professinal Workflow"
+msgstr "Workflow des professionnels"
 
 #: ../form/professional_form.py:47
 #: ../profiles/default/types/professional.xml
@@ -224,9 +240,21 @@ msgstr "Professionnel"
 msgid "Professionals"
 msgstr "Professionnels"
 
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "Provides access to workflow history"
+msgstr "Permet d'accéder à l'historique du workflow"
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "Publish"
+msgstr "Publié"
+
 #: ../profiles/default/types/realization.xml
 msgid "Realization"
 msgstr "Réalisation"
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "Remove"
+msgstr "Retirer"
 
 #: ../profiles/default/controlpanel.xml
 msgid "Renocopro Settings"
@@ -252,6 +280,10 @@ msgstr "Rue"
 #: ../content/realization.py:47
 msgid "Technical point of view, financing, management of the co-ownership"
 msgstr "Point de vue technique, financement, gestion de la copropriété"
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "The ID of the user who performed the last transition"
+msgstr ""
 
 #: ../content/case_studies.py:16
 msgid "Title"
@@ -279,6 +311,10 @@ msgstr "TVA"
 msgid "Vegetation, water management"
 msgstr "Végétalisation, gestion de l'eau"
 
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "When the previous transition was performed"
+msgstr ""
+
 #: ../content/case_studies.py:86
 msgid "Work"
 msgstr "Travaux"
@@ -293,6 +329,14 @@ msgstr "Code postal"
 msgid "activities"
 msgstr "Activités"
 
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "back_to_created"
+msgstr "Retour à l'état 'Créé'"
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "created"
+msgstr "Créé"
+
 #. Default: "A new professional has been created you can access it at the following url:\n              ${url}\n              "
 #: ../form/professional_form.py:54
 msgid "email_body_professional_submission"
@@ -300,10 +344,22 @@ msgstr ""
 "Un nouveau 'professionnel' a été créé, vous pouvez y accéder à l'adresse suivante :\n"
 " ${url}"
 
-#. Default: "The professional ${name} received modifications in the fields:\n          ${fields}\n          \n          you can access it at the following url:\n          ${url}\n          "
+#. Default: "The professional ${name} received modifications in the fields:\n          ${fields}\n\n          you can access it at the following url:\n          ${url}\n          "
 #: ../content/event.py:26
-msgid "email_body_project_submission"
-msgstr "Le professionel ${name} à reçu des modifications sur les champs:\n          ${fields}\n          \n          vous pouvez y accéder en suivant cet url:\n          ${url}\n          ""
+msgid "email_body_professionnal_modification"
+msgstr "Le professionnel ${name} à reçu des modificaions sur les champs:\n          ${fields}\n\n          vous pouvez y accéder à l'adresse suivante :\n          ${url}\n          "
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "published"
+msgstr "Publié"
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "remove"
+msgstr "Retirer"
+
+#: ../profiles/default/workflows/professional_workflow/definition.xml
+msgid "removed"
+msgstr "Retiré"
 
 #: ../configure.zcml:38
 msgid "renocopro.policy"

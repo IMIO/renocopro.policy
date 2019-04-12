@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<dc-workflow xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+             i18n:domain="renocopro.policy"
+             workflow_id="professional_workflow"
+             title="Professinal Workflow"
+             description=""
+             state_variable="review_state"
+             initial_state="created"
+             i18n:attributes="title; description">
+
+  <permission>Access contents information</permission>
+  <permission>Change portal events</permission>
+  <permission>Modify portal content</permission>
+  <permission>View</permission>
+
+  <state state_id="created" title="created" i18n:attributes="title">
+    <exit-transition transition_id="publish"/>
+
+    <permission-map name="Access contents information" acquired="False">
+      <permission-role>Manager</permission-role>
+      <permission-role>Owner</permission-role>
+      <permission-role>Editor</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map name="Change portal events" acquired="False">
+      <permission-role>Manager</permission-role>
+      <permission-role>Owner</permission-role>
+      <permission-role>Editor</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map name="Modify portal content" acquired="False">
+      <permission-role>Manager</permission-role>
+      <permission-role>Owner</permission-role>
+      <permission-role>Editor</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map name="View" acquired="False">
+      <permission-role>Manager</permission-role>
+      <permission-role>Owner</permission-role>
+      <permission-role>Editor</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+  </state>
+
+  <state state_id="published" title="published" i18n:attributes="title">
+    <exit-transition transition_id="remove"/>
+    <exit-transition transition_id="back_to_created"/>
+
+    <permission-map name="Access contents information" acquired="False">
+      <permission-role>Anonymous</permission-role>
+    </permission-map>
+    <permission-map name="Change portal events" acquired="False">
+      <permission-role>Manager</permission-role>
+      <permission-role>Reviewer</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map name="Modify portal content" acquired="False">
+      <permission-role>Manager</permission-role>
+      <permission-role>Reviewer</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map name="View" acquired="False">
+      <permission-role>Anonymous</permission-role>
+    </permission-map>
+  </state>
+
+  <state state_id="removed" title="removed" i18n:attributes="title">
+    <exit-transition transition_id="black_to_published"/>
+
+    <permission-map name="Access contents information" acquired="False">
+      <permission-role>Manager</permission-role>
+      <permission-role>Owner</permission-role>
+      <permission-role>Editor</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map name="Change portal events" acquired="False">
+      <permission-role>Manager</permission-role>
+      <permission-role>Owner</permission-role>
+      <permission-role>Editor</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map name="Modify portal content" acquired="False">
+      <permission-role>Manager</permission-role>
+      <permission-role>Owner</permission-role>
+      <permission-role>Editor</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map name="View" acquired="False">
+      <permission-role>Manager</permission-role>
+      <permission-role>Owner</permission-role>
+      <permission-role>Editor</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+  </state>
+
+  <transition transition_id="publish"
+              new_state="published"
+              title="Publish"
+              trigger="USER"
+              before_script="" after_script=""
+              i18n:attributes="title">
+  <action url="%(content_url)s/content_status_modify?workflow_action=publish"
+          category="workflow"
+          i18n:translate="">Publish</action>
+  <guard>
+    <guard-permission>Modify portal content</guard-permission>
+  </guard>
+  </transition>
+
+  <transition transition_id="back_to_created"
+              new_state="created"
+              title="back_to_created"
+              trigger="USER"
+              before_script="" after_script=""
+              i18n:attributes="title">
+  <action url="%(content_url)s/content_status_modify?workflow_action=back_to_created"
+          category="workflow"
+          i18n:translate="">Back to created</action>
+  <guard>
+    <guard-permission>Modify portal content</guard-permission>
+  </guard>
+  </transition>
+
+  <transition transition_id="remove"
+              new_state="removed"
+              title="Remove"
+              trigger="USER"
+              before_script="" after_script=""
+              i18n:attributes="title">
+  <action url="%(content_url)s/content_status_modify?workflow_action=remove"
+          category="workflow"
+          i18n:translate="">remove</action>
+  <guard>
+    <guard-permission>Modify portal content</guard-permission>
+  </guard>
+  </transition>
+
+  <transition transition_id="black_to_published"
+              new_state="published"
+              title="Black to published"
+              trigger="USER"
+              before_script="" after_script=""
+              i18n:attributes="title">
+  <action url="%(content_url)s/content_status_modify?workflow_action=black_to_published"
+          category="workflow"
+          i18n:translate="">Black to published</action>
+  <guard>
+    <guard-permission>Modify portal content</guard-permission>
+  </guard>
+  </transition>
+
+  <variable variable_id="action"         for_catalog="False"
+           for_status="True" update_always="True">
+  <description i18n:translate="">
+    Previous transition
+  </description>
+  <default>
+
+   <expression>transition/getId|nothing</expression>
+  </default>
+  <guard>
+  </guard>
+ </variable>
+ <variable variable_id="actor"          for_catalog="False"
+           for_status="True" update_always="True">
+  <description i18n:translate="">
+    The ID of the user who performed the last transition
+  </description>
+  <default>
+
+   <expression>user/getId</expression>
+  </default>
+  <guard>
+  </guard>
+ </variable>
+
+ <variable variable_id="review_history" for_catalog="False"
+           for_status="False" update_always="False">
+  <description i18n:translate="">
+    Provides access to workflow history
+  </description>
+  <default>
+
+   <expression>state_change/getHistory</expression>
+  </default>
+  <guard>
+   <guard-permission>Request review</guard-permission>
+   <guard-permission>Review portal content</guard-permission>
+  </guard>
+ </variable>
+ <variable variable_id="time"           for_catalog="False"
+           for_status="True" update_always="True">
+  <description i18n:translate="">
+    When the previous transition was performed
+  </description>
+  <default>
+
+   <expression>state_change/getDateTime</expression>
+  </default>
+  <guard>
+  </guard>
+ </variable>
+</dc-workflow>
