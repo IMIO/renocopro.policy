@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a2 (unreleased)
+1.0a2 (2019-04-12)
 ------------------
 
 - Add workflow for professional
