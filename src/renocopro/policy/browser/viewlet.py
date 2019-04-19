@@ -9,6 +9,8 @@ class CaseStudieViewlet(ViewletBase):
     index = ViewPageTemplateFile("templates/case_studie_viewlet.pt")
 
     def get_cases(self):
+        if not self.context.type_of_building:
+            return []
         results = self.context.portal_catalog(
             type_of_building=self.context.type_of_building
         )

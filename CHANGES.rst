@@ -5,7 +5,8 @@ Changelog
 1.0a3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix viewlet for same case studies when the building type is undefined
+  [mpeeters]
 
 
 1.0a2 (2019-04-12)
