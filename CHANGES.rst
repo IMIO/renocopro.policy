@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a3 (unreleased)
+1.0a3 (2019-04-19)
 ------------------
 
 - Fix viewlet for same case studies when the building type is undefined
