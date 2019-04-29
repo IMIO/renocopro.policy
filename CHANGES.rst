@@ -5,6 +5,9 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
+- Update values on case studie viewlet
+  [vpiret]
+
 - Update syndic fields
   [vpiret]
 

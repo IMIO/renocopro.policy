@@ -1,5 +1,12 @@
 <lu tal:repeat="case view/get_cases">
   <li>
-    <a href="" tal:content="case/Title" tal:attributes="href string:${case/getURL}"></a>
+    <a href=""
+       tal:attributes="href string:${case/getURL}"
+       tal:define="image python:case.getObject().image">
+      <img style="width:80px; height:80px;"
+           tal:condition="image"
+           tal:attributes="src  string:${case/getURL}/@@images/image"/>
+      <span tal:content="case/Title"></span>
+    </a>
   </li>
 </lu>
