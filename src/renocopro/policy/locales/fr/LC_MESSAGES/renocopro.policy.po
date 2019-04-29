@@ -35,7 +35,7 @@ msgid "Case Studies"
 msgstr "Études de cas"
 
 #: ../faceted/configure.zcml:23
-#: ../setuphandlers.py:125
+#: ../setuphandlers.py:159
 msgid "Case studies"
 msgstr "Études de cas"
 
@@ -52,7 +52,7 @@ msgstr "Configuration du produit renocopro"
 msgid "Consumption, type of system implemented, performance achieved,... "
 msgstr "Consommation, type de système mis en place, performances atteintes, ..."
 
-#: ../content/realization.py:29
+#: ../content/realization.py:28
 msgid "Contact details of the syndic"
 msgstr "Coordonnées du syndic"
 
@@ -89,7 +89,7 @@ msgstr "Description"
 msgid "Description of the company's activity"
 msgstr "Description de l'activité de l'entreprise"
 
-#: ../content/realization.py:42
+#: ../content/realization.py:32
 msgid "Description of the work carried out"
 msgstr "Description des travaux réalisés"
 
@@ -100,10 +100,6 @@ msgstr "Détails des gros posts"
 #: ../content/case_studies.py:53
 msgid "Duration of the work"
 msgstr "Durée des travaux"
-
-#: ../content/realization.py:35
-msgid "Email"
-msgstr "Email"
 
 #: ../browser/controlpanel.py:12
 msgid "Email address of the professional manager"
@@ -141,7 +137,7 @@ msgstr "Relations humaines"
 msgid "If there are multiple email addresses, separate them with semicolons"
 msgstr "S'il y a plusieurs adresses mail, séparez-les par des points-virgules."
 
-#: ../content/realization.py:46
+#: ../content/realization.py:36
 msgid "Innovative aspects implemented"
 msgstr "Aspects innovants mis en oeuvre"
 
@@ -154,7 +150,7 @@ msgid "Last name"
 msgstr "Nom"
 
 #: ../content/professional.py:18
-#: ../setuphandlers.py:70
+#: ../setuphandlers.py:71
 msgid "Legal status"
 msgstr "Statut juridique"
 
@@ -166,10 +162,6 @@ msgstr "Listing de tous les travaux réalisés"
 #: ../content/professional.py:27
 msgid "Location"
 msgstr "Localisation"
-
-#: ../content/realization.py:33
-msgid "Name"
-msgstr "Nom"
 
 #: ../content/professional.py:15
 msgid "Name of the company/organization"
@@ -187,12 +179,12 @@ msgstr "Surface nette"
 msgid "New professional submission"
 msgstr "Nouvelle soumission d'un professionnel"
 
-#: ../content/event.py:46
+#: ../content/event.py:50
 msgid "New professionnal modification"
 msgstr "Nouvelle modification d'un professionnel"
 
 #: ../faceted/configure.zcml:15
-#: ../setuphandlers.py:139
+#: ../setuphandlers.py:173
 msgid "News"
 msgstr "Actualités"
 
@@ -201,18 +193,13 @@ msgid "Number of housing units"
 msgstr "Nombre d'unités de logement"
 
 #: ../content/case_studies.py:73
-#: ../content/realization.py:39
 msgid "Other"
 msgstr "Autres"
 
 #: ../content/case_studies.py:66
-#: ../setuphandlers.py:63
+#: ../setuphandlers.py:64
 msgid "Other functions"
 msgstr "Autres fonctions"
-
-#: ../content/realization.py:37
-msgid "Phone / Mobile phone"
-msgstr "Téléphone / GSM"
 
 #: ../content/professional.py:56
 msgid "Phone / Mobile phone of the contact person"
@@ -236,7 +223,7 @@ msgid "Professional"
 msgstr "Professionnel"
 
 #: ../faceted/configure.zcml:31
-#: ../setuphandlers.py:132
+#: ../setuphandlers.py:166
 msgid "Professionals"
 msgstr "Professionnels"
 
@@ -277,7 +264,7 @@ msgstr "Activités spécifiques dans le domaine de la rénovation des coproprié
 msgid "Street"
 msgstr "Rue"
 
-#: ../content/realization.py:47
+#: ../content/realization.py:37
 msgid "Technical point of view, financing, management of the co-ownership"
 msgstr "Point de vue technique, financement, gestion de la copropriété"
 
@@ -290,12 +277,16 @@ msgid "Title"
 msgstr "Titre"
 
 #: ../content/case_studies.py:46
-#: ../setuphandlers.py:56
+#: ../setuphandlers.py:57
 msgid "Type of building"
 msgstr "Type de batiment"
 
+#: ../setuphandlers.py:78
+msgid "Type of professional"
+msgstr "Type de professionnel"
+
 #: ../content/case_studies.py:40
-#: ../setuphandlers.py:49
+#: ../setuphandlers.py:50
 msgid "Types of work"
 msgstr "Types de travaux"
 
@@ -345,9 +336,15 @@ msgstr ""
 " ${url}"
 
 #. Default: "The professional ${name} received modifications in the fields:\n          ${fields}\n\n          you can access it at the following url:\n          ${url}\n          "
-#: ../content/event.py:26
+#: ../content/event.py:30
 msgid "email_body_professionnal_modification"
-msgstr "Le professionnel ${name} à reçu des modificaions sur les champs:\n          ${fields}\n\n          vous pouvez y accéder à l'adresse suivante :\n          ${url}\n          "
+msgstr ""
+"Le professionnel ${name} à reçu des modificaions sur les champs:\n"
+"          ${fields}\n"
+"\n"
+"          vous pouvez y accéder à l'adresse suivante :\n"
+"          ${url}\n"
+"          "
 
 #: ../profiles/default/workflows/professional_workflow/definition.xml
 msgid "published"

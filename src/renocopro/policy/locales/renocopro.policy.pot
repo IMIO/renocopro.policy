@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-04-12 08:49+0000\n"
+"POT-Creation-Date: 2019-04-29 10:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgid "Case Studies"
 msgstr ""
 
 #: ../faceted/configure.zcml:23
-#: ../setuphandlers.py:125
+#: ../setuphandlers.py:159
 msgid "Case studies"
 msgstr ""
 
@@ -59,7 +59,7 @@ msgstr ""
 msgid "Consumption, type of system implemented, performance achieved,... "
 msgstr ""
 
-#: ../content/realization.py:29
+#: ../content/realization.py:28
 msgid "Contact details of the syndic"
 msgstr ""
 
@@ -96,7 +96,7 @@ msgstr ""
 msgid "Description of the company's activity"
 msgstr ""
 
-#: ../content/realization.py:42
+#: ../content/realization.py:32
 msgid "Description of the work carried out"
 msgstr ""
 
@@ -106,10 +106,6 @@ msgstr ""
 
 #: ../content/case_studies.py:53
 msgid "Duration of the work"
-msgstr ""
-
-#: ../content/realization.py:35
-msgid "Email"
 msgstr ""
 
 #: ../browser/controlpanel.py:12
@@ -148,7 +144,7 @@ msgstr ""
 msgid "If there are multiple email addresses, separate them with semicolons"
 msgstr ""
 
-#: ../content/realization.py:46
+#: ../content/realization.py:36
 msgid "Innovative aspects implemented"
 msgstr ""
 
@@ -161,7 +157,7 @@ msgid "Last name"
 msgstr ""
 
 #: ../content/professional.py:18
-#: ../setuphandlers.py:70
+#: ../setuphandlers.py:71
 msgid "Legal status"
 msgstr ""
 
@@ -172,10 +168,6 @@ msgstr ""
 #: ../content/case_studies.py:37
 #: ../content/professional.py:27
 msgid "Location"
-msgstr ""
-
-#: ../content/realization.py:33
-msgid "Name"
 msgstr ""
 
 #: ../content/professional.py:15
@@ -194,12 +186,12 @@ msgstr ""
 msgid "New professional submission"
 msgstr ""
 
-#: ../content/event.py:46
+#: ../content/event.py:50
 msgid "New professionnal modification"
 msgstr ""
 
 #: ../faceted/configure.zcml:15
-#: ../setuphandlers.py:139
+#: ../setuphandlers.py:173
 msgid "News"
 msgstr ""
 
@@ -208,17 +200,12 @@ msgid "Number of housing units"
 msgstr ""
 
 #: ../content/case_studies.py:73
-#: ../content/realization.py:39
 msgid "Other"
 msgstr ""
 
 #: ../content/case_studies.py:66
-#: ../setuphandlers.py:63
+#: ../setuphandlers.py:64
 msgid "Other functions"
-msgstr ""
-
-#: ../content/realization.py:37
-msgid "Phone / Mobile phone"
 msgstr ""
 
 #: ../content/professional.py:56
@@ -243,7 +230,7 @@ msgid "Professional"
 msgstr ""
 
 #: ../faceted/configure.zcml:31
-#: ../setuphandlers.py:132
+#: ../setuphandlers.py:166
 msgid "Professionals"
 msgstr ""
 
@@ -284,7 +271,7 @@ msgstr ""
 msgid "Street"
 msgstr ""
 
-#: ../content/realization.py:47
+#: ../content/realization.py:37
 msgid "Technical point of view, financing, management of the co-ownership"
 msgstr ""
 
@@ -297,12 +284,16 @@ msgid "Title"
 msgstr ""
 
 #: ../content/case_studies.py:46
-#: ../setuphandlers.py:56
+#: ../setuphandlers.py:57
 msgid "Type of building"
 msgstr ""
 
+#: ../setuphandlers.py:78
+msgid "Type of professional"
+msgstr ""
+
 #: ../content/case_studies.py:40
-#: ../setuphandlers.py:49
+#: ../setuphandlers.py:50
 msgid "Types of work"
 msgstr ""
 
@@ -350,7 +341,7 @@ msgid "email_body_professional_submission"
 msgstr ""
 
 #. Default: "The professional ${name} received modifications in the fields:\n          ${fields}\n\n          you can access it at the following url:\n          ${url}\n          "
-#: ../content/event.py:26
+#: ../content/event.py:30
 msgid "email_body_professionnal_modification"
 msgstr ""
 

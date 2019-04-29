@@ -64,8 +64,9 @@ class IProfessional(model.Schema):
 
     fieldset("activities", label=_(u"activities"), fields=["activity"])
 
-    activity = schema.Text(
+    activity = schema.Choice(
         title=_(u"Specific activities in the field of condominium renovation"),
+        vocabulary=u"collective.taxonomy.type_of_professional",
         required=False,
     )
 

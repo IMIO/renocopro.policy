@@ -5,6 +5,7 @@ from Products.CMFPlone.interfaces import INonInstallable
 from Products.CMFPlone.interfaces.constrains import ISelectableConstrainTypes
 from collective.taxonomy.factory import registerTaxonomy
 from collective.taxonomy.interfaces import ITaxonomy
+from collective.taxonomy.exportimport import TaxonomyImportExportAdapter
 from plone import api
 from plone.dexterity.interfaces import IDexterityFTI
 from zope.component import queryUtility
@@ -72,22 +73,38 @@ def add_taxonomies():
         "default_language": "fr",
     }
 
+    data_type_of_professional = {
+        "taxonomy": "type_of_professional",
+        "field_title": translate(
+            _("Type of professional"), target_language=current_lang
+        ),
+        "field_description": "",
+        "default_language": "fr",
+        "filename": "taxonomy-settings-type-of-professional.xml",
+    }
+
     portal = api.portal.get()
     sm = portal.getSiteManager()
+
     types_of_work_item = "collective.taxonomy.types_of_work"
     type_of_building_item = "collective.taxonomy.type_of_building"
     other_functions_item = "collective.taxonomy.other_functions"
     legal_status_item = "collective.taxonomy.legal_status"
+    type_of_professional_item = "collective.taxonomy.type_of_professional"
     utility_types_of_work = sm.queryUtility(ITaxonomy, name=types_of_work_item)
     utility_type_of_building = sm.queryUtility(ITaxonomy, name=type_of_building_item)
     utility_other_functions = sm.queryUtility(ITaxonomy, name=other_functions_item)
     utility_legal_status = sm.queryUtility(ITaxonomy, name=legal_status_item)
+    utility_type_of_professional = sm.queryUtility(
+        ITaxonomy, name=type_of_professional_item
+    )
 
     if (
         utility_types_of_work
         and utility_type_of_building
         and utility_other_functions
         and utility_legal_status
+        and utility_type_of_professional
     ):
         return
 
@@ -95,6 +112,7 @@ def add_taxonomies():
     create_taxonomy_object(data_type_of_building)
     create_taxonomy_object(data_other_functions)
     create_taxonomy_object(data_legal_status)
+    create_taxonomy_object_and_values(data_type_of_professional, portal)
 
     # remove taxonomy test
     item = "collective.taxonomy.test"
@@ -116,6 +134,27 @@ def create_taxonomy_object(data_tax):
     )
 
     del data_tax["taxonomy"]
+    taxonomy.registerBehavior(**data_tax)
+
+
+def create_taxonomy_object_and_values(data_tax, portal):
+    taxonomy = registerTaxonomy(
+        api.portal.get(),
+        name=data_tax["taxonomy"],
+        title=data_tax["field_title"],
+        description=data_tax["field_description"],
+        default_language=data_tax["default_language"],
+    )
+
+    adapter = TaxonomyImportExportAdapter(portal)
+    data_path = os.path.join(os.path.dirname(__file__), "data")
+    file_path = os.path.join(data_path, data_tax["filename"])
+    data = (open(file_path, "r").read(),)
+    import_file = data[0]
+    adapter.importDocument(taxonomy, import_file)
+
+    del data_tax["taxonomy"]
+    del data_tax["filename"]
     taxonomy.registerBehavior(**data_tax)
 
 

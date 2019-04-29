@@ -5,6 +5,12 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
+- Add taxonomy for type of professional
+  [vpiret]
+
+- Update activity of professional
+  [vpiret]
+
 - Update values on case studie viewlet
   [vpiret]
 
