@@ -8,8 +8,12 @@ from zope.i18n import translate
 def send_notification(obj, event):
     fields = []
 
-    for modif in event.descriptions[0].attributes:
-        fields.append(modif)
+    if event.descriptions:
+        for modif in event.descriptions[0].attributes:
+            fields.append(modif)
+
+    if not fields:
+        return
 
     lang = api.portal.get_current_language()[:2]
     email = api.portal.get_registry_record(

@@ -24,19 +24,9 @@ class IRealization(IRenocopro):
 
     zip_code = schema.Int(title=_(u"Zip code"), required=False)
 
-    fieldset(
-        "contact details of the syndic",
-        label=_(u"Contact details of the syndic"),
-        fields=["name", "email", "phone"],
+    contact_details_of_the_syndic = schema.TextLine(
+        title=_(u"Contact details of the syndic"), required=False
     )
-
-    name = schema.TextLine(title=_(u"Name"), required=False)
-
-    email = schema.Email(title=_(u"Email"), required=False)
-
-    phone = schema.TextLine(title=_(u"Phone / Mobile phone"), required=False)
-
-    fieldset("other", label=_(u"Other"), fields=["rich_description", "innovative"])
 
     rich_description = RichText(
         title=_(u"Description of the work carried out"), required=False
