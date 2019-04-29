@@ -5,6 +5,9 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
+- Add faceted for professional
+  [vpiret]
+
 - Add taxonomy for type of professional
   [vpiret]
 

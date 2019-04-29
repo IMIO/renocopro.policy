@@ -10,8 +10,23 @@
   </index>
   <column value="types_of_work" />
 
+  <index name="types_of_professional" meta_type="KeywordIndex">
+    <indexed_attr value="types_of_professional" />
+  </index>
+  <column value="types_of_professional" />
+
   <index name="renovation_year" meta_type="FieldIndex">
     <indexed_attr value="renovation_year" />
   </index>
   <column value="renovation_year" />
+
+  <index name="zip_code" meta_type="FieldIndex">
+    <indexed_attr value="zip_code" />
+  </index>
+  <column value="zip_code" />
+
+  <index name="city" meta_type="FieldIndex">
+    <indexed_attr value="city" />
+  </index>
+  <column value="city" />
 </object>

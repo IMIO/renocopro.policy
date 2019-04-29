@@ -164,6 +164,8 @@ def add_stucture(portal):
         obj = create_content("Folder", _(u"Case studies"), portal)
         _activate_dashboard_navigation(obj, True, "/faceted/config/case_studies.xml")
         set_constrain_types(obj, ["case_studies"])
+        case_studies_layout = FacetedLayout(obj)
+        case_studies_layout.update_layout(layout="faceted-casestudies")
         _publish(obj)
 
     # Folder professionals
@@ -171,6 +173,8 @@ def add_stucture(portal):
         obj = create_content("Folder", _(u"Professionals"), portal)
         _activate_dashboard_navigation(obj, True, "/faceted/config/professionals.xml")
         set_constrain_types(obj, ["professional"])
+        professional_layout = FacetedLayout(obj)
+        professional_layout.update_layout(layout="faceted-professionals")
         _publish(obj)
 
     # Folder news

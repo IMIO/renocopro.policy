@@ -1,0 +1,63 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="renocopro.policy">
+
+<body>
+<metal:content-core fill-slot="content-core">
+  <metal:block define-macro="content-core">
+    <div tal:define="
+        folderContents folderContents | python:context.getFolderContents();
+        Batch python:modules['Products.CMFPlone'].Batch;
+        b_start python:request.get('b_start', 0);
+        batch python:isinstance(folderContents, Batch) and folderContents or Batch(folderContents, 100, int(b_start), orphan=2);">
+
+      <div metal:use-macro="context/batch_macros/macros/navigation"/>
+
+      <div class="eea-preview-items">
+        <tal:entries repeat="brain batch">
+          <tal:entry tal:define="doc brain/getObject|nothing"
+                     tal:condition="python:doc is not None">
+
+
+            <div class="faceted-professional"
+                 tal:define="portal_type brain/portal_type|string:;
+                   self nocall:context/@@faceted-professionals;
+                   useViewTypes brain/portal_properties/site_properties/typesUseViewActionInListings|python:[];
+                   useView python:portal_type in useViewTypes;
+                   zip_code brain/zip_code;
+                   city  brain/city;">
+              <a tal:define="description brain/Description|string:;
+                             title brain/pretty_title_or_id|string:;
+                             url brain/getURL|string:#"
+                 tal:attributes="href url;
+                                 title title">
+
+                <div class="items-content">
+                  <div class="text">
+                    <h4 tal:content="brain/pretty_title_or_id|string:">Title</h4>
+                    <span tal:content="zip_code" tal:condition="zip_code">zip_code</span>
+                    <span tal:content="city" tal:condition="city">city</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </tal:entry>
+        </tal:entries>
+        <span tal:condition="not: batch/sequence_length"
+              class="table_faceted_no_results"
+              i18n:domain="plone"
+              i18n:translate="description_no_results_found">No results were found.</span>
+      </div>
+
+      <div metal:use-macro="context/batch_macros/macros/navigation"/>
+
+    </div>
+
+  </metal:block>
+</metal:content-core>
+</body>
+</html>
