@@ -16,6 +16,8 @@ class IRenocoproSettingsSchema(Interface):
         required=False,
     )
 
+    policy_link = schema.TextLine(title=_(u"Policy link"), required=False)
+
 
 class RenocoproSettingsEditForm(controlpanel.RegistryEditForm):
 

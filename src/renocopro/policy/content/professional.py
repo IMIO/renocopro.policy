@@ -62,8 +62,6 @@ class IProfessional(model.Schema):
 
     vat = schema.TextLine(title=_(u"VAT"), required=False)
 
-    fieldset("activities", label=_(u"activities"), fields=["activity"])
-
     activity = schema.Choice(
         title=_(u"Specific activities in the field of condominium renovation"),
         vocabulary=u"collective.taxonomy.type_of_professional",

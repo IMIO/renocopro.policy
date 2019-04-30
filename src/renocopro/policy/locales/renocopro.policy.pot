@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-04-29 10:24+0000\n"
+"POT-Creation-Date: 2019-04-30 11:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,12 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: renocopro.policy\n"
 
-#: ../browser/controlpanel.py:24
+#: ../browser/controlpanel.py:26
 msgid ""
+msgstr ""
+
+#: ../fields/policy_checkbox_input.pt:78
+msgid "(Read policy)"
 msgstr ""
 
 #: ../content/realization.py:17
@@ -42,7 +46,7 @@ msgid "Case Studies"
 msgstr ""
 
 #: ../faceted/configure.zcml:23
-#: ../setuphandlers.py:159
+#: ../setuphandlers.py:164
 msgid "Case studies"
 msgstr ""
 
@@ -51,7 +55,7 @@ msgstr ""
 msgid "City"
 msgstr ""
 
-#: ../browser/controlpanel.py:23
+#: ../browser/controlpanel.py:25
 msgid "Configuration for renocopro product"
 msgstr ""
 
@@ -64,7 +68,7 @@ msgid "Contact details of the syndic"
 msgstr ""
 
 #: ../content/professional.py:31
-#: ../form/professional_form.py:24
+#: ../form/professional_form.py:33
 msgid "Contact person"
 msgstr ""
 
@@ -80,7 +84,7 @@ msgstr ""
 msgid "Cost/m2"
 msgstr ""
 
-#: ../form/professional_form.py:16
+#: ../form/professional_form.py:23
 msgid "Default"
 msgstr ""
 
@@ -140,6 +144,10 @@ msgstr ""
 msgid "Human relations"
 msgstr ""
 
+#: ../fields/policy_checkbox_input.pt:76
+msgid "I validate the policy"
+msgstr ""
+
 #: ../browser/controlpanel.py:13
 msgid "If there are multiple email addresses, separate them with semicolons"
 msgstr ""
@@ -148,7 +156,7 @@ msgstr ""
 msgid "Innovative aspects implemented"
 msgstr ""
 
-#: ../configure.zcml:38
+#: ../configure.zcml:39
 msgid "Installs the renocopro.policy add-on."
 msgstr ""
 
@@ -182,7 +190,7 @@ msgstr ""
 msgid "Net surface area"
 msgstr ""
 
-#: ../form/professional_form.py:66
+#: ../form/professional_form.py:69
 msgid "New professional submission"
 msgstr ""
 
@@ -191,7 +199,7 @@ msgid "New professionnal modification"
 msgstr ""
 
 #: ../faceted/configure.zcml:15
-#: ../setuphandlers.py:173
+#: ../setuphandlers.py:182
 msgid "News"
 msgstr ""
 
@@ -212,6 +220,10 @@ msgstr ""
 msgid "Phone / Mobile phone of the contact person"
 msgstr ""
 
+#: ../browser/controlpanel.py:19
+msgid "Policy link"
+msgstr ""
+
 #: ../profiles/default/workflows/professional_workflow/definition.xml
 msgid "Previous transition"
 msgstr ""
@@ -224,13 +236,13 @@ msgstr ""
 msgid "Professinal Workflow"
 msgstr ""
 
-#: ../form/professional_form.py:47
+#: ../form/professional_form.py:50
 #: ../profiles/default/types/professional.xml
 msgid "Professional"
 msgstr ""
 
 #: ../faceted/configure.zcml:31
-#: ../setuphandlers.py:166
+#: ../setuphandlers.py:173
 msgid "Professionals"
 msgstr ""
 
@@ -258,11 +270,11 @@ msgstr ""
 msgid "Renovation year"
 msgstr ""
 
-#: ../form/professional_form.py:95
+#: ../form/professional_form.py:98
 msgid "Send"
 msgstr ""
 
-#: ../content/professional.py:68
+#: ../content/professional.py:66
 msgid "Specific activities in the field of condominium renovation"
 msgstr ""
 
@@ -288,7 +300,7 @@ msgstr ""
 msgid "Type of building"
 msgstr ""
 
-#: ../setuphandlers.py:78
+#: ../setuphandlers.py:79
 msgid "Type of professional"
 msgstr ""
 
@@ -297,12 +309,16 @@ msgstr ""
 msgid "Types of work"
 msgstr ""
 
-#: ../configure.zcml:47
+#: ../configure.zcml:48
 msgid "Uninstalls the renocopro.policy add-on."
 msgstr ""
 
 #: ../content/professional.py:63
 msgid "VAT"
+msgstr ""
+
+#: ../form/professional_form.py:18
+msgid "Validation"
 msgstr ""
 
 #: ../content/case_studies.py:113
@@ -317,14 +333,13 @@ msgstr ""
 msgid "Work"
 msgstr ""
 
+#: ../form/professional_form.py:109
+msgid "You must validate the policy"
+msgstr ""
+
 #: ../content/professional.py:53
 #: ../content/realization.py:25
 msgid "Zip code"
-msgstr ""
-
-#: ../content/professional.py:65
-#: ../form/professional_form.py:40
-msgid "activities"
 msgstr ""
 
 #: ../profiles/default/workflows/professional_workflow/definition.xml
@@ -336,7 +351,7 @@ msgid "created"
 msgstr ""
 
 #. Default: "A new professional has been created you can access it at the following url:\n              ${url}\n              "
-#: ../form/professional_form.py:54
+#: ../form/professional_form.py:57
 msgid "email_body_professional_submission"
 msgstr ""
 
@@ -357,11 +372,11 @@ msgstr ""
 msgid "removed"
 msgstr ""
 
-#: ../configure.zcml:38
+#: ../configure.zcml:39
 msgid "renocopro.policy"
 msgstr ""
 
-#: ../configure.zcml:47
+#: ../configure.zcml:48
 msgid "renocopro.policy (uninstall)"
 msgstr ""
 

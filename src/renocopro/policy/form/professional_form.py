@@ -1,22 +1,31 @@
 # -*- coding: utf-8 -*-
-
+from Products.statusmessages.interfaces import IStatusMessage
+from plone import api
+from plone.supermodel import model
+from renocopro.policy import _
+from renocopro.policy.content.professional import IProfessional
+from renocopro.policy.fields.policy_checkbox import policy_single_checkbox_field_widget
+from renocopro.policy.utils import execute_under_admin
 from z3c.form import button
 from z3c.form.field import Fields
-from z3c.form.group import Group, GroupForm
 from z3c.form.form import EditForm
-from renocopro.policy.content.professional import IProfessional
-from plone import api
+from z3c.form.group import Group, GroupForm
+from zope import schema
 from zope.i18n import translate
-from renocopro.policy import _
-from renocopro.policy.utils import execute_under_admin
+
+
+class IValidation(model.Schema):
+    validation = schema.Bool(title=_(u"Validation"))
 
 
 class DefaultGroup(Group):
     __name__ = "default"
     label = _(u"Default")
     fields = Fields(IProfessional).select(
-        "title", "legal_status", "rich_description", "location"
+        "title", "legal_status", "rich_description", "location", "activity"
     )
+    fields = fields + Fields(IValidation).select("validation")
+    fields["validation"].widgetFactory = policy_single_checkbox_field_widget
 
 
 class ContactGroup(Group):
@@ -35,15 +44,9 @@ class ContactGroup(Group):
     )
 
 
-class ActivityGroup(Group):
-    __name__ = "activities"
-    label = _(u"activities")
-    fields = Fields(IProfessional).select("activity")
-
-
 class ProfessionalForm(GroupForm, EditForm):
 
-    groups = (DefaultGroup, ContactGroup, ActivityGroup)
+    groups = (DefaultGroup, ContactGroup)
     label = _(u"Professional")
     ignoreContext = True
 
@@ -95,8 +98,13 @@ class ProfessionalForm(GroupForm, EditForm):
     @button.buttonAndHandler(_(u"Send"), name="send")
     def handleApply(self, action):
         data, errors = self.extractData()
-        if errors:
-            self.status = self.formErrorsMessage
-            return
+        if data.get("validation"):
+            if errors:
+                self.status = self.formErrorsMessage
+                return
 
-        self.send_request(data)
+            self.send_request(data)
+        else:
+            IStatusMessage(self.request).addStatusMessage(
+                _(u"You must validate the policy"), "error"
+            )
