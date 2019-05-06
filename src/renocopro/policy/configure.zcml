@@ -28,6 +28,7 @@
   <include package=".faceted" />
   <include package=".form" />
   <include package=".fields" />
+  <include package=".portlets" />
 
   <genericsetup:registerProfile
       name="default"

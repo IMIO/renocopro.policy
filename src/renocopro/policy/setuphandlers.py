@@ -14,6 +14,8 @@ from zope.i18n.interfaces import ITranslationDomain
 from zope.interface import implementer
 from zope.schema.interfaces import IVocabularyFactory
 from eea.facetednavigation.layout.layout import FacetedLayout
+from renocopro.policy.portlets.footer import add_portlets
+from renocopro.policy.portlets.footer import delete_portlets
 
 from renocopro.policy import _
 
@@ -35,6 +37,8 @@ def post_install(context):
 
     add_taxonomies()
     add_stucture(portal)
+    add_portlets()
+    delete_portlets()
 
 
 def uninstall(context):

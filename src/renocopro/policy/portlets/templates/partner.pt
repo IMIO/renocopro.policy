@@ -1,0 +1,18 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      tal:omit-tag=""
+      i18n:domain="plone">
+  <aside class="portlet portletClassic" id="portal-footer-partner" metal:define-macro="portlet">
+    <div class="portletContent">
+      <a href="https://www.wallonie.be" i18n:attributes="alt" alt="">
+        <img i18n:attributes="alt" src="++theme++renocopro.theme/images/rw.jpg" alt="">
+      </a>
+      <a href="https://www.liege.be/fr" i18n:attributes="alt" alt="">
+        <img i18n:attributes="alt" src="++theme++renocopro.theme/images/liege.png" alt="">
+      </a>
+    </div>
+  </aside>
+</html>

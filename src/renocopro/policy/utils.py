@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-
 from AccessControl import getSecurityManager
 from AccessControl.SecurityManagement import newSecurityManager
 from AccessControl.SecurityManagement import setSecurityManager
 from AccessControl.User import UnrestrictedUser as BaseUnrestrictedUser
+from Products.CMFPlone.utils import safe_unicode
+import os
 
 
 class UnrestrictedUser(BaseUnrestrictedUser):
@@ -33,3 +34,12 @@ def execute_under_admin(portal, function, *args, **kwargs):
     finally:
         # Restore the old security manager
         setSecurityManager(sm)
+
+
+def getFileContent(file_path):
+    package_path = os.path.dirname(__file__)
+    filePath = "/".join([package_path, file_path])
+    f = file(filePath)  # noqa
+    data = safe_unicode(f.read())
+    f.close()
+    return data
