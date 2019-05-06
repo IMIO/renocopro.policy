@@ -55,6 +55,7 @@ setup(
         "eea.facetednavigation",
         "collective.behavior.gallery",
         "renocopro.theme",
+        "collective.behavior.banner",
     ],
     extras_require={
         "test": [
