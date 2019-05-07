@@ -29,7 +29,7 @@
               <div class="image-background"
                    tal:attributes="style string:background-image:url(${case/getURL}/@@images/image/preview)"></div>
               <div class="flex-caption">
-                <span class="title" tal:content="case/Title"></span>
+                <span class="block" tal:content="case/Title"></span>
                 <div class="content">
                   <div class="type">
                     <span class="types_of_work" tal:content="case/types_of_work"></span>
@@ -48,7 +48,7 @@
     <tal:cases>
     </tal:slider>
     <div class="align-right">
-      <a href="" class="voir-tout" tal:condition="view/folder" tal:attributes="href view/folder">
+      <a href="" class="read-more" tal:condition="view/folder" tal:attributes="href view/folder">
       Voir tout
         <div class="plus"></div>
       </a>

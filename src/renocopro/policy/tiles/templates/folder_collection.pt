@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      i18n:domain="renocopro.policy">
+  <body>
+    <tal:slider tal:define="contents view/contents;
+                            items contents/results;
+                            slider_limit view/slider_limit;
+                            slider_class view/slider_class">
+    <h2 tal:content="view/title" tal:condition="view/title"></h2>
+    <tal:not_items tal:condition="not:items" i18n:translate="">
+    <div class="portalMessage error">
+      <strong i18n:translate="">Error</strong>
+      <span i18n:translate="">The selected contains no item studie</span>
+    </div>
+    </tal:not_items>
+
+    <tal:items tal:condition="items">
+    <section tal:attributes="data-slider slider_limit;
+    class slider_class"
+             data-slider="4">
+      <div class="flexslider flexslider-slider">
+        <ul class="slides">
+          <tal:item tal:repeat="item items">
+          <li class="items" tal:define="image python:view.check_image(item)">
+            <a href="" tal:attributes="href item/getURL">
+              <div class="image-background"
+                   tal:condition="image"
+                   tal:attributes="style string:background-image:url(${item/getURL}/@@images/image/preview)"></div>
+              <div class="flex-caption">
+                <div class="content">
+                  <div class="title" tal:content="item/Title"></div>
+                  <tal:block condition="python: item.portal_type == 'Event'">
+                  <div class="documentByLine"
+                       tal:define="obj item/getObject;
+                       event_view nocall:obj/@@event_summary;"
+                       tal:content="structure python:event_view.formatted_date(obj)"></div>
+                  </tal:block>
+                  <div class="description" tal:content="item/Description"></div>
+                </div>
+              </div>
+            </a>
+          </li>
+          </tal:item>
+        </ul>
+      </div>
+    </section>
+    <tal:items>
+    <div class="align-right">
+      <a href="" class="read-more" tal:condition="contents/url" tal:attributes="href contents/url">
+      Voir tout
+        <div class="plus"></div>
+      </a>
+    </div>
+    </tal:slider>
+
+  </body>
+</html>

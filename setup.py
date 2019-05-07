@@ -56,7 +56,6 @@ setup(
         "collective.behavior.gallery",
         "renocopro.theme",
         "collective.behavior.banner",
-        "iaweb.mosaic",
     ],
     extras_require={
         "test": [

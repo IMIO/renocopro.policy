@@ -58,7 +58,7 @@ class CaseStudiesTile(Tile):
     def contents(self):
         limit = self.data["limit"]
         catalog = api.portal.get_tool("portal_catalog")
-        results = catalog(portal_type="case_studies")
+        results = catalog(portal_type="case_studies", review_state="published")
         random_result = random.sample(results, len(results))
         return random_result[:limit]
 
@@ -67,8 +67,10 @@ class CaseStudiesTile(Tile):
 
     def folder(self):
         uid = self.data["folder"]
-        folder = api.content.get(UID=uid)
-        return folder.absolute_url()
+        if uid:
+            folder = api.content.get(UID=uid)
+            return folder.absolute_url()
+        return None
 
     def slider_limit(self):
         return self.data["limit_slider"]

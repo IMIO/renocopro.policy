@@ -18,4 +18,16 @@
         template="templates/case_studies.pt"
         />
 
+    <plone:tile
+        name="tile.folder_collection"
+        title="Content of folder or collection"
+        description="A tile which displays contents of folder or collection"
+        add_permission="cmf.ModifyPortalContent"
+        class=".folder_collection.FolderCollectionTile"
+        for="*"
+        permission="zope.Public"
+        schema=".folder_collection.IFolderCollectionTile"
+        template="templates/folder_collection.pt"
+        />
+
 </configure>
