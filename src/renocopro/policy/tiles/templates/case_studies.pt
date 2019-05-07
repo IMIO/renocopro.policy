@@ -6,17 +6,53 @@
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       i18n:domain="renocopro.policy">
   <body>
-    <section class="case-studies" tal:define="cases view/contents">
-      <ul>
-        <li tal:repeat="case cases">
-          <a href="" tal:attributes="href case/getURL" tal:define="item case/getObject">
-              <div class="case-studies-image"
-                 tal:attributes="style string:background-image:url(${case/getURL}/@@images/image)" />
-              <div class="case-studies-title" tal:content="item/title" />
-          </a>
-        </li>
-      </ul>
+    <tal:slider tal:define="cases view/contents;
+    slider_limit view/slider_limit;
+    slider_class view/slider_class">
+    <h2 tal:content="view/title" tal:condition="view/title"></h2>
+    <tal:not_cases tal:condition="not:cases" i18n:translate="">
+    <div class="portalMessage error">
+      <strong i18n:translate="">Error</strong>
+      <span i18n:translate="">The selected contains no case studie</span>
+    </div>
+    </tal:not_cases>
+
+    <tal:cases tal:condition="cases">
+    <section tal:attributes="data-slider slider_limit;
+    class slider_class"
+             data-slider="4">
+      <div class="flexslider flexslider-slider">
+        <ul class="slides">
+          <tal:case tal:repeat="case cases">
+          <li class="items">
+            <a href="" tal:attributes="href case/getURL">
+              <div class="image-background"
+                   tal:attributes="style string:background-image:url(${case/getURL}/@@images/image/preview)"></div>
+              <div class="flex-caption">
+                <span class="title" tal:content="case/Title"></span>
+                <div class="content">
+                  <div class="type">
+                    <span class="types_of_work" tal:content="case/types_of_work"></span>
+                    /
+                    <span class="type_of_building" tal:content="case/type_of_building"></span>
+                  </div>
+                  <div class="renovation_year" tal:content="case/renovation_year"></div>
+                </div>
+              </div>
+            </a>
+          </li>
+          </tal:case>
+        </ul>
+      </div>
     </section>
+    <tal:cases>
+    </tal:slider>
+    <div class="align-right">
+      <a href="" class="voir-tout" tal:condition="view/folder" tal:attributes="href view/folder">
+      Voir tout
+        <div class="plus"></div>
+      </a>
+    </div>
 
   </body>
 </html>
