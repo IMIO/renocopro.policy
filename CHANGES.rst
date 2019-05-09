@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a4 (unreleased)
+1.0a4 (2019-05-09)
 ------------------
 
 - Add collective.easyform dependency
