@@ -56,6 +56,7 @@ setup(
         "collective.behavior.gallery",
         "renocopro.theme",
         "collective.behavior.banner",
+        "plone.app.imagecropping",
     ],
     extras_require={
         "test": [
