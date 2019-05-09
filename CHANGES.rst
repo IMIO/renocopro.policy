@@ -5,7 +5,8 @@ Changelog
 1.0a5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add logo to footer
+  [AuroreMariscal]
 
 
 1.0a4 (2019-05-09)

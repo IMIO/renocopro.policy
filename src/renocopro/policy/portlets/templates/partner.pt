@@ -8,10 +8,28 @@
   <aside class="portlet portletClassic" id="portal-footer-partner" metal:define-macro="portlet">
     <div class="portletContent">
       <a href="https://www.wallonie.be" i18n:attributes="alt" alt="">
-        <img i18n:attributes="alt" src="++theme++renocopro.theme/images/rw.jpg" alt="">
+        <img i18n:attributes="alt" src="++theme++renocopro.theme/images/logo_wallonie.png"
+             alt="Logo du soutien de la région wallone">
       </a>
       <a href="https://www.liege.be/fr" i18n:attributes="alt" alt="">
-        <img i18n:attributes="alt" src="++theme++renocopro.theme/images/liege.png" alt="">
+        <img i18n:attributes="alt" src="++theme++renocopro.theme/images/logo_liege.png"
+             alt="Logo de la ville de Liège">
+      </a>
+      <a href="http://clusters.wallonie.be/cap-construction-fr/" i18n:attributes="alt" alt="">
+        <img i18n:attributes="alt" src="++theme++renocopro.theme/images/logo_cap_construction.png"
+             alt="Logo Cluster Cap Construction">
+      </a>
+      <a href="https://www.liegeenergie.be/" i18n:attributes="alt" alt="">
+        <img i18n:attributes="alt" src="++theme++renocopro.theme/images/logo_liege_energie.jpg"
+             alt="Logo Liège Energie">
+      </a>
+      <a href="http://clusters.wallonie.be/ecoconstruction-fr/" i18n:attributes="alt" alt="">
+        <img i18n:attributes="alt" src="++theme++renocopro.theme/images/logo_cluster_eco_construction.png"
+             alt="Logo Cluster Eco Construction">
+      </a>
+      <a href="https://www.snpc-nems.be/" i18n:attributes="alt" alt="">
+        <img i18n:attributes="alt" src="++theme++renocopro.theme/images/logo_snpc.png"
+             alt="Logo SNPC">
       </a>
     </div>
   </aside>
