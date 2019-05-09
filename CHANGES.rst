@@ -5,7 +5,10 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
-- Add policy valiation for professional
+- Add collective.easyform dependency
+  [mpeeters]
+
+- Add policy validation for professional
   [vpiret]
 
 - Add faceted for professional
