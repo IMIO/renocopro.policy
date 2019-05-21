@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a6 (unreleased)
+1.0a6 (2019-05-21)
 ------------------
 
 - Update professional schema
