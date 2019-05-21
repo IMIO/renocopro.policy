@@ -14,10 +14,7 @@ class ICaseStudiesTile(model.Schema):
     """
     """
 
-    title = schema.TextLine(
-        title=_(u'Title'),
-        required=False
-    )
+    title = schema.TextLine(title=_(u"Title"), required=False)
 
     folder = schema.Choice(
         title=_(u"Select the folder of cases studies"),
@@ -31,16 +28,16 @@ class ICaseStudiesTile(model.Schema):
     )
 
     limit = schema.Int(
-        title=_(u'Limit'),
-        description=_(u'Limit Search Results'),
+        title=_(u"Limit"),
+        description=_(u"Limit Search Results"),
         required=False,
         default=8,
         min=1,
     )
 
     limit_slider = schema.Int(
-        title=_(u'Limit slider'),
-        description=_(u'Number of element in slider'),
+        title=_(u"Limit slider"),
+        description=_(u"Number of element in slider"),
         required=False,
         default=4,
         min=1,
@@ -78,6 +75,6 @@ class CaseStudiesTile(Tile):
     def slider_class(self):
         limit = self.data["limit_slider"]
         if limit == 1:
-            return 'slider flexslider-tile one'
+            return "slider flexslider-tile one"
         else:
-            return 'slider flexslider-tile multiple'
+            return "slider flexslider-tile multiple"

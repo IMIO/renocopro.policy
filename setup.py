@@ -57,6 +57,7 @@ setup(
         "renocopro.theme",
         "collective.behavior.banner",
         "collective.easyform",
+        "geopy",
     ],
     extras_require={
         "test": [

@@ -13,7 +13,6 @@ class IPolicySingleCheckBoxWidget(ISingleCheckBoxWidget):
 
 @implementer_only(IPolicySingleCheckBoxWidget)
 class PolicySingleCheckBoxWidget(SingleCheckBoxWidget):
-
     def get_policy_link(self):
         return api.portal.get_registry_record(
             "renocopro.policy.browser.controlpanel.IRenocoproSettingsSchema.policy_link",

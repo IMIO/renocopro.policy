@@ -5,6 +5,9 @@ Changelog
 1.0a6 (unreleased)
 ------------------
 
+- Add number for address and generates the location if it is not completed
+  [vpiret]
+
 - Update addable content on the basic structure of the site
   [vpiret]
 

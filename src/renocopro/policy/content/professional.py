@@ -8,6 +8,9 @@ from plone.supermodel import model
 from renocopro.policy import _
 from zope.interface import implements
 from plone.supermodel.directives import fieldset
+from renocopro.policy.utils import get_location_info
+
+DEFAULT_GEOLOCATION = (50.6451381, 5.5734203)
 
 
 class IProfessional(model.Schema):
@@ -33,6 +36,7 @@ class IProfessional(model.Schema):
             "last_name",
             "first_name",
             "street",
+            "number",
             "city",
             "zip_code",
             "phone",
@@ -45,6 +49,8 @@ class IProfessional(model.Schema):
     last_name = schema.TextLine(title=_(u"Last name"), required=False)
 
     first_name = schema.TextLine(title=_(u"First name"), required=False)
+
+    number = schema.TextLine(title=_(u"Number"), required=False)
 
     street = schema.TextLine(title=_(u"Street"), required=False)
 
@@ -71,3 +77,12 @@ class IProfessional(model.Schema):
 
 class Professional(Container):
     implements(IProfessional)
+
+
+def handle_location(obj, event):
+
+    if (obj.location.latitude, obj.location.longitude) != DEFAULT_GEOLOCATION:
+        return
+
+    address = u"{0} {1} {2} {3}".format(obj.number, obj.street, obj.zip_code, obj.city)
+    obj.location = get_location_info(address)

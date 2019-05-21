@@ -7,5 +7,19 @@
          zope.lifecycleevent.IObjectModifiedEvent"
     handler=".event.send_notification"
     />
+
+  <adapter
+      for="*
+           zope.publisher.interfaces.browser.IBrowserRequest"
+      provides="renocopro.policy.content.adapters.IMapsConfiguration"
+      factory="renocopro.policy.content.adapters.MapsConfiguration"
+      name="maps_configuration"
+  />
+
+  <subscriber
+      for="renocopro.policy.content.professional.IProfessional
+           zope.lifecycleevent.interfaces.IObjectCreatedEvent"
+      handler=".professional.handle_location"
+      />
 </configure>
 

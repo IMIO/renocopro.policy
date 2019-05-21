@@ -17,9 +17,7 @@ def add_portlets():
     mapping = getMultiAdapter((portal, manager), IPortletAssignmentMapping)
 
     if "partner" not in mapping.keys():
-        mapping["partner"] = classic.Assignment(
-            template="@@partners-portlet", macro=""
-        )
+        mapping["partner"] = classic.Assignment(template="@@partners-portlet", macro="")
 
     if "navigation" not in mapping.keys():
         mapping["navigation"] = navigation.Assignment(

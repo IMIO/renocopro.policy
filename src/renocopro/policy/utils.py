@@ -5,6 +5,7 @@ from AccessControl.SecurityManagement import setSecurityManager
 from AccessControl.User import UnrestrictedUser as BaseUnrestrictedUser
 from Products.CMFPlone.utils import safe_unicode
 import os
+import geopy
 
 
 class UnrestrictedUser(BaseUnrestrictedUser):
@@ -28,7 +29,7 @@ def execute_under_admin(portal, function, *args, **kwargs):
             newSecurityManager(None, tmp_user)
             # Call the function
             return function(*args, **kwargs)
-        except:
+        except:  # noqa
             # If special exception handlers are needed, run them here
             raise
     finally:
@@ -43,3 +44,13 @@ def getFileContent(file_path):
     data = safe_unicode(f.read())
     f.close()
     return data
+
+
+def get_location_info(address):
+    location = None
+    try:
+        geolocator = geopy.geocoders.Nominatim()
+        location = geolocator.geocode(address, exactly_one=True)
+    except:  # noqa
+        pass
+    return location

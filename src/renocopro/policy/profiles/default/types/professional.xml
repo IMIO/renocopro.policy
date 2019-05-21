@@ -24,6 +24,7 @@
  <property name="klass">renocopro.policy.content.professional.Professional</property>
  <property name="behaviors">
   <element value="plone.app.content.interfaces.INameFromTitle"/>
+  <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage"/>
  </property>
  <property name="schema">renocopro.policy.content.professional.IProfessional</property>
  <property name="model_source"/>
