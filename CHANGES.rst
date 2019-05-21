@@ -5,7 +5,8 @@ Changelog
 1.0a6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update addable content on the basic structure of the site
+  [vpiret]
 
 
 1.0a5 (2019-05-10)

@@ -167,7 +167,7 @@ def add_stucture(portal):
     if "case-studies" not in portal:
         obj = create_content("Folder", _(u"Case studies"), portal)
         _activate_dashboard_navigation(obj, True, "/faceted/config/case_studies.xml")
-        set_constrain_types(obj, ["case_studies"])
+        set_constrain_types(obj, ["case_studies", "Image", "File"])
         case_studies_layout = FacetedLayout(obj)
         case_studies_layout.update_layout(layout="faceted-casestudies")
         _publish(obj)
@@ -176,7 +176,7 @@ def add_stucture(portal):
     if "professionals" not in portal:
         obj = create_content("Folder", _(u"Professionals"), portal)
         _activate_dashboard_navigation(obj, True, "/faceted/config/professionals.xml")
-        set_constrain_types(obj, ["professional"])
+        set_constrain_types(obj, ["professional", "Image", "File"])
         professional_layout = FacetedLayout(obj)
         professional_layout.update_layout(layout="faceted-professionals")
         _publish(obj)
@@ -185,7 +185,7 @@ def add_stucture(portal):
     if "news" not in portal:
         obj = create_content("Folder", _(u"News"), portal)
         _activate_dashboard_navigation(obj, True, "/faceted/config/news.xml")
-        set_constrain_types(obj, ["News Item"])
+        set_constrain_types(obj, ["News Item", "Image", "File"])
         news_layout = FacetedLayout(obj)
         news_layout.update_layout(layout="faceted-news")
         _publish(obj)
