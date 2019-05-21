@@ -5,6 +5,9 @@ Changelog
 1.0a6 (unreleased)
 ------------------
 
+- Update professional schema
+  [vpiret]
+
 - Add number for address and generates the location if it is not completed
   [vpiret]
 

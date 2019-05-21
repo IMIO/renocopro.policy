@@ -22,7 +22,17 @@ class DefaultGroup(Group):
     __name__ = "default"
     label = _(u"Default")
     fields = Fields(IProfessional).select(
-        "title", "legal_status", "rich_description", "location", "activity"
+        "title",
+        "legal_status",
+        "rich_description",
+        "location",
+        "activity",
+        "street",
+        "number",
+        "city",
+        "zip_code",
+        "website",
+        "vat",
     )
     fields = fields + Fields(IValidation).select("validation")
     fields["validation"].widgetFactory = policy_single_checkbox_field_widget
@@ -31,18 +41,7 @@ class DefaultGroup(Group):
 class ContactGroup(Group):
     __name__ = "contact person"
     label = _(u"Contact person")
-    fields = Fields(IProfessional).select(
-        "last_name",
-        "first_name",
-        "street",
-        "number",
-        "city",
-        "zip_code",
-        "phone",
-        "email",
-        "website",
-        "vat",
-    )
+    fields = Fields(IProfessional).select("last_name", "first_name", "phone", "email")
 
 
 class ProfessionalForm(GroupForm, EditForm):

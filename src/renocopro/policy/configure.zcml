@@ -49,6 +49,6 @@
       name="renocopro.policy-hiddenprofiles"
       />
 
-  <!-- -*- extra stuff goes here -*- -->
+  <adapter factory=".converter.NoFormatIntegerDataConverter" />
 
 </configure>

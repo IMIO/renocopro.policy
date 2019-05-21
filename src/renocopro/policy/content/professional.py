@@ -32,18 +32,7 @@ class IProfessional(model.Schema):
     fieldset(
         "contact person",
         label=_(u"Contact person"),
-        fields=[
-            "last_name",
-            "first_name",
-            "street",
-            "number",
-            "city",
-            "zip_code",
-            "phone",
-            "email",
-            "website",
-            "vat",
-        ],
+        fields=["last_name", "first_name", "phone", "email"],
     )
 
     last_name = schema.TextLine(title=_(u"Last name"), required=False)
@@ -64,7 +53,7 @@ class IProfessional(model.Schema):
 
     email = schema.Email(title=_(u"Email of the contact person"), required=False)
 
-    website = schema.TextLine(title=_(u"website"), required=False)
+    website = schema.URI(title=_(u"website"), required=False)
 
     vat = schema.TextLine(title=_(u"VAT"), required=False)
 

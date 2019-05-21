@@ -11,87 +11,75 @@
     </caption>
   </term>
   <term>
-    <termIdentifier>design_offices_auditors_and_consultants</termIdentifier>
+    <termIdentifier>design_offices</termIdentifier>
     <caption>
-      <langstring language="fr">Bureaux d'études, auditeurs et conseillers</langstring>
+      <langstring language="fr">Bureau d'études (Ingénieurs stabilité, HVAC...)</langstring>
     </caption>
-    <term>
-      <termIdentifier>stability_engineers</termIdentifier>
-      <caption>
-        <langstring language="fr">Ingénieurs stabilité</langstring>
-      </caption>
-    </term>
-    <term>
-      <termIdentifier>auditors</termIdentifier>
-      <caption>
-        <langstring language="fr">Auditeurs (PEB/PHPP/gestion humidité)</langstring>
-      </caption>
-    </term>
-    <term>
-      <termIdentifier>security</termIdentifier>
-      <caption>
-        <langstring language="fr">Sécurité (incendie/…)</langstring>
-      </caption>
-    </term>
-    <term>
-      <termIdentifier>thermography_and_airtightness_control_agency</termIdentifier>
-      <caption>
-        <langstring language="fr">Agence de contrôle en thermographie et étanchéité à l'air</langstring>
-      </caption>
-    </term>
   </term>
   <term>
-    <termIdentifier>contractors_and_installers</termIdentifier>
+    <termIdentifier>auditors</termIdentifier>
     <caption>
-      <langstring language="fr">Entrepreneurs et installateurs</langstring>
+      <langstring language="fr">Auditeurs (PEB/PHPP/gestion humidité)</langstring>
     </caption>
-    <term>
-      <termIdentifier>roofer</termIdentifier>
-      <caption>
-        <langstring language="fr">Couvreur</langstring>
-      </caption>
-    </term>
-    <term>
-      <termIdentifier>insulation</termIdentifier>
-      <caption>
-        <langstring language="fr">Isolation</langstring>
-      </caption>
-    </term>
-    <term>
-      <termIdentifier>ventilation_airtightness_heating</termIdentifier>
-      <caption>
-        <langstring language="fr">Ventilation/étanchéité à l'air/Chauffage</langstring>
-      </caption>
-    </term>
-    <term>
-      <termIdentifier>carpentry</termIdentifier>
-      <caption>
-        <langstring language="fr">Menuiserie</langstring>
-      </caption>
-    </term>
-    <term>
-      <termIdentifier>structural_work</termIdentifier>
-      <caption>
-        <langstring language="fr">Gros œuvre</langstring>
-      </caption>
-    </term>
-    <term>
-      <termIdentifier>raising</termIdentifier>
-      <caption>
-        <langstring language="fr">Réhausse</langstring>
-      </caption>
-    </term>
-    <term>
-      <termIdentifier>electricity_and_gas</termIdentifier>
-      <caption>
-        <langstring language="fr">Électricité et gaz</langstring>
-      </caption>
-    </term>
-    <term>
-      <termIdentifier>renewable_heat_and_power_generation</termIdentifier>
-      <caption>
-        <langstring language="fr">Production renouvelable de chaleur et d'électricité</langstring>
-      </caption>
-    </term>
+  </term>
+  <term>
+    <termIdentifier>security</termIdentifier>
+    <caption>
+      <langstring language="fr">Sécurité (incendie/…)</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>thermography_and_airtightness_control_agency</termIdentifier>
+    <caption>
+      <langstring language="fr">Agence de contrôle en thermographie et étanchéité à l'air</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>roofer</termIdentifier>
+    <caption>
+      <langstring language="fr">Couvreur</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>insulation</termIdentifier>
+    <caption>
+      <langstring language="fr">Isolation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>ventilation_airtightness_heating</termIdentifier>
+    <caption>
+      <langstring language="fr">Ventilation/étanchéité à l'air/Chauffage</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>carpentry</termIdentifier>
+    <caption>
+      <langstring language="fr">Menuiserie</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>structural_work</termIdentifier>
+    <caption>
+      <langstring language="fr">Gros œuvre</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>raising</termIdentifier>
+    <caption>
+      <langstring language="fr">Réhausse</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>renewable_heat_and_power_generation</termIdentifier>
+    <caption>
+      <langstring language="fr">Production renouvelable de chaleur et d'électricité</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>installer</termIdentifier>
+    <caption>
+      <langstring language="fr">Installateur (électrécité, eau, ...)</langstring>
+    </caption>
   </term>
 </vdex>
