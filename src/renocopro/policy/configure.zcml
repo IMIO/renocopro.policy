@@ -13,7 +13,7 @@
   <include package="collective.taxonomy" />
   <include package="plone.formwidget.geolocation" />
   <include package="collective.documentation" />
-  <include package="plone.app.mosaic" />
+  <include package="iaweb.mosaic" />
   <include package="eea.facetednavigation" />
   <include package="collective.behavior.gallery" />
   <include package="collective.easyform" />

@@ -52,6 +52,7 @@ setup(
         "plone.formwidget.geolocation",
         "collective.documentation",
         "plone.app.mosaic",
+        "iaweb.mosaic",
         "eea.facetednavigation",
         "collective.behavior.gallery",
         "renocopro.theme",

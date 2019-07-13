@@ -6,7 +6,7 @@
     <dependency>profile-collective.taxonomy:default</dependency>
     <dependency>profile-plone.formwidget.geolocation:default</dependency>
     <dependency>profile-collective.documentation:default</dependency>
-    <dependency>profile-plone.app.mosaic:default</dependency>
+    <dependency>profile-iaweb.mosaic:default</dependency>
     <dependency>profile-eea.facetednavigation:default</dependency>
     <dependency>profile-collective.behavior.gallery:default</dependency>
     <dependency>profile-collective.easyform:default</dependency>

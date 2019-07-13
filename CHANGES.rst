@@ -5,7 +5,8 @@ Changelog
 1.0a7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add iaweb.mosaic dependency
+  [mpeeters]
 
 
 1.0a6 (2019-05-21)
