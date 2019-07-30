@@ -1,0 +1,126 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="renocopro.policy">
+<body>
+
+<metal:main fill-slot="main">
+
+  <legend tal:content="context/Title"/>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="rex_img_large_border">
+        <div class="rex_img_large" tal:condition="context/image">
+          <img class="view img-responsive" src="" tal:attributes="src string: ${context/absolute_url}/@@images/image" />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <ul>
+        <li class="rexlisttech">
+          <span i18n:translate="">Location</span>:
+          <span tal:content="context/location"></span>
+        </li>
+        <li class="rexlisttech">
+          <span i18n:translate="">Types of work</span>:
+          <span tal:content="context/types_of_work"></span>
+        </li>
+        <li class="rexlisttech">
+          <span i18n:translate="">Type of building</span>:
+          <span tal:content="context/type_of_building"></span>
+        </li>
+        <li class="rexlisttech">
+          <span i18n:translate="">Renovation year</span>:
+          <span tal:content="context/renovation_year"></span>
+        </li>
+        <li class="rexlisttech">
+          <span i18n:translate="">Duration of the work</span>:
+          <span tal:content="context/duration_of_the_work"></span>
+        </li>
+        <li class="rexlisttech">
+          <span i18n:translate="">Heated floor area</span>:
+          <span tal:content="context/net_surface_area"></span>
+        </li>
+        <li class="rexlisttech">
+          <span i18n:translate="">Cost of renovation</span>:
+          <span tal:content="context/cost_of_renovation"></span>
+        </li>
+        <li class="rexlisttech">
+          <span i18n:translate="">Cost/m2</span>:
+          <span tal:content="context/cost_m2"></span>
+        </li>
+        <li class="rexlisttech">
+          <span i18n:translate="">Number of housing units</span>:
+          <span tal:content="context/number_of_housing_units"></span>
+        </li>
+        <li class="rexlisttech">
+          <span i18n:translate="">Number of co-owners</span>:
+          <span tal:content="context/number_of_coowners"></span>
+        </li>
+        <li class="rexlisttech">
+          <span i18n:translate="">Other functions</span>:
+          <span tal:content="context/other_functions"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div tal:replace="structure context/@@gallery_view" />
+
+  <section id="tabs" class="tabs">
+    <ul>
+    </ul>
+  </section>
+
+  <section tal:condition="context/rich_description">
+    <h2 class="tab" i18n:translate="">Description</h2>
+    <div tal:replace="structure context/rich_description/output"></div>
+  </section>
+
+  <section tal:condition="context/grants_and_subsidies">
+    <h2 class="tab" i18n:translate="">Grants and subsidies</h2>
+    <div tal:replace="structure context/grants_and_subsidies/output"></div>
+  </section>
+
+  <section tal:condition="context/financing_option">
+    <h2 class="tab" i18n:translate="">Financing option</h2>
+    <div tal:replace="structure context/financing_option/output"></div>
+  </section>
+
+  <section tal:condition="context/actor">
+    <h2 class="tab" i18n:translate="">Actor</h2>
+    <div tal:replace="structure context/actor/output"></div>
+  </section>
+
+  <section tal:condition="context/human_relations">
+    <h2 class="tab" i18n:translate="">Human relations</h2>
+    <div tal:replace="structure context/human_relations/output"></div>
+  </section>
+
+  <section tal:condition="context/work">
+    <h2 class="tab" i18n:translate="">Work</h2>
+    <div tal:replace="structure context/work/output"></div>
+  </section>
+
+  <section tal:condition="context/description_of_the_systems">
+    <h2 class="tab" i18n:translate="">Description of the systems</h2>
+    <div tal:replace="structure context/description_of_the_systems/output"></div>
+  </section>
+
+  <section tal:condition="context/renewable_energies">
+    <h2 class="tab" i18n:translate="">Renewable energies</h2>
+    <div tal:replace="structure context/renewable_energies/output"></div>
+  </section>
+
+  <section tal:condition="context/sustainable_aspects">
+    <h2 class="tab" i18n:translate="">Sustainable aspects</h2>
+    <div tal:replace="structure context/sustainable_aspects/output"></div>
+  </section>
+
+</metal:main>
+
+</body>
+</html>

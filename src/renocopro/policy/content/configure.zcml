@@ -1,5 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="renocopro.policy">
 
   <subscriber
@@ -21,5 +22,15 @@
            zope.lifecycleevent.interfaces.IObjectCreatedEvent"
       handler=".professional.handle_location"
       />
+
+  <browser:page
+      for=".case_studies.ICaseStudies"
+      name="view"
+      class=".case_studies.CaseStudiesView"
+      template="templates/case_studies.pt"
+      permission="zope2.View"
+      layer="..interfaces.IRenocoproPolicyLayer"
+      />
+
 </configure>
 

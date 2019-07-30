@@ -2,8 +2,8 @@
 
 from plone import schema
 from plone.app.textfield import RichText
+from plone.dexterity.browser.view import DefaultView
 from plone.dexterity.content import Container
-from plone.formwidget.geolocation.field import GeolocationField
 from plone.supermodel.directives import fieldset
 from zope.interface import implements
 from renocopro.policy import _
@@ -30,11 +30,12 @@ class ICaseStudies(IRenocopro):
             "cost_of_renovation",
             "cost_m2",
             "number_of_housing_units",
+            "number_of_coowners",
             "other_functions",
         ],
     )
 
-    location = GeolocationField(title=_(u"Location"), required=False)
+    location = schema.TextLine(title=_(u"Location"), required=False)
 
     types_of_work = schema.Choice(
         title=_(u"Types of work"),
@@ -48,18 +49,24 @@ class ICaseStudies(IRenocopro):
         required=False,
     )
 
-    renovation_year = schema.Int(title=_(u"Renovation year"), required=False)
+    renovation_year = schema.TextLine(title=_(u"Renovation year"), required=False)
 
-    duration_of_the_work = schema.Int(title=_(u"Duration of the work"), required=False)
+    duration_of_the_work = schema.TextLine(
+        title=_(u"Duration of the work"), required=False
+    )
 
-    net_surface_area = schema.Int(title=_(u"Net surface area"), required=False)
+    net_surface_area = schema.TextLine(title=_(u"Heated floor area"), required=False)
 
-    cost_of_renovation = schema.Int(title=_(u"Cost of renovation"), required=False)
+    cost_of_renovation = schema.TextLine(title=_(u"Cost of renovation"), required=False)
 
-    cost_m2 = schema.Int(title=_(u"Cost/m2"), required=False)
+    cost_m2 = schema.TextLine(title=_(u"Cost/m2"), required=False)
 
-    number_of_housing_units = schema.Int(
+    number_of_housing_units = schema.TextLine(
         title=_(u"Number of housing units"), required=False
+    )
+
+    number_of_coowners = schema.TextLine(
+        title=_(u"Number of co-owners"), required=False
     )
 
     other_functions = schema.Choice(
@@ -72,15 +79,22 @@ class ICaseStudies(IRenocopro):
         "Other",
         label=_(u"Other"),
         fields=[
+            "grants_and_subsidies",
+            "financing_option",
+            "actor",
             "work",
             "human_relations",
-            "energy",
-            "enr_systems",
-            "environment",
-            "products",
-            "costs",
+            "description_of_the_systems",
+            "renewable_energies",
+            "sustainable_aspects",
         ],
     )
+
+    grants_and_subsidies = RichText(title=_(u"Grants and subsidies"), required=False)
+
+    financing_option = RichText(title=_(u"Financing option"), required=False)
+
+    actor = RichText(title=_(u"Actor"), required=False)
 
     work = RichText(
         title=_(u"Work"), description=_(u"Listing of all work done"), required=False
@@ -94,32 +108,20 @@ class ICaseStudies(IRenocopro):
         required=False,
     )
 
-    energy = RichText(
-        title=_(u"Energy"),
-        description=_(
-            u"Consumption, type of system implemented, performance achieved,... "
-        ),
+    description_of_the_systems = RichText(
+        title=_(u"Description of the systems"),
+        description=_(u"heating, DHW, ventilation, possible cooling"),
         required=False,
     )
 
-    enr_systems = RichText(
-        title=_(u"EnR & Systems"),
-        description=_(u"Heating, ecs, cooling, ventilation, EnR"),
-        required=False,
-    )
+    renewable_energies = RichText(title=_(u"Renewable energies"), required=False)
 
-    environment = RichText(
-        title=_(u"Environment"),
-        description=_(u"Vegetation, water management"),
-        required=False,
-    )
-
-    products = RichText(title=_(u"Products"), required=False)
-
-    costs = RichText(
-        title=_(u"Cost"), description=_(u"Details of the big posts"), required=False
-    )
+    sustainable_aspects = RichText(title=_(u"Sustainable aspects"), required=False)
 
 
 class CaseStudies(Container):
     implements(ICaseStudies)
+
+
+class CaseStudiesView(DefaultView):
+    pass

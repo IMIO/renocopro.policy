@@ -5,7 +5,8 @@ Changelog
 1.0a8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add a default view for case studies
+  [vpiret]
 
 
 1.0a7 (2019-07-13)

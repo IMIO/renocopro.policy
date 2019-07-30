@@ -3,8 +3,6 @@
      tal:condition="photos"
      i18n:domain="collective.behavior.gallery">
 
-  <legend i18n:translate="">Gallery</legend>
-
   <div class="gallery-photo"
        tal:repeat="photo photos">
 
