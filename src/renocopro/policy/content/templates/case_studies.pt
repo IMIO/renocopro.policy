@@ -70,55 +70,61 @@
   </div>
   <div tal:replace="structure context/@@gallery_view" />
 
-  <section id="tabs" class="tabs">
-    <ul>
-    </ul>
-  </section>
+    <section id="case-studies-tabs" class="tabs">
+      <div class="tabs-buttons-content">
+        <button id="prev" class="arrow"></button>
+        <ul id="tabs-buttons">
+        </ul>
+        <button id="next" class="arrow"></button>
+      </div>
 
-  <section tal:condition="context/rich_description">
-    <h2 class="tab" i18n:translate="">Description</h2>
-    <div tal:replace="structure context/rich_description/output"></div>
-  </section>
+      <div id="tabs-content">
+        <section tal:condition="context/rich_description">
+          <h2 i18n:translate="">Description</h2>
+          <div tal:replace="structure context/rich_description/output"></div>
+        </section>
 
-  <section tal:condition="context/grants_and_subsidies">
-    <h2 class="tab" i18n:translate="">Grants and subsidies</h2>
-    <div tal:replace="structure context/grants_and_subsidies/output"></div>
-  </section>
+        <section tal:condition="context/grants_and_subsidies">
+          <h2 i18n:translate="">Grants and subsidies</h2>
+          <div tal:replace="structure context/grants_and_subsidies/output"></div>
+        </section>
 
-  <section tal:condition="context/financing_option">
-    <h2 class="tab" i18n:translate="">Financing option</h2>
-    <div tal:replace="structure context/financing_option/output"></div>
-  </section>
+        <section tal:condition="context/financing_option">
+          <h2 i18n:translate="">Financing option</h2>
+          <div tal:replace="structure context/financing_option/output"></div>
+        </section>
 
-  <section tal:condition="context/actor">
-    <h2 class="tab" i18n:translate="">Actor</h2>
-    <div tal:replace="structure context/actor/output"></div>
-  </section>
+        <section tal:condition="context/actor">
+          <h2 i18n:translate="">Actor</h2>
+          <div tal:replace="structure context/actor/output"></div>
+        </section>
 
-  <section tal:condition="context/human_relations">
-    <h2 class="tab" i18n:translate="">Human relations</h2>
-    <div tal:replace="structure context/human_relations/output"></div>
-  </section>
+        <section tal:condition="context/human_relations">
+          <h2 i18n:translate="">Human relations</h2>
+          <div tal:replace="structure context/human_relations/output"></div>
+        </section>
 
-  <section tal:condition="context/work">
-    <h2 class="tab" i18n:translate="">Work</h2>
-    <div tal:replace="structure context/work/output"></div>
-  </section>
+        <section tal:condition="context/work">
+          <h2 i18n:translate="">Work</h2>
+          <div tal:replace="structure context/work/output"></div>
+        </section>
 
-  <section tal:condition="context/description_of_the_systems">
-    <h2 class="tab" i18n:translate="">Description of the systems</h2>
-    <div tal:replace="structure context/description_of_the_systems/output"></div>
-  </section>
+        <section tal:condition="context/description_of_the_systems">
+          <h2 i18n:translate="">Description of the systems</h2>
+          <div tal:replace="structure context/description_of_the_systems/output"></div>
+        </section>
 
-  <section tal:condition="context/renewable_energies">
-    <h2 class="tab" i18n:translate="">Renewable energies</h2>
-    <div tal:replace="structure context/renewable_energies/output"></div>
-  </section>
+        <section tal:condition="context/renewable_energies">
+          <h2 i18n:translate="">Renewable energies</h2>
+          <div tal:replace="structure context/renewable_energies/output"></div>
+        </section>
 
-  <section tal:condition="context/sustainable_aspects">
-    <h2 class="tab" i18n:translate="">Sustainable aspects</h2>
-    <div tal:replace="structure context/sustainable_aspects/output"></div>
-  </section>
+        <section tal:condition="context/sustainable_aspects">
+          <h2 i18n:translate="">Sustainable aspects</h2>
+          <div tal:replace="structure context/sustainable_aspects/output"></div>
+        </section>
+      </div>
+    </section>
 
 </metal:main>
 

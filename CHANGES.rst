@@ -5,6 +5,9 @@ Changelog
 1.0a8 (unreleased)
 ------------------
 
+- Adapt template of case studies for add tabs
+  [AuroreMariscal]
+
 - Add a default view for case studies
   [vpiret]
 
