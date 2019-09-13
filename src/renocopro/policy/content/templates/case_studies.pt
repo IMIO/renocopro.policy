@@ -4,11 +4,11 @@
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       lang="en"
       metal:use-macro="context/main_template/macros/master"
-      i18n:domain="renocopro.policy">
+      i18n:domain="renocopro.policy"
+      tal:define="foo python:request.set('disable_plone.leftcolumn', 1)">
 <body>
 
 <metal:main fill-slot="main">
-
   <legend tal:content="context/Title"/>
 
   <div class="row">
@@ -70,7 +70,7 @@
   </div>
   <div tal:replace="structure context/@@gallery_view" />
 
-    <section id="case-studies-tabs" class="tabs">
+    <section id="case-studies-tabs" class="tabs" tal:condition="view/show_section">
       <div class="tabs-buttons-content">
         <button id="prev" class="arrow"></button>
         <ul id="tabs-buttons">

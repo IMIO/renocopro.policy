@@ -124,4 +124,17 @@ class CaseStudies(Container):
 
 
 class CaseStudiesView(DefaultView):
-    pass
+    def show_section(self):
+        if (
+            self.context.rich_description
+            or self.context.grants_and_subsidies
+            or self.context.financing_option
+            or self.context.actor
+            or self.context.human_relations
+            or self.context.work
+            or self.context.description_of_the_systems
+            or self.context.renewable_energies
+            or self.context.sustainable_aspects
+        ):
+            return True
+        return False
