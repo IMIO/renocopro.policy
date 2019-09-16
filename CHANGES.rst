@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a9 (unreleased)
+1.0a9 (2019-09-16)
 ------------------
 
 - Update cases studies template
