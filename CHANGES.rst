@@ -5,7 +5,8 @@ Changelog
 1.0a10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix taxonomy display on case studies
+  [vpiret]
 
 
 1.0a9 (2019-09-16)

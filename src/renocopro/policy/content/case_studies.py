@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
 
+from collective.taxonomy.interfaces import ITaxonomy
 from plone import schema
+from plone import api
 from plone.app.textfield import RichText
 from plone.dexterity.browser.view import DefaultView
 from plone.dexterity.content import Container
 from plone.supermodel.directives import fieldset
+from zope.component import getSiteManager
 from zope.interface import implements
 from renocopro.policy import _
 from renocopro.policy.content.interfaces import IRenocopro
@@ -138,3 +141,14 @@ class CaseStudiesView(DefaultView):
         ):
             return True
         return False
+
+    def translate_selected_taxonomy_item(self, context, taxonomy_id, item_id):
+        sm = getSiteManager()
+        utility = sm.queryUtility(ITaxonomy, name=taxonomy_id)
+        if item_id:
+            if item_id:
+                return utility.translate(
+                    item_id,
+                    context=context,
+                    target_language=api.portal.get_current_language()[:2],
+                )

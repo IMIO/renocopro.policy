@@ -25,13 +25,13 @@
           <span i18n:translate="">Location</span>:
           <span tal:content="context/location"></span>
         </li>
-        <li class="rexlisttech">
+        <li class="rexlisttech" tal:define="types_of_work context/types_of_work">
           <span i18n:translate="">Types of work</span>:
-          <span tal:content="context/types_of_work"></span>
+          <span tal:content="python: view.translate_selected_taxonomy_item(context, 'collective.taxonomy.types_of_work', types_of_work)"></span>
         </li>
-        <li class="rexlisttech">
+        <li class="rexlisttech" tal:define="type_of_building context/type_of_building">
           <span i18n:translate="">Type of building</span>:
-          <span tal:content="context/type_of_building"></span>
+          <span tal:content="python: view.translate_selected_taxonomy_item(context, 'collective.taxonomy.type_of_building', type_of_building)"></span>
         </li>
         <li class="rexlisttech">
           <span i18n:translate="">Renovation year</span>:
@@ -61,9 +61,9 @@
           <span i18n:translate="">Number of co-owners</span>:
           <span tal:content="context/number_of_coowners"></span>
         </li>
-        <li class="rexlisttech">
+        <li class="rexlisttech" tal:define="other_functions context/other_functions">
           <span i18n:translate="">Other functions</span>:
-          <span tal:content="context/other_functions"></span>
+          <span tal:content="python: view.translate_selected_taxonomy_item(context, 'collective.taxonomy.other_functions', other_functions)"></span>
         </li>
       </ul>
     </div>
