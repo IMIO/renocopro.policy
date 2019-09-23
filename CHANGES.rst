@@ -5,6 +5,15 @@ Changelog
 1.0a10 (unreleased)
 -------------------
 
+- Update professional filed
+  [vpiret]
+
+- Hidde title on case studies
+  [vpiret]
+
+- Add construction_year field
+  [vpiret]
+
 - Fix taxonomy display on case studies
   [vpiret]
 

@@ -52,6 +52,8 @@ class ICaseStudies(IRenocopro):
         required=False,
     )
 
+    construction_year = schema.TextLine(title=_(u"Construction year"), required=False)
+
     renovation_year = schema.TextLine(title=_(u"Renovation year"), required=False)
 
     duration_of_the_work = schema.TextLine(

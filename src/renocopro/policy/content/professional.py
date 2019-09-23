@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 
+from z3c.form.browser.checkbox import CheckBoxFieldWidget
 from plone import schema
 from plone.app.textfield import RichText
+from plone.autoform import directives as form
 from plone.dexterity.content import Container
 from plone.formwidget.geolocation.field import GeolocationField
 from plone.supermodel import model
@@ -57,9 +59,13 @@ class IProfessional(model.Schema):
 
     vat = schema.TextLine(title=_(u"VAT"), required=False)
 
-    activity = schema.Choice(
+    form.widget(activity=CheckBoxFieldWidget)
+    activity = schema.List(
         title=_(u"Specific activities in the field of condominium renovation"),
-        vocabulary=u"collective.taxonomy.type_of_professional",
+        value_type=schema.Choice(
+            title=_(u"Specific activities in the field of condominium renovation"),
+            vocabulary=u"collective.taxonomy.type_of_professional"
+        ),
         required=False,
     )
 
