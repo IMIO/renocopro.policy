@@ -67,7 +67,7 @@ class IProfessional(model.Schema):
         title=_(u"Specific activities in the field of condominium renovation"),
         value_type=schema.Choice(
             title=_(u"Specific activities in the field of condominium renovation"),
-            vocabulary=u"collective.taxonomy.type_of_professional"
+            vocabulary=u"collective.taxonomy.type_of_professional",
         ),
         required=False,
     )
@@ -87,6 +87,5 @@ def handle_location(obj, event):
 
 
 class ProfessionalView(DefaultView):
-
     def get_taxonomy_item(self, context, taxonomy_id, item_id):
         return translate_selected_taxonomy_item(context, taxonomy_id, item_id)
