@@ -5,6 +5,9 @@ Changelog
 1.0a10 (unreleased)
 -------------------
 
+- Adapt template for professional
+  [AuroreMariscal]
+
 - Add default view for professional
   [vpiret]
 

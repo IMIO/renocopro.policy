@@ -26,20 +26,35 @@
                  tal:define="portal_type brain/portal_type|string:;
                    self nocall:context/@@faceted-professionals;
                    useViewTypes brain/portal_properties/site_properties/typesUseViewActionInListings|python:[];
-                   useView python:portal_type in useViewTypes;
-                   zip_code brain/zip_code;
-                   city  brain/city;">
+                   useView python:portal_type in useViewTypes;">
               <a tal:define="description brain/Description|string:;
                              title brain/pretty_title_or_id|string:;
+                             activities python: brain.getObject().activity;
+                             legal_status python: brain.getObject().legal_status;
+                             rich_description python: brain.getObject().rich_description;
+                             is_image python: brain.getObject().image;
                              url brain/getURL|string:#"
                  tal:attributes="href url;
                                  title title">
 
                 <div class="items-content">
+                  <div class="image">
+                    <img style="border: none" tal:condition="is_image"
+                         tal:attributes="src  string:${brain/getURL}/@@images/image"/>
+                  </div>
                   <div class="text">
                     <h4 tal:content="brain/pretty_title_or_id|string:">Title</h4>
-                    <span tal:content="zip_code" tal:condition="zip_code">zip_code</span>
-                    <span tal:content="city" tal:condition="city">city</span>
+                    <span class="status" tal:content="python: self.get_taxonomy_item(context, 'collective.taxonomy.legal_status', legal_status)"></span>
+                    <div>
+                      <ul>
+                        <li tal:repeat="activity activities">
+                          <span tal:content="python: self.get_taxonomy_item(context, 'collective.taxonomy.type_of_professional', activity)"></span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="description" tal:condition="rich_description">
+                      <div tal:replace="structure rich_description/output"></div>
+                    </div>
                   </div>
                 </div>
               </a>
