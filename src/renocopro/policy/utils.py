@@ -4,6 +4,11 @@ from AccessControl.SecurityManagement import newSecurityManager
 from AccessControl.SecurityManagement import setSecurityManager
 from AccessControl.User import UnrestrictedUser as BaseUnrestrictedUser
 from Products.CMFPlone.utils import safe_unicode
+
+from collective.taxonomy.interfaces import ITaxonomy
+from plone import api
+from zope.component import getSiteManager
+
 import os
 import geopy
 
@@ -54,3 +59,15 @@ def get_location_info(address):
     except:  # noqa
         pass
     return location
+
+
+def translate_selected_taxonomy_item(context, taxonomy_id, item_id):
+    sm = getSiteManager()
+    utility = sm.queryUtility(ITaxonomy, name=taxonomy_id)
+    if item_id:
+        if item_id:
+            return utility.translate(
+                item_id,
+                context=context,
+                target_language=api.portal.get_current_language()[:2],
+            )

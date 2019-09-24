@@ -1,16 +1,19 @@
 # -*- coding: utf-8 -*-
 
-from z3c.form.browser.checkbox import CheckBoxFieldWidget
 from plone import schema
 from plone.app.textfield import RichText
 from plone.autoform import directives as form
+from plone.dexterity.browser.view import DefaultView
 from plone.dexterity.content import Container
 from plone.formwidget.geolocation.field import GeolocationField
 from plone.supermodel import model
-from renocopro.policy import _
-from zope.interface import implements
 from plone.supermodel.directives import fieldset
+from z3c.form.browser.checkbox import CheckBoxFieldWidget
+from zope.interface import implements
+
+from renocopro.policy import _
 from renocopro.policy.utils import get_location_info
+from renocopro.policy.utils import translate_selected_taxonomy_item
 
 DEFAULT_GEOLOCATION = (50.6451381, 5.5734203)
 
@@ -81,3 +84,9 @@ def handle_location(obj, event):
 
     address = u"{0} {1} {2} {3}".format(obj.number, obj.street, obj.zip_code, obj.city)
     obj.location = get_location_info(address)
+
+
+class ProfessionalView(DefaultView):
+
+    def get_taxonomy_item(self, context, taxonomy_id, item_id):
+        return translate_selected_taxonomy_item(context, taxonomy_id, item_id)

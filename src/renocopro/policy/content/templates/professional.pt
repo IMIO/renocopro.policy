@@ -1,0 +1,55 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="renocopro.policy"
+      tal:define="foo python:request.set('disable_plone.leftcolumn', 1)">
+<body>
+
+<metal:main fill-slot="main">
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="rex_img_large_border">
+        <div class="rex_img_large" tal:condition="context/image">
+          <img class="view img-responsive" src="" tal:attributes="src string: ${context/absolute_url}/@@images/image" />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <ul>
+        <li class="rexlisttech">
+          <span i18n:translate="">Name of the company/organization</span>:
+          <span tal:content="context/title"></span>
+        </li>
+        <li class="rexlisttech" tal:define="legal_status context/legal_status">
+          <span i18n:translate="">Legal status</span>:
+          <span tal:content="python: view.get_taxonomy_item(context, 'collective.taxonomy.legal_status', legal_status)"></span>
+        </li>
+        <li class="rexlisttech">
+            <span i18n:translate="">Specific activities in the field of condominium renovation</span>:
+            <ul tal:define="activities context/activity">
+              <li tal:repeat="activity activities">
+                <span tal:content="python: view.get_taxonomy_item(context, 'collective.taxonomy.type_of_professional', activity)"></span>
+              </li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <ul>
+        <li class="rexlisttech" tal:condition="context/rich_description">
+          <span i18n:translate="">Description of the company's activity</span>:
+          <div tal:replace="structure context/rich_description/output"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</metal:main>
+
+</body>
+</html>

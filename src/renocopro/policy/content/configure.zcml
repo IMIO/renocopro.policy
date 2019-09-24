@@ -32,5 +32,14 @@
       layer="..interfaces.IRenocoproPolicyLayer"
       />
 
+  <browser:page
+      for=".professional.IProfessional"
+      name="view"
+      class=".professional.ProfessionalView"
+      template="templates/professional.pt"
+      permission="zope2.View"
+      layer="..interfaces.IRenocoproPolicyLayer"
+      />
+
 </configure>
 

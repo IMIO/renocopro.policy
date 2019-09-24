@@ -5,6 +5,12 @@ Changelog
 1.0a10 (unreleased)
 -------------------
 
+- Add default view for professional
+  [vpiret]
+
+- Fix case studies view
+  [vpiret]
+
 - Change diplay title on case studies
   [vpiret]
 
