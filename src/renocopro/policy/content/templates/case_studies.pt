@@ -84,47 +84,47 @@
 
       <div id="tabs-content">
         <section tal:condition="context/rich_description">
-          <h2 i18n:translate="" class="hidden">Description</h2>
+          <h2 i18n:translate="" class="tab">Description</h2>
           <div tal:replace="structure context/rich_description/output"></div>
         </section>
 
         <section tal:condition="context/grants_and_subsidies">
-          <h2 i18n:translate="" class="hidden">Grants and subsidies</h2>
+          <h2 i18n:translate="" class="tab">Grants and subsidies</h2>
           <div tal:replace="structure context/grants_and_subsidies/output"></div>
         </section>
 
         <section tal:condition="context/financing_option">
-          <h2 i18n:translate="" class="hidden">Financing option</h2>
+          <h2 i18n:translate="" class="tab">Financing option</h2>
           <div tal:replace="structure context/financing_option/output"></div>
         </section>
 
         <section tal:condition="context/actor">
-          <h2 i18n:translate="" class="hidden">Actor</h2>
+          <h2 i18n:translate="" class="tab">Actor</h2>
           <div tal:replace="structure context/actor/output"></div>
         </section>
 
         <section tal:condition="context/human_relations">
-          <h2 i18n:translate="" class="hidden">Human relations</h2>
+          <h2 i18n:translate="" class="tab">Human relations</h2>
           <div tal:replace="structure context/human_relations/output"></div>
         </section>
 
         <section tal:condition="context/work">
-          <h2 i18n:translate="" class="hidden">Work</h2>
+          <h2 i18n:translate="" class="tab">Work</h2>
           <div tal:replace="structure context/work/output"></div>
         </section>
 
         <section tal:condition="context/description_of_the_systems">
-          <h2 i18n:translate="" class="hidden">Description of the systems</h2>
+          <h2 i18n:translate="" class="tab">Description of the systems</h2>
           <div tal:replace="structure context/description_of_the_systems/output"></div>
         </section>
 
         <section tal:condition="context/renewable_energies">
-          <h2 i18n:translate="" class="hidden">Renewable energies</h2>
+          <h2 i18n:translate="" class="tab">Renewable energies</h2>
           <div tal:replace="structure context/renewable_energies/output"></div>
         </section>
 
         <section tal:condition="context/sustainable_aspects">
-          <h2 i18n:translate="" class="hidden">Sustainable aspects</h2>
+          <h2 i18n:translate="" class="tab">Sustainable aspects</h2>
           <div tal:replace="structure context/sustainable_aspects/output"></div>
         </section>
       </div>

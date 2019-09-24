@@ -5,6 +5,9 @@ Changelog
 1.0a10 (unreleased)
 -------------------
 
+- Change diplay title on case studies
+  [vpiret]
+
 - Update professional filed
   [vpiret]
 
