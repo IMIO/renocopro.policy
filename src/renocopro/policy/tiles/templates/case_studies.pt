@@ -45,7 +45,7 @@
         </ul>
       </div>
     </section>
-    <tal:cases>
+    </tal:cases>
     </tal:slider>
     <div class="align-right">
       <a href="" class="read-more" tal:condition="view/folder" tal:attributes="href view/folder">

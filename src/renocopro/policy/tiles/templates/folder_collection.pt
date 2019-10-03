@@ -48,7 +48,7 @@
         </ul>
       </div>
     </section>
-    <tal:items>
+    </tal:items>
     <div class="align-right">
       <a href="" class="read-more" tal:condition="contents/url" tal:attributes="href contents/url">
       Voir tout

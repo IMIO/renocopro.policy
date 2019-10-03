@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from plone import schema
+from plone import api
 from plone.app.textfield import RichText
 from plone.autoform import directives as form
 from plone.dexterity.browser.view import DefaultView
@@ -29,7 +30,17 @@ class IProfessional(model.Schema):
     )
 
     rich_description = RichText(
-        title=_(u"Description of the company's activity"), required=False
+        title=_(u"Description of the company's activity"),
+        description=_(u"Summarize the activities of your company"),
+        required=False,
+    )
+
+    specific_activities = RichText(
+        title=_(u"Description of specific activities"),
+        description=_(
+            u"Describe the specific activities in the field of condominium renovation"
+        ),
+        required=False,
     )
 
     location = GeolocationField(title=_(u"Location"), required=False)
@@ -89,3 +100,79 @@ def handle_location(obj, event):
 class ProfessionalView(DefaultView):
     def get_taxonomy_item(self, context, taxonomy_id, item_id):
         return translate_selected_taxonomy_item(context, taxonomy_id, item_id)
+
+    def get_realizations(self):
+        brains = api.content.find(
+            context=self.context,
+            depth=1,
+            portal_type="realization",
+            sort_on="getObjPositionInParent",
+        )
+        return [b.getObject() for b in brains]
+
+    def get_images(self, realization):
+        brains = api.content.find(
+            context=realization,
+            depth=1,
+            portal_type="Image",
+            sort_on="getObjPositionInParent",
+        )
+        return [b.getObject() for b in brains]
+
+    def get_info_real(self, real):
+        title = real.title
+        description = real.rich_description
+        address = self.pretty_address("", real.street, real.city, real.zip_code)
+
+        syndic = real.contact_details_of_the_syndic
+        innovative = real.innovative
+
+        structure = "<h3>{0}</h3>".format(title)
+        if description:
+            structure = '{0}<div class="description">{1}</div>'.format(
+                structure, description.output
+            )
+
+        if syndic:
+            structure = '{0}<div class="syndic"><label>{1}</label><p>{2}</p></div>'.format(
+                structure, _(u"Contact details of the syndic"), syndic
+            )
+
+        if address:
+            structure = '{0}<div class="address"><label>{1}</label><p>{2}</p></div>'.format(
+                structure, _(u"Address of the co-ownership"), address
+            )
+
+        if innovative:
+            structure = '{0}<div class="innovative"><label>{1}</label><div>{2}</div></div>'.format(
+                structure, _(u"Innovative aspects implemented"), innovative.output
+            )
+
+        return structure
+
+    def pretty_address(self, num, street, city, zip_code):
+        address = ""
+        if street or city or zip_code:
+            if street and city and zip_code:
+                address = "{0}, {1}({2})".format(street, city, zip_code)
+            if street and city and not zip_code:
+                address = "{0}, {1}".format(street, city)
+            if not street and city and zip_code:
+                address = "{0}({1})".format(city, zip_code)
+            if street and not city and zip_code:
+                address = "{0} ({1})".format(street, zip_code)
+            if street and not city and not zip_code:
+                address = street
+            if not street and city and not zip_code:
+                address = city
+            if not street and not city and zip_code:
+                address = zip_code
+        if num:
+            if address:
+                address = "{0}, {1}".format(num, address)
+            else:
+                address = num
+        return address
+
+    def pretty_contact(self, last_name, first_name):
+        return ("{0} {1}".format(last_name, first_name)).lstrip()

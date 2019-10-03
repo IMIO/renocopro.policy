@@ -41,5 +41,13 @@
       layer="..interfaces.IRenocoproPolicyLayer"
       />
 
+  <browser:page
+    for=".professional.IProfessional"
+    name="realization_view"
+    permission="zope2.View"
+    class=".professional.ProfessionalView"
+    template="templates/gallery_realization.pt"
+    />
+
 </configure>
 

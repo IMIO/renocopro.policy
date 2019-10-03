@@ -7,7 +7,9 @@
       i18n:domain="renocopro.policy"
       tal:define="foo python:request.set('disable_plone.leftcolumn', 1)">
 <body>
-
+<metal:js fill-slot="javascript_head_slot">
+  <script tal:define="site_url context/@@plone_portal_state/portal_url" tal:attributes="src string:${site_url}/++plone++renocopro.policy/js/renocopro.js"></script>
+</metal:js>
 <metal:main fill-slot="main">
 
   <div class="row">
@@ -21,15 +23,11 @@
     <div class="col-md-6">
       <ul>
         <li class="rexlisttech">
-          <span i18n:translate="">Name of the company/organization</span>:
+          <span i18n:translate="" class="label">Name of the company/organization</span>:
           <span tal:content="context/title"></span>
         </li>
-        <li class="rexlisttech" tal:define="legal_status context/legal_status">
-          <span i18n:translate="">Legal status</span>:
-          <span tal:content="python: view.get_taxonomy_item(context, 'collective.taxonomy.legal_status', legal_status)"></span>
-        </li>
         <li class="rexlisttech">
-            <span i18n:translate="">Specific activities in the field of condominium renovation</span>:
+            <span i18n:translate="" class="label">Specific activities in the field of condominium renovation</span>:
             <ul tal:define="activities context/activity">
               <li tal:repeat="activity activities">
                 <span tal:content="python: view.get_taxonomy_item(context, 'collective.taxonomy.type_of_professional', activity)"></span>
@@ -40,15 +38,55 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6">
-      <ul>
-        <li class="rexlisttech" tal:condition="context/rich_description">
-          <span i18n:translate="">Description of the company's activity</span>:
-          <div tal:replace="structure context/rich_description/output"></div>
+    <div>
+      <div class="rexlisttech" tal:condition="context/rich_description">
+        <div i18n:translate="" class="label">Description of the company's activity</div>
+        <div tal:replace="structure context/rich_description/output"></div>
+      </div>
+      <div class="rexlisttech" tal:condition="context/specific_activities">
+        <div i18n:translate="" class="label">Description of specific activities</div>
+        <div tal:replace="structure context/specific_activities/output"></div>
+      </div>
+      <div class="rexlisttech">
+        <div tal:replace="structure context/@@realization_view" />
+      </div>
+    </div>
+  </div>
+
+  <div class="">
+      <ul tal:define="num context/number;
+                      street context/street;
+                      city context/city;
+                      zip_code context/zip_code">
+        <li class="rexlisttech" tal:condition="python: view.pretty_address(num, street, city, zip_code)">
+          <span tal:content="python: view.pretty_address(num, street, city, zip_code)"></span>
+        </li>
+        <li class="rexlisttech" tal:condition="context/website">
+          <span tal:content="context/website"></span>
+        </li>
+        <li class="rexlisttech" tal:condition="context/legal_status">
+          <span tal:content="python: self.get_taxonomy_item(context, 'collective.taxonomy.legal_status', context/legal_status)"></span>
+        </li>
+        <li class="rexlisttech">
+          <span tal:content="context/vat"></span>
+        </li>
+        <li class="rexlisttech">
+          <div i18n:translate="" class="label">Contact person</div>
+          <ul tal:define="last_name context/last_name;
+                          first_name context/first_name">
+            <li class="rexlisttech" tal:condition="python: view.pretty_contact(last_name,first_name)">
+              <span tal:content="python: view.pretty_contact(last_name,first_name)"></span>
+            </li>
+            <li class="rexlisttech" tal:condition="context/phone">
+              <span tal:content="context/phone"></span>
+            </li>
+            <li class="rexlisttech" tal:condition="context/email">
+              <span tal:content="context/email"></span>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
-  </div>
 </metal:main>
 
 </body>

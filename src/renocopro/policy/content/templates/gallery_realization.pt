@@ -1,0 +1,38 @@
+<div id="gallery-realization"
+     tal:define="realizations view/get_realizations"
+     tal:condition="realizations"
+     i18n:domain="renocopro.policy">
+
+  <div class="gallery-photo"
+       tal:repeat="realization realizations">
+    <a href="" data-caption=""
+       class="images-preview"
+       data-thumbs='{"autoStart":true}'
+       tal:attributes="href string: ${realization/absolute_url}/@@images/image;
+                         data-caption realization/Title;
+                         rel realization/id;
+                         data-fancybox-group realization/id;
+                         data-fancybox string:images-preview-${realization/id}">
+      <img src=""
+           tal:attributes="src string: ${realization/absolute_url}/@@images/image;
+                               data-thumb string: ${realization/absolute_url}/@@images/image"/>
+
+
+      <div class="caption" style="display: none;"
+           tal:content="structure python:view.get_info_real(realization)"></div>
+    </a>
+    <div style="display: none;"
+         tal:repeat="real_img python: view.get_images(realization)">
+      <a href=""
+         class="images-preview"
+         data-thumb=""
+         tal:attributes="href string: ${real_img/absolute_url}/@@images/image;
+                           data-thumb string: ${real_img/absolute_url}/@@images/image;
+                           rel realization/id;
+                           data-fancybox-group realization/id;
+                           data-fancybox string:images-preview-${realization/id}">
+      </a>
+    </div>
+  </div>
+
+</div>

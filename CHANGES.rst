@@ -5,6 +5,9 @@ Changelog
 1.0a10 (unreleased)
 -------------------
 
+- Add professionnal view with realization gallery
+  [vpiret]
+
 - Adapt template for professional
   [AuroreMariscal]
 
