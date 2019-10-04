@@ -13,47 +13,49 @@
 <metal:main fill-slot="main">
 
   <div class="row">
-    <div class="col-md-6">
-      <div class="rex_img_large_border">
-        <div class="rex_img_large" tal:condition="context/image">
-          <img class="view img-responsive" src="" tal:attributes="src string: ${context/absolute_url}/@@images/image" />
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="rex_img_large_border">
+            <div class="rex_img_large" tal:condition="context/image">
+              <img class="view img-responsive" src="" tal:attributes="src string: ${context/absolute_url}/@@images/image" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li class="rexlisttech">
+              <span i18n:translate="" class="label">Name of the company/organization</span>:
+              <span tal:content="context/title"></span>
+            </li>
+            <li class="rexlisttech">
+                <span i18n:translate="" class="label">Specific activities in the field of condominium renovation</span>:
+                <ul tal:define="activities context/activity">
+                  <li tal:repeat="activity activities">
+                    <span tal:content="python: view.get_taxonomy_item(context, 'collective.taxonomy.type_of_professional', activity)"></span>
+                  </li>
+                </ul>
+            </li>
+          </ul>
         </div>
       </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="rexlisttech" tal:condition="context/rich_description">
+            <div i18n:translate="" class="label">Description of the company's activity</div>
+            <div tal:replace="structure context/rich_description/output"></div>
+          </div>
+          <div class="rexlisttech" tal:condition="context/specific_activities">
+            <div i18n:translate="" class="label">Description of specific activities</div>
+            <div tal:replace="structure context/specific_activities/output"></div>
+          </div>
+          <div class="rexlisttech">
+            <div tal:replace="structure context/@@realization_view" />
+            </div>
+          </div>
+        </div>
     </div>
-    <div class="col-md-6">
-      <ul>
-        <li class="rexlisttech">
-          <span i18n:translate="" class="label">Name of the company/organization</span>:
-          <span tal:content="context/title"></span>
-        </li>
-        <li class="rexlisttech">
-            <span i18n:translate="" class="label">Specific activities in the field of condominium renovation</span>:
-            <ul tal:define="activities context/activity">
-              <li tal:repeat="activity activities">
-                <span tal:content="python: view.get_taxonomy_item(context, 'collective.taxonomy.type_of_professional', activity)"></span>
-              </li>
-            </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="row">
-    <div>
-      <div class="rexlisttech" tal:condition="context/rich_description">
-        <div i18n:translate="" class="label">Description of the company's activity</div>
-        <div tal:replace="structure context/rich_description/output"></div>
-      </div>
-      <div class="rexlisttech" tal:condition="context/specific_activities">
-        <div i18n:translate="" class="label">Description of specific activities</div>
-        <div tal:replace="structure context/specific_activities/output"></div>
-      </div>
-      <div class="rexlisttech">
-        <div tal:replace="structure context/@@realization_view" />
-      </div>
-    </div>
-  </div>
-
-  <div class="">
+    <div class="col-md-3">
       <ul tal:define="num context/number;
                       street context/street;
                       city context/city;
@@ -87,6 +89,7 @@
         </li>
       </ul>
     </div>
+  </div>
 </metal:main>
 
 </body>
