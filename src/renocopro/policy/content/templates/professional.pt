@@ -66,8 +66,8 @@
         <li class="rexlisttech" tal:condition="context/website">
           <span tal:content="context/website"></span>
         </li>
-        <li class="rexlisttech" tal:condition="context/legal_status">
-          <span tal:content="python: self.get_taxonomy_item(context, 'collective.taxonomy.legal_status', context/legal_status)"></span>
+        <li class="rexlisttech" tal:define="legal_status context/legal_status" tal:condition="context/legal_status">
+          <span tal:content="python: view.get_taxonomy_item(context, 'collective.taxonomy.legal_status', legal_status)"></span>
         </li>
         <li class="rexlisttech">
           <span tal:content="context/vat"></span>

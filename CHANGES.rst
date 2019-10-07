@@ -5,6 +5,9 @@ Changelog
 1.0a10 (unreleased)
 -------------------
 
+- Fix encoding utf-8
+  [vpiret]
+
 - Add professionnal view with realization gallery
   [vpiret]
 

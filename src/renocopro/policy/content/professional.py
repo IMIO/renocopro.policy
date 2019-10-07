@@ -127,24 +127,24 @@ class ProfessionalView(DefaultView):
         syndic = real.contact_details_of_the_syndic
         innovative = real.innovative
 
-        structure = "<h3>{0}</h3>".format(title)
+        structure = u"<h3>{0}</h3>".format(title)
         if description:
-            structure = '{0}<div class="description">{1}</div>'.format(
+            structure = u'{0}<div class="description">{1}</div>'.format(
                 structure, description.output
             )
 
         if syndic:
-            structure = '{0}<div class="syndic"><label>{1}</label><p>{2}</p></div>'.format(
+            structure = u'{0}<div class="syndic"><label>{1}</label><p>{2}</p></div>'.format(
                 structure, _(u"Contact details of the syndic"), syndic
             )
 
         if address:
-            structure = '{0}<div class="address"><label>{1}</label><p>{2}</p></div>'.format(
+            structure = u'{0}<div class="address"><label>{1}</label><p>{2}</p></div>'.format(
                 structure, _(u"Address of the co-ownership"), address
             )
 
         if innovative:
-            structure = '{0}<div class="innovative"><label>{1}</label><div>{2}</div></div>'.format(
+            structure = u'{0}<div class="innovative"><label>{1}</label><div>{2}</div></div>'.format(
                 structure, _(u"Innovative aspects implemented"), innovative.output
             )
 
@@ -154,13 +154,13 @@ class ProfessionalView(DefaultView):
         address = ""
         if street or city or zip_code:
             if street and city and zip_code:
-                address = "{0}, {1}({2})".format(street, city, zip_code)
+                address = u"{0}, {1}({2})".format(street, city, zip_code)
             if street and city and not zip_code:
-                address = "{0}, {1}".format(street, city)
+                address = u"{0}, {1}".format(street, city)
             if not street and city and zip_code:
-                address = "{0}({1})".format(city, zip_code)
+                address = u"{0}({1})".format(city, zip_code)
             if street and not city and zip_code:
-                address = "{0} ({1})".format(street, zip_code)
+                address = u"{0} ({1})".format(street, zip_code)
             if street and not city and not zip_code:
                 address = street
             if not street and city and not zip_code:
@@ -169,10 +169,10 @@ class ProfessionalView(DefaultView):
                 address = zip_code
         if num:
             if address:
-                address = "{0}, {1}".format(num, address)
+                address = u"{0}, {1}".format(num, address)
             else:
                 address = num
         return address
 
     def pretty_contact(self, last_name, first_name):
-        return ("{0} {1}".format(last_name, first_name)).lstrip()
+        return (u"{0} {1}".format(last_name, first_name)).lstrip()
