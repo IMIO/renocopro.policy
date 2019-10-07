@@ -16,7 +16,7 @@ long_description = "\n\n".join(
 
 setup(
     name="renocopro.policy",
-    version="1.0a10",
+    version="1.0a11.dev0",
     description="An add-on for Plone",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
