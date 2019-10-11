@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a11 (unreleased)
+1.0a11 (2019-10-11)
 -------------------
 
 - Fix faceted views
