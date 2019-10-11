@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a13 (unreleased)
+1.0a13 (2019-10-11)
 -------------------
 
 - Fix professional view
