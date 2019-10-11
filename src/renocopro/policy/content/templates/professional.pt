@@ -16,8 +16,8 @@
     <div class="col-md-9">
       <div class="row">
         <div class="col-md-4">
-          <div class="rex_img_large_border">
-            <div class="rex_img_large" tal:condition="context/image">
+          <div class="rex_img_large_border" tal:condition="python: getattr(context, 'image', None)">
+            <div class="rex_img_large">
               <img class="view img-responsive" src="" tal:attributes="src string: ${context/absolute_url}/@@images/image" />
             </div>
           </div>
