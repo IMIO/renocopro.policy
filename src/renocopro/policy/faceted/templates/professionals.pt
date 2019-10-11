@@ -18,8 +18,8 @@
 
       <div class="eea-preview-items">
         <tal:entries repeat="brain batch">
-          <tal:entry tal:define="doc brain/getObject|nothing"
-                     tal:condition="python:doc is not None">
+          <tal:entry tal:define="pro brain/getObject|nothing"
+                     tal:condition="python:pro is not None">
 
 
             <div class="faceted-professional"
@@ -29,17 +29,17 @@
                    useView python:portal_type in useViewTypes;">
               <a tal:define="description brain/Description|string:;
                              title brain/pretty_title_or_id|string:;
-                             activities python: brain.getObject().activity;
-                             legal_status python: brain.getObject().legal_status;
-                             rich_description python: brain.getObject().rich_description;
-                             is_image python: brain.getObject().image;
+                             activities python: getattr(pro,'activity');
+                             legal_status python: getattr(pro,'legal_status');
+                             rich_description python: getattr(pro,'rich_description');
+                             is_image python: getattr(pro,'image');
                              url brain/getURL|string:#"
                  tal:attributes="href url;
                                  title title">
 
                 <div class="items-content">
-                  <div class="image">
-                    <img style="border: none" tal:condition="is_image"
+                  <div class="image" tal:condition="is_image">
+                    <img style="border: none"
                          tal:attributes="src  string:${brain/getURL}/@@images/image"/>
                   </div>
                   <div class="text">

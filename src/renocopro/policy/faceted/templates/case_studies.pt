@@ -35,13 +35,13 @@
               <a tal:define="description brain/Description|string:;
                              title brain/pretty_title_or_id|string:;
                              url brain/getURL|string:#;
-                             is_image python: brain.getObject().image"
+                             is_image python: getattr(doc,'image');"
                  tal:attributes="href url;
                                  title title">
 
                 <div class="items-content">
-                  <div class="image">
-                    <img style="border: none" tal:condition="is_image"
+                  <div class="image" tal:condition="is_image">
+                    <img style="border: none"
                          tal:attributes="src  string:${brain/getURL}/@@images/image"/>
                   </div>
                   <div class="text">

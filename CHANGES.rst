@@ -5,7 +5,8 @@ Changelog
 1.0a11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix faceted views
+  [vpiret]
 
 
 1.0a10 (2019-10-07)
