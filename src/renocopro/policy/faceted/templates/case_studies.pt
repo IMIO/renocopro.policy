@@ -35,7 +35,7 @@
               <a tal:define="description brain/Description|string:;
                              title brain/pretty_title_or_id|string:;
                              url brain/getURL|string:#;
-                             is_image python: getattr(doc,'image');"
+                             is_image python: getattr(doc,'image', None);"
                  tal:attributes="href url;
                                  title title">
 

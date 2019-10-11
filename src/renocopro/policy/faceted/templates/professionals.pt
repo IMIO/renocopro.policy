@@ -29,10 +29,10 @@
                    useView python:portal_type in useViewTypes;">
               <a tal:define="description brain/Description|string:;
                              title brain/pretty_title_or_id|string:;
-                             activities python: getattr(pro,'activity');
-                             legal_status python: getattr(pro,'legal_status');
-                             rich_description python: getattr(pro,'rich_description');
-                             is_image python: getattr(pro,'image');
+                             activities python: getattr(pro,'activity', None);
+                             legal_status python: getattr(pro,'legal_status', None);
+                             rich_description python: getattr(pro,'rich_description', None);
+                             is_image python: getattr(pro,'image', None);
                              url brain/getURL|string:#"
                  tal:attributes="href url;
                                  title title">
