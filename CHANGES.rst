@@ -5,7 +5,8 @@ Changelog
 1.0a14 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add slider for case studies and professionnals
+  [AuroreMariscal]
 
 
 1.0a13 (2019-10-11)

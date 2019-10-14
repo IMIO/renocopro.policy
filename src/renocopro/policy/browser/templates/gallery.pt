@@ -3,16 +3,21 @@
      tal:condition="photos"
      i18n:domain="collective.behavior.gallery">
 
-  <div class="gallery-photo"
-       tal:repeat="photo photos">
-
-      <a href="" data-caption="" data-fancybox="gallery"
-         tal:attributes="href photo/absolute_url;
-                         data-caption photo/Title">
-          <img src=""
-               tal:attributes="src python: view.image_url(photo)"  />
-      </a>
-
-  </div>
+    <div class="gallery-photo" data-slider="6">
+      <div class="flexslider flexslider-slider">
+        <ul class="slides">
+          <tal:case tal:repeat="photo photos">
+          <li class="items">
+            <a href="" data-caption="" data-fancybox="gallery"
+                                       tal:attributes="href photo/absolute_url;
+                                       data-caption photo/Title">
+              <img src=""
+                   tal:attributes="src python: view.image_url(photo)"  />
+            </a>
+          </li>
+          </tal:case>
+        </ul>
+      </div>
+    </div>
 
 </div>
