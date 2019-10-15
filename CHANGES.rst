@@ -5,6 +5,9 @@ Changelog
 1.0a14 (unreleased)
 -------------------
 
+- Adapte style for event
+  [vpiret]
+
 - Add slider for case studies and professionnals
   [AuroreMariscal]
 

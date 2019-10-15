@@ -60,6 +60,7 @@ setup(
         "collective.easyform",
         "collective.defaultexcludedfromnav",
         "geopy",
+        "collective.geolocationbehavior",
     ],
     extras_require={
         "test": [

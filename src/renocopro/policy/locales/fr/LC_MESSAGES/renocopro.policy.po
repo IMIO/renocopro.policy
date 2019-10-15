@@ -28,6 +28,7 @@ msgstr ""
 msgid "Actor"
 msgstr "Acteur"
 
+#: ../content/professional.py:143
 #: ../content/realization.py:17
 msgid "Address of the co-ownership"
 msgstr "Adresse de la copropriété"
@@ -53,7 +54,7 @@ msgstr "Études de cas"
 msgid "Case studies"
 msgstr "Études de cas"
 
-#: ../content/professional.py:59
+#: ../content/professional.py:62
 #: ../content/realization.py:23
 msgid "City"
 msgstr "Ville"
@@ -67,11 +68,13 @@ msgstr "Configuration du produit renocopro"
 msgid "Construction year"
 msgstr "Année de construction"
 
+#: ../content/professional.py:138
 #: ../content/realization.py:28
 msgid "Contact details of the syndic"
 msgstr "Coordonnées du syndic"
 
-#: ../content/professional.py:47
+#: ../content/professional.py:50
+#: ../content/templates/professional.pt:76
 #: ../form/professional_form.py:43
 msgid "Contact person"
 msgstr "Personne de contact"
@@ -94,7 +97,7 @@ msgstr "Défaut"
 msgid "Describe the decision-making methods, levers and obstacles related to condominium decision-making"
 msgstr "Décrire les modes décisionnels, les leviers et freins liés à la décision en copropriété"
 
-#: ../content/professional.py:39
+#: ../content/professional.py:40
 msgid "Describe the specific activities in the field of condominium renovation"
 msgstr "Décrivez les activités spécifiques dans le domaine de la rénovation des copropriétés"
 
@@ -103,12 +106,13 @@ msgstr "Décrivez les activités spécifiques dans le domaine de la rénovation 
 msgid "Description"
 msgstr "Description"
 
-#: ../content/professional.py:38
+#: ../content/professional.py:39
+#: ../content/templates/professional.pt:49
 msgid "Description of specific activities"
 msgstr "Description des activités spécifiques"
 
-#: ../content/professional.py:32
-#: ../content/templates/professional.pt:46
+#: ../content/professional.py:33
+#: ../content/templates/professional.pt:45
 msgid "Description of the company's activity"
 msgstr "Description de l'activité de l'entreprise"
 
@@ -130,7 +134,7 @@ msgstr "Durée des travaux"
 msgid "Email address of the professional manager"
 msgstr "Adresse mail du manager pour les professionnels"
 
-#: ../content/professional.py:67
+#: ../content/professional.py:70
 msgid "Email of the contact person"
 msgstr "Email de la personne de contact"
 
@@ -144,7 +148,7 @@ msgstr ""
 msgid "Financing option"
 msgstr "Option financement"
 
-#: ../content/professional.py:53
+#: ../content/professional.py:56
 msgid "First name"
 msgstr "Prénom"
 
@@ -171,6 +175,7 @@ msgstr "Je valide la charte"
 msgid "If there are multiple email addresses, separate them with semicolons"
 msgstr "S'il y a plusieurs adresses mail, séparez-les par des points-virgules."
 
+#: ../content/professional.py:148
 #: ../content/realization.py:36
 msgid "Innovative aspects implemented"
 msgstr "Aspects innovants mis en oeuvre"
@@ -179,12 +184,11 @@ msgstr "Aspects innovants mis en oeuvre"
 msgid "Installs the renocopro.policy add-on."
 msgstr ""
 
-#: ../content/professional.py:51
+#: ../content/professional.py:54
 msgid "Last name"
 msgstr "Nom"
 
-#: ../content/professional.py:26
-#: ../content/templates/professional.pt:28
+#: ../content/professional.py:27
 #: ../setuphandlers.py:75
 msgid "Legal status"
 msgstr "Statut juridique"
@@ -209,13 +213,13 @@ msgid "Listing of all work done"
 msgstr "Listing de tous les travaux réalisés"
 
 #: ../content/case_studies.py:40
-#: ../content/professional.py:43
+#: ../content/professional.py:46
 #: ../content/templates/case_studies.pt:25
 msgid "Location"
 msgstr "Localisation"
 
-#: ../content/professional.py:23
-#: ../content/templates/professional.pt:24
+#: ../content/professional.py:24
+#: ../content/templates/professional.pt:28
 msgid "Name of the company/organization"
 msgstr "Nom de l'entreprise / organisme"
 
@@ -236,7 +240,7 @@ msgstr "Nouvelle modification d'un professionnel"
 msgid "News"
 msgstr "Actualités"
 
-#: ../content/professional.py:55
+#: ../content/professional.py:58
 msgid "Number"
 msgstr "Numéro"
 
@@ -265,7 +269,7 @@ msgstr "Autres"
 msgid "Other functions"
 msgstr "Autres fonctions"
 
-#: ../content/professional.py:64
+#: ../content/professional.py:67
 msgid "Phone / Mobile phone of the contact person"
 msgstr "Téléphone / GSM de la personne de contact"
 
@@ -333,17 +337,17 @@ msgstr ""
 msgid "Send"
 msgstr "Envoyé"
 
-#: ../content/professional.py:75
+#: ../content/professional.py:78
 #: ../content/templates/professional.pt:32
 msgid "Specific activities in the field of condominium renovation"
 msgstr "Activités spécifiques dans le domaine de la rénovation des copropriétés"
 
-#: ../content/professional.py:57
+#: ../content/professional.py:60
 #: ../content/realization.py:21
 msgid "Street"
 msgstr "Rue"
 
-#: ../content/professional.py:33
+#: ../content/professional.py:34
 msgid "Summarize the activities of your company"
 msgstr "Décrivez de manière synthétique les activités de votre entreprise"
 
@@ -394,7 +398,7 @@ msgstr "Types de travaux"
 msgid "Uninstalls the renocopro.policy add-on."
 msgstr ""
 
-#: ../content/professional.py:71
+#: ../content/professional.py:74
 msgid "VAT"
 msgstr "TVA"
 
@@ -415,7 +419,7 @@ msgstr "Travaux"
 msgid "You must validate the policy"
 msgstr "Vous devez valider la charte"
 
-#: ../content/professional.py:61
+#: ../content/professional.py:64
 #: ../content/realization.py:25
 msgid "Zip code"
 msgstr "Code postal"
@@ -470,6 +474,6 @@ msgstr ""
 msgid "renocopro.policy (uninstall)"
 msgstr ""
 
-#: ../content/professional.py:69
+#: ../content/professional.py:72
 msgid "website"
 msgstr "Site internet"

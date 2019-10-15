@@ -10,5 +10,6 @@
     <dependency>profile-eea.facetednavigation:default</dependency>
     <dependency>profile-collective.behavior.gallery:default</dependency>
     <dependency>profile-collective.easyform:default</dependency>
+    <dependency>profile-collective.geolocationbehavior:default</dependency>
   </dependencies>
 </metadata>
