@@ -5,6 +5,9 @@ Changelog
 1.0a14 (unreleased)
 -------------------
 
+- Add map to professionnal view RENOCOPRO-37
+  [daggelpop]
+
 - Adapt tile RENOCOPRO-42
   [AuroreMariscal]
 

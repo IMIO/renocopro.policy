@@ -176,3 +176,27 @@ class ProfessionalView(DefaultView):
 
     def pretty_contact(self, last_name, first_name):
         return (u"{0} {1}".format(last_name, first_name)).lstrip()
+
+    def geojson(self):
+        return """{
+      "type": "FeatureCollection",
+      "features": [
+          {
+              "type": "Feature",
+              "id": 1,
+              "properties": {
+                "popup": "%s"
+              },
+              "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                      %s,
+                      %s
+                  ]
+              }
+          }
+      ]}""" % (
+            self.context.Title(),
+            self.context.location.longitude,
+            self.context.location.latitude,
+        )

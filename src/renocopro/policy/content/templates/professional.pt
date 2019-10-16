@@ -88,7 +88,20 @@
           </ul>
         </li>
       </ul>
-    </div>
+
+      <div tal:condition="context/location"
+           tal:attributes="data-geojson view/geojson"
+           id="faceted-map"
+           class="pat-leaflet"
+           data-pat-leaflet='
+            {
+              "fullscreencontrol": true,
+              "locatecontrol": false,
+              "zoomcontrol": true,
+              "minimap": false,
+              "geosearch": false
+            }'
+      ></div>
   </div>
 </metal:main>
 
