@@ -7,6 +7,7 @@ from plone.autoform import directives
 from plone.supermodel import model
 from plone.tiles import Tile
 from zope import schema
+from renocopro.policy.utils import translate_selected_taxonomy_item
 import random
 
 
@@ -78,3 +79,6 @@ class CaseStudiesTile(Tile):
             return "slider flexslider-tile one"
         else:
             return "slider flexslider-tile multiple"
+
+    def get_taxonomy_item(self, context, taxonomy_id, item_id):
+        return translate_selected_taxonomy_item(context, taxonomy_id, item_id)

@@ -31,10 +31,11 @@
               <div class="flex-caption">
                 <span class="block" tal:content="case/Title"></span>
                 <div class="content">
-                  <div class="type">
-                    <span class="types_of_work" tal:content="case/types_of_work"></span>
-                    /
-                    <span class="type_of_building" tal:content="case/type_of_building"></span>
+                  <div class="type" tal:define="types_of_work case/types_of_work;
+                                                 type_of_building case/type_of_building">
+                    <span class="types_of_work" tal:content="python: view.get_taxonomy_item(context, 'collective.taxonomy.types_of_work', types_of_work)"></span>
+                    <tal:types_of_work tal:condition="types_of_work">/</tal:types_of_work>
+                    <span class="type_of_building" tal:content="python: view.get_taxonomy_item(context, 'collective.taxonomy.type_of_building', type_of_building)"></span>
                   </div>
                   <div class="renovation_year" tal:content="case/renovation_year"></div>
                 </div>

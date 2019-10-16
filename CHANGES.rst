@@ -5,6 +5,9 @@ Changelog
 1.0a14 (unreleased)
 -------------------
 
+- Adapt tile RENOCOPRO-42
+  [AuroreMariscal]
+
 - Adapte style for event
   [vpiret]
 
