@@ -61,6 +61,7 @@ setup(
         "collective.defaultexcludedfromnav",
         "geopy",
         "collective.geolocationbehavior",
+        "collective.faceted.map",
     ],
     extras_require={
         "test": [

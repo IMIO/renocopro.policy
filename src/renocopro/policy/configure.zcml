@@ -17,6 +17,7 @@
   <include package="eea.facetednavigation" />
   <include package="collective.behavior.gallery" />
   <include package="collective.easyform" />
+  <include package="collective.faceted.map" />
 
   <include package=".browser" />
   <include package=".content" />
