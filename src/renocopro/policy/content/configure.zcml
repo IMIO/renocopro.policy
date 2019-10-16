@@ -49,5 +49,16 @@
     template="templates/gallery_realization.pt"
     />
 
+  <!-- indexer -->
+  <adapter
+    name="latitude"
+    factory=".indexer.latitude"
+    />
+
+  <adapter
+    name="longitude"
+    factory=".indexer.longitude"
+    />
+
 </configure>
 
