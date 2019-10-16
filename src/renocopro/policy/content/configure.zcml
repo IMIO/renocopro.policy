@@ -10,36 +10,36 @@
     />
 
   <adapter
-      for="*
-           zope.publisher.interfaces.browser.IBrowserRequest"
-      provides="renocopro.policy.content.adapters.IMapsConfiguration"
-      factory="renocopro.policy.content.adapters.MapsConfiguration"
-      name="maps_configuration"
-  />
+    for="*
+         zope.publisher.interfaces.browser.IBrowserRequest"
+    provides="renocopro.policy.content.adapters.IMapsConfiguration"
+    factory="renocopro.policy.content.adapters.MapsConfiguration"
+    name="maps_configuration"
+    />
 
   <subscriber
-      for="renocopro.policy.content.professional.IProfessional
-           zope.lifecycleevent.interfaces.IObjectCreatedEvent"
-      handler=".professional.handle_location"
-      />
+    for="renocopro.policy.content.professional.IProfessional
+         zope.lifecycleevent.interfaces.IObjectCreatedEvent"
+    handler=".professional.handle_location"
+    />
 
   <browser:page
-      for=".case_studies.ICaseStudies"
-      name="view"
-      class=".case_studies.CaseStudiesView"
-      template="templates/case_studies.pt"
-      permission="zope2.View"
-      layer="..interfaces.IRenocoproPolicyLayer"
-      />
+    for=".case_studies.ICaseStudies"
+    name="view"
+    class=".case_studies.CaseStudiesView"
+    template="templates/case_studies.pt"
+    permission="zope2.View"
+    layer="..interfaces.IRenocoproPolicyLayer"
+    />
 
   <browser:page
-      for=".professional.IProfessional"
-      name="view"
-      class=".professional.ProfessionalView"
-      template="templates/professional.pt"
-      permission="zope2.View"
-      layer="..interfaces.IRenocoproPolicyLayer"
-      />
+    for=".professional.IProfessional"
+    name="view"
+    class=".professional.ProfessionalView"
+    template="templates/professional.pt"
+    permission="zope2.View"
+    layer="..interfaces.IRenocoproPolicyLayer"
+    />
 
   <browser:page
     for=".professional.IProfessional"
