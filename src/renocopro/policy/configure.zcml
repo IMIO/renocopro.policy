@@ -18,6 +18,7 @@
   <include package="collective.behavior.gallery" />
   <include package="collective.easyform" />
   <include package="collective.faceted.map" />
+  <include package="collective.geolocationbehavior" />
 
   <include package=".browser" />
   <include package=".content" />
