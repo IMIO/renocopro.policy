@@ -2,6 +2,7 @@
 from Products.statusmessages.interfaces import IStatusMessage
 from plone import api
 from plone.supermodel import model
+from plone.app.contenttypes.behaviors.leadimage import ILeadImage
 from renocopro.policy import _
 from renocopro.policy.content.professional import IProfessional
 from renocopro.policy.fields.policy_checkbox import policy_single_checkbox_field_widget
@@ -34,6 +35,7 @@ class DefaultGroup(Group):
         "website",
         "vat",
     )
+    fields = fields + Fields(ILeadImage).select("image")
     fields = fields + Fields(IValidation).select("validation")
     fields["validation"].widgetFactory = policy_single_checkbox_field_widget
 
@@ -90,6 +92,7 @@ class ProfessionalForm(GroupForm, EditForm):
             email=data["email"],
             website=data["website"],
             vat=data["vat"],
+            image=data["image"],
             activity=data["activity"],
             container=container,
         )

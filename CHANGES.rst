@@ -5,6 +5,9 @@ Changelog
 1.0a14 (unreleased)
 -------------------
 
+- Add image on professinnal form
+  [vpiret]
+
 - Succinct activities in professionnal view RENOCOPRO-37
   [daggelpop]
 
