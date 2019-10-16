@@ -24,11 +24,11 @@
         </div>
         <div class="col-md-6">
           <ul>
-            <li class="rexlisttech">
+            <li>
               <span i18n:translate="" class="label">Name of the company/organization</span>:
               <span tal:content="context/title"></span>
             </li>
-            <li class="rexlisttech">
+            <li>
                 <span i18n:translate="" class="label">Specific activities in the field of condominium renovation</span>:
                 <ul tal:define="activities context/activity">
                   <li tal:repeat="activity activities">
@@ -41,49 +41,50 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <div class="rexlisttech" tal:condition="context/rich_description">
+          <div tal:condition="context/rich_description">
             <div i18n:translate="" class="label">Description of the company's activity</div>
             <div tal:replace="structure context/rich_description/output"></div>
           </div>
-          <div class="rexlisttech" tal:condition="context/specific_activities">
+          <div tal:condition="context/specific_activities">
             <div i18n:translate="" class="label">Description of specific activities</div>
             <div tal:replace="structure context/specific_activities/output"></div>
           </div>
-          <div class="rexlisttech">
+          <div>
             <div tal:replace="structure context/@@realization_view" />
             </div>
           </div>
         </div>
     </div>
     <div class="col-md-3">
-      <ul tal:define="num context/number;
+      <ul class="box" 
+          tal:define="num context/number;
                       street context/street;
                       city context/city;
                       zip_code context/zip_code">
-        <li class="rexlisttech" tal:condition="python: view.pretty_address(num, street, city, zip_code)">
-          <span tal:content="python: view.pretty_address(num, street, city, zip_code)"></span>
+        <li tal:condition="python: view.pretty_address(num, street, city, zip_code)">
+          <span tal:content="structure python: view.pretty_address(num, street, city, zip_code)"></span>
         </li>
-        <li class="rexlisttech" tal:condition="context/website">
-          <span tal:content="context/website"></span>
+        <li tal:condition="context/website">
+          <a target="_blank" tal:attributes="href context/website"><span tal:replace="context/website"></span></a>
         </li>
-        <li class="rexlisttech" tal:define="legal_status context/legal_status" tal:condition="context/legal_status">
+        <li tal:define="legal_status context/legal_status" tal:condition="context/legal_status">
           <span tal:content="python: view.get_taxonomy_item(context, 'collective.taxonomy.legal_status', legal_status)"></span>
         </li>
-        <li class="rexlisttech">
+        <li>
           <span tal:content="context/vat"></span>
         </li>
-        <li class="rexlisttech">
+        <li>
           <div i18n:translate="" class="label">Contact person</div>
           <ul tal:define="last_name context/last_name;
                           first_name context/first_name">
-            <li class="rexlisttech" tal:condition="python: view.pretty_contact(last_name,first_name)">
+            <li tal:condition="python: view.pretty_contact(last_name,first_name)">
               <span tal:content="python: view.pretty_contact(last_name,first_name)"></span>
             </li>
-            <li class="rexlisttech" tal:condition="context/phone">
-              <span tal:content="context/phone"></span>
+            <li tal:condition="context/phone">
+              <a tal:attributes="href string:tel:${context/phone}"><span tal:replace="context/phone"></span></a>
             </li>
-            <li class="rexlisttech" tal:condition="context/email">
-              <span tal:content="context/email"></span>
+            <li tal:condition="context/email">
+              <a tal:attributes="href string:mailto:${context/email}"><span tal:replace="context/email"></span></a>
             </li>
           </ul>
         </li>

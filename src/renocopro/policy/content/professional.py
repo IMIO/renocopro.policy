@@ -154,7 +154,7 @@ class ProfessionalView(DefaultView):
         address = ""
         if street or city or zip_code:
             if street and city and zip_code:
-                address = u"{0}, {1}({2})".format(street, city, zip_code)
+                address = u"{0},<br>{1} ({2})".format(street, city, zip_code)
             if street and city and not zip_code:
                 address = u"{0}, {1}".format(street, city)
             if not street and city and zip_code:
