@@ -99,7 +99,9 @@ def handle_location(obj, event):
 
 class ProfessionalView(DefaultView):
     def get_taxonomy_item(self, context, taxonomy_id, item_id):
-        return translate_selected_taxonomy_item(context, taxonomy_id, item_id)
+        full_label = translate_selected_taxonomy_item(context, taxonomy_id, item_id)
+        levels = [level.strip() for level in full_label.split(u"\xbb")]
+        return levels[-1]
 
     def get_realizations(self):
         brains = api.content.find(

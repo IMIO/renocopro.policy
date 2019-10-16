@@ -5,6 +5,9 @@ Changelog
 1.0a14 (unreleased)
 -------------------
 
+- Succinct activities in professionnal view RENOCOPRO-37
+  [daggelpop]
+
 - Adapt template professionnal view RENOCOPRO-37
   [daggelpop]
 
