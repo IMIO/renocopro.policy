@@ -42,4 +42,14 @@
     permission="cmf.ManagePortal"
     />
 
+
+  <plone:behavior
+      title="behavior.AddOnTheGallery"
+      description="Behavior add image on the gallery"
+      provides=".behaviors.IAddOnTheGallery"
+      factory=".behaviors.AddOnTheGallery"
+      marker=".behaviors.IAddOnTheGallery"
+      />
+
+
 </configure>

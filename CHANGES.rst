@@ -5,6 +5,9 @@ Changelog
 1.0a14 (unreleased)
 -------------------
 
+- Add behavior for add image on the gallery
+  [vpiret]
+
 - Adapt template for map in faceted RENOCOPRO-39
   [AuroreMariscal]
 

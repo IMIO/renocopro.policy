@@ -28,7 +28,11 @@ msgstr ""
 msgid "Actor"
 msgstr "Acteur"
 
-#: ../content/professional.py:143
+#: ../browser/behaviors.py:16
+msgid "Add on the gallery"
+msgstr "Ajouter à la galerie"
+
+#: ../content/professional.py:145
 #: ../content/realization.py:17
 msgid "Address of the co-ownership"
 msgstr "Adresse de la copropriété"
@@ -36,6 +40,10 @@ msgstr "Adresse de la copropriété"
 #: ../profiles/default/workflows/professional_workflow/definition.xml
 msgid "Back to created"
 msgstr "Retour à l'état 'Créé'"
+
+#: ../browser/configure.zcml:52
+msgid "Behavior add image on the gallery"
+msgstr ""
 
 #: ../profiles/default/workflows/professional_workflow/definition.xml
 msgid "Black to published"
@@ -68,14 +76,14 @@ msgstr "Configuration du produit renocopro"
 msgid "Construction year"
 msgstr "Année de construction"
 
-#: ../content/professional.py:138
+#: ../content/professional.py:140
 #: ../content/realization.py:28
 msgid "Contact details of the syndic"
 msgstr "Coordonnées du syndic"
 
 #: ../content/professional.py:50
-#: ../content/templates/professional.pt:76
-#: ../form/professional_form.py:43
+#: ../content/templates/professional.pt:77
+#: ../form/professional_form.py:45
 msgid "Contact person"
 msgstr "Personne de contact"
 
@@ -89,7 +97,7 @@ msgstr "Coût de rénovation"
 msgid "Cost/m2"
 msgstr "Coût/m2"
 
-#: ../form/professional_form.py:23
+#: ../form/professional_form.py:24
 msgid "Default"
 msgstr "Défaut"
 
@@ -124,6 +132,10 @@ msgstr "Description des systèmes"
 #: ../content/realization.py:32
 msgid "Description of the work carried out"
 msgstr "Description des travaux réalisés"
+
+#: ../faceted/templates/professionals.pt:24
+msgid "Display map"
+msgstr ""
 
 #: ../content/case_studies.py:59
 #: ../content/templates/case_studies.pt:45
@@ -162,6 +174,10 @@ msgstr "Aides et subsides"
 msgid "Heated floor area"
 msgstr "Surface de plancher chauffé"
 
+#: ../faceted/templates/professionals.pt:23
+msgid "Hide map"
+msgstr ""
+
 #: ../content/case_studies.py:108
 #: ../content/templates/case_studies.pt:107
 msgid "Human relations"
@@ -175,12 +191,12 @@ msgstr "Je valide la charte"
 msgid "If there are multiple email addresses, separate them with semicolons"
 msgstr "S'il y a plusieurs adresses mail, séparez-les par des points-virgules."
 
-#: ../content/professional.py:148
+#: ../content/professional.py:150
 #: ../content/realization.py:36
 msgid "Innovative aspects implemented"
 msgstr "Aspects innovants mis en oeuvre"
 
-#: ../configure.zcml:36
+#: ../configure.zcml:38
 msgid "Installs the renocopro.policy add-on."
 msgstr ""
 
@@ -193,17 +209,17 @@ msgstr "Nom"
 msgid "Legal status"
 msgstr "Statut juridique"
 
-#: ../tiles/case_studies.py:31
+#: ../tiles/case_studies.py:32
 #: ../tiles/folder_collection.py:29
 msgid "Limit"
 msgstr ""
 
-#: ../tiles/case_studies.py:32
+#: ../tiles/case_studies.py:33
 #: ../tiles/folder_collection.py:30
 msgid "Limit Search Results"
 msgstr ""
 
-#: ../tiles/case_studies.py:39
+#: ../tiles/case_studies.py:40
 #: ../tiles/folder_collection.py:37
 msgid "Limit slider"
 msgstr ""
@@ -227,7 +243,7 @@ msgstr "Nom de l'entreprise / organisme"
 msgid "Name of the project"
 msgstr "Nom de la réalisation"
 
-#: ../form/professional_form.py:69
+#: ../form/professional_form.py:71
 msgid "New professional submission"
 msgstr "Nouvelle soumission d'un professionnel"
 
@@ -249,7 +265,7 @@ msgstr "Numéro"
 msgid "Number of co-owners"
 msgstr "Nombre de copropriétaires"
 
-#: ../tiles/case_studies.py:40
+#: ../tiles/case_studies.py:41
 #: ../tiles/folder_collection.py:38
 msgid "Number of element in slider"
 msgstr ""
@@ -285,7 +301,7 @@ msgstr "Transition précédente"
 msgid "Professinal Workflow"
 msgstr "Workflow des professionnels"
 
-#: ../form/professional_form.py:50
+#: ../form/professional_form.py:52
 #: ../profiles/default/types/professional.xml
 msgid "Professional"
 msgstr "Professionnel"
@@ -329,11 +345,11 @@ msgstr "Année de rénovation"
 msgid "Select an existing content"
 msgstr ""
 
-#: ../tiles/case_studies.py:20
+#: ../tiles/case_studies.py:21
 msgid "Select the folder of cases studies"
 msgstr ""
 
-#: ../form/professional_form.py:99
+#: ../form/professional_form.py:102
 msgid "Send"
 msgstr "Envoyé"
 
@@ -373,7 +389,7 @@ msgid "The selected contains no item studie"
 msgstr ""
 
 #: ../content/case_studies.py:17
-#: ../tiles/case_studies.py:17
+#: ../tiles/case_studies.py:18
 #: ../tiles/folder_collection.py:15
 msgid "Title"
 msgstr "Titre"
@@ -394,7 +410,7 @@ msgstr "Type de professionnel"
 msgid "Types of work"
 msgstr "Types de travaux"
 
-#: ../configure.zcml:45
+#: ../configure.zcml:47
 msgid "Uninstalls the renocopro.policy add-on."
 msgstr ""
 
@@ -402,7 +418,7 @@ msgstr ""
 msgid "VAT"
 msgstr "TVA"
 
-#: ../form/professional_form.py:18
+#: ../form/professional_form.py:19
 msgid "Validation"
 msgstr ""
 
@@ -415,7 +431,7 @@ msgstr ""
 msgid "Work"
 msgstr "Travaux"
 
-#: ../form/professional_form.py:110
+#: ../form/professional_form.py:113
 msgid "You must validate the policy"
 msgstr "Vous devez valider la charte"
 
@@ -428,12 +444,16 @@ msgstr "Code postal"
 msgid "back_to_created"
 msgstr "Retour à l'état 'Créé'"
 
+#: ../browser/configure.zcml:52
+msgid "behavior.AddOnTheGallery"
+msgstr ""
+
 #: ../profiles/default/workflows/professional_workflow/definition.xml
 msgid "created"
 msgstr "Créé"
 
 #. Default: "A new professional has been created you can access it at the following url:\n              ${url}\n              "
-#: ../form/professional_form.py:57
+#: ../form/professional_form.py:59
 msgid "email_body_professional_submission"
 msgstr ""
 "Un nouveau 'professionnel' a été créé, vous pouvez y accéder à l'adresse suivante :\n"
@@ -466,11 +486,11 @@ msgstr "Retirer"
 msgid "removed"
 msgstr "Retiré"
 
-#: ../configure.zcml:36
+#: ../configure.zcml:38
 msgid "renocopro.policy"
 msgstr ""
 
-#: ../configure.zcml:45
+#: ../configure.zcml:47
 msgid "renocopro.policy (uninstall)"
 msgstr ""
 

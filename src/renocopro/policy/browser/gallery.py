@@ -14,7 +14,11 @@ class GalleryView(BrowserView):
             portal_type="Image",
             sort_on="getObjPositionInParent",
         )
-        return [b.getObject() for b in brains]
+        return [
+            obj
+            for obj in [b.getObject() for b in brains]
+            if getattr(obj, "add_on_gallery", False)
+        ]
 
     def image_url(self, obj, default_scale="preview"):
         url = ""

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-10-15 07:46+0000\n"
+"POT-Creation-Date: 2019-10-17 10:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,13 +35,21 @@ msgstr ""
 msgid "Actor"
 msgstr ""
 
-#: ../content/professional.py:143
+#: ../browser/behaviors.py:16
+msgid "Add on the gallery"
+msgstr ""
+
+#: ../content/professional.py:145
 #: ../content/realization.py:17
 msgid "Address of the co-ownership"
 msgstr ""
 
 #: ../profiles/default/workflows/professional_workflow/definition.xml
 msgid "Back to created"
+msgstr ""
+
+#: ../browser/configure.zcml:52
+msgid "Behavior add image on the gallery"
 msgstr ""
 
 #: ../profiles/default/workflows/professional_workflow/definition.xml
@@ -75,14 +83,14 @@ msgstr ""
 msgid "Construction year"
 msgstr ""
 
-#: ../content/professional.py:138
+#: ../content/professional.py:140
 #: ../content/realization.py:28
 msgid "Contact details of the syndic"
 msgstr ""
 
 #: ../content/professional.py:50
-#: ../content/templates/professional.pt:76
-#: ../form/professional_form.py:43
+#: ../content/templates/professional.pt:77
+#: ../form/professional_form.py:45
 msgid "Contact person"
 msgstr ""
 
@@ -96,7 +104,7 @@ msgstr ""
 msgid "Cost/m2"
 msgstr ""
 
-#: ../form/professional_form.py:23
+#: ../form/professional_form.py:24
 msgid "Default"
 msgstr ""
 
@@ -130,6 +138,10 @@ msgstr ""
 
 #: ../content/realization.py:32
 msgid "Description of the work carried out"
+msgstr ""
+
+#: ../faceted/templates/professionals.pt:24
+msgid "Display map"
 msgstr ""
 
 #: ../content/case_studies.py:59
@@ -169,6 +181,10 @@ msgstr ""
 msgid "Heated floor area"
 msgstr ""
 
+#: ../faceted/templates/professionals.pt:23
+msgid "Hide map"
+msgstr ""
+
 #: ../content/case_studies.py:108
 #: ../content/templates/case_studies.pt:107
 msgid "Human relations"
@@ -182,12 +198,12 @@ msgstr ""
 msgid "If there are multiple email addresses, separate them with semicolons"
 msgstr ""
 
-#: ../content/professional.py:148
+#: ../content/professional.py:150
 #: ../content/realization.py:36
 msgid "Innovative aspects implemented"
 msgstr ""
 
-#: ../configure.zcml:36
+#: ../configure.zcml:38
 msgid "Installs the renocopro.policy add-on."
 msgstr ""
 
@@ -200,17 +216,17 @@ msgstr ""
 msgid "Legal status"
 msgstr ""
 
-#: ../tiles/case_studies.py:31
+#: ../tiles/case_studies.py:32
 #: ../tiles/folder_collection.py:29
 msgid "Limit"
 msgstr ""
 
-#: ../tiles/case_studies.py:32
+#: ../tiles/case_studies.py:33
 #: ../tiles/folder_collection.py:30
 msgid "Limit Search Results"
 msgstr ""
 
-#: ../tiles/case_studies.py:39
+#: ../tiles/case_studies.py:40
 #: ../tiles/folder_collection.py:37
 msgid "Limit slider"
 msgstr ""
@@ -234,7 +250,7 @@ msgstr ""
 msgid "Name of the project"
 msgstr ""
 
-#: ../form/professional_form.py:69
+#: ../form/professional_form.py:71
 msgid "New professional submission"
 msgstr ""
 
@@ -256,7 +272,7 @@ msgstr ""
 msgid "Number of co-owners"
 msgstr ""
 
-#: ../tiles/case_studies.py:40
+#: ../tiles/case_studies.py:41
 #: ../tiles/folder_collection.py:38
 msgid "Number of element in slider"
 msgstr ""
@@ -292,7 +308,7 @@ msgstr ""
 msgid "Professinal Workflow"
 msgstr ""
 
-#: ../form/professional_form.py:50
+#: ../form/professional_form.py:52
 #: ../profiles/default/types/professional.xml
 msgid "Professional"
 msgstr ""
@@ -336,11 +352,11 @@ msgstr ""
 msgid "Select an existing content"
 msgstr ""
 
-#: ../tiles/case_studies.py:20
+#: ../tiles/case_studies.py:21
 msgid "Select the folder of cases studies"
 msgstr ""
 
-#: ../form/professional_form.py:99
+#: ../form/professional_form.py:102
 msgid "Send"
 msgstr ""
 
@@ -380,7 +396,7 @@ msgid "The selected contains no item studie"
 msgstr ""
 
 #: ../content/case_studies.py:17
-#: ../tiles/case_studies.py:17
+#: ../tiles/case_studies.py:18
 #: ../tiles/folder_collection.py:15
 msgid "Title"
 msgstr ""
@@ -401,7 +417,7 @@ msgstr ""
 msgid "Types of work"
 msgstr ""
 
-#: ../configure.zcml:45
+#: ../configure.zcml:47
 msgid "Uninstalls the renocopro.policy add-on."
 msgstr ""
 
@@ -409,7 +425,7 @@ msgstr ""
 msgid "VAT"
 msgstr ""
 
-#: ../form/professional_form.py:18
+#: ../form/professional_form.py:19
 msgid "Validation"
 msgstr ""
 
@@ -422,7 +438,7 @@ msgstr ""
 msgid "Work"
 msgstr ""
 
-#: ../form/professional_form.py:110
+#: ../form/professional_form.py:113
 msgid "You must validate the policy"
 msgstr ""
 
@@ -435,12 +451,16 @@ msgstr ""
 msgid "back_to_created"
 msgstr ""
 
+#: ../browser/configure.zcml:52
+msgid "behavior.AddOnTheGallery"
+msgstr ""
+
 #: ../profiles/default/workflows/professional_workflow/definition.xml
 msgid "created"
 msgstr ""
 
 #. Default: "A new professional has been created you can access it at the following url:\n              ${url}\n              "
-#: ../form/professional_form.py:57
+#: ../form/professional_form.py:59
 msgid "email_body_professional_submission"
 msgstr ""
 
@@ -465,11 +485,11 @@ msgstr ""
 msgid "removed"
 msgstr ""
 
-#: ../configure.zcml:36
+#: ../configure.zcml:38
 msgid "renocopro.policy"
 msgstr ""
 
-#: ../configure.zcml:45
+#: ../configure.zcml:47
 msgid "renocopro.policy (uninstall)"
 msgstr ""
 
