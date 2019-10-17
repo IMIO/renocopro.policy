@@ -32,6 +32,9 @@ Changelog
 - Add map to event view RENOCOPRO-35
   [daggelpop]
 
+- Truncate description in professionals faceted view RENOCOPRO-40
+  [daggelpop]
+
 1.0a13 (2019-10-11)
 -------------------
 

@@ -60,7 +60,7 @@
                              title brain/pretty_title_or_id|string:;
                              activities python: getattr(pro,'activity', None);
                              legal_status python: getattr(pro,'legal_status', None);
-                             rich_description python: getattr(pro,'rich_description', None);
+                             rich_description python: self.get_rich_description(pro);
                              is_image python: getattr(pro,'image', None);
                              url brain/getURL|string:#"
                  tal:attributes="href url;
@@ -82,7 +82,7 @@
                       </ul>
                     </div>
                     <div class="description" tal:condition="rich_description">
-                      <div tal:replace="structure rich_description/output"></div>
+                      <div tal:replace="structure rich_description"></div>
                     </div>
                   </div>
                 </div>
