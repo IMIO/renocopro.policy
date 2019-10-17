@@ -29,6 +29,8 @@ Changelog
 - Add slider for case studies and professionnals
   [AuroreMariscal]
 
+- Add map to event view RENOCOPRO-35
+  [daggelpop]
 
 1.0a13 (2019-10-11)
 -------------------
