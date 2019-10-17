@@ -5,6 +5,9 @@ Changelog
 1.0a14 (unreleased)
 -------------------
 
+- Adapt template for map in faceted RENOCOPRO-39
+  [AuroreMariscal]
+
 - Add image on professinnal form
   [vpiret]
 
