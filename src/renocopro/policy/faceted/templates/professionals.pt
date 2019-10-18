@@ -37,7 +37,7 @@
           jQuery(document).ready(function($) {
             $(Faceted.Events).bind(Faceted.Events.AJAX_QUERY_SUCCESS, function() {
               setTimeout(function() {
-                require('pat-registry').scan($('div#faceted-map'));
+                require('pat-registry', 'pat-leaflet').scan($('div#faceted-map'));
                 $('.button-map').click(function() {
                   $('.button-map').toggle();
                   $('#faceted-map').toggleClass('hidden');

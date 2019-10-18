@@ -5,6 +5,9 @@ Changelog
 1.0a15 (unreleased)
 -------------------
 
+- Improve map initialization
+  [mpeeters]
+
 - Add geo: link to event location RENOCOPRO-35
   [daggelpop]
 
