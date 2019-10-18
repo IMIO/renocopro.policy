@@ -5,7 +5,8 @@ Changelog
 1.0a15 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add geo: link to event location RENOCOPRO-35
+  [daggelpop]
 
 
 1.0a14 (2019-10-18)
