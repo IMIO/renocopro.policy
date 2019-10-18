@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a15 (unreleased)
+1.0a15 (2019-10-18)
 -------------------
 
 - Improve map initialization on faceted for professionals
