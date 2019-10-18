@@ -5,7 +5,7 @@ Changelog
 1.0a15 (unreleased)
 -------------------
 
-- Improve map initialization
+- Improve map initialization on faceted for professionals
   [mpeeters]
 
 - Add geo: link to event location RENOCOPRO-35
