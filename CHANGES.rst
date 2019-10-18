@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a14 (unreleased)
+1.0a14 (2019-10-18)
 -------------------
 
 - Add behavior for add image on the gallery

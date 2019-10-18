@@ -11,9 +11,9 @@
   <column value="types_of_work" />
 
   <index name="types_of_professional" meta_type="KeywordIndex">
-    <indexed_attr value="types_of_professional" />
+    <indexed_attr value="activity" />
   </index>
-  <column value="types_of_professional" />
+  <column value="activity" />
 
   <index name="renovation_year" meta_type="FieldIndex">
     <indexed_attr value="renovation_year" />
