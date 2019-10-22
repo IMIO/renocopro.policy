@@ -21,6 +21,6 @@ class CaseStudieViewlet(ViewletBase):
         return brains
 
 
-class ProfessionnalRegistrationViewlet(ViewletBase):
+class ProfessionalRegistrationViewlet(ViewletBase):
 
     index = ViewPageTemplateFile("templates/professionnal_registration_viewlet.pt")

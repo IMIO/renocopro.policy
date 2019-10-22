@@ -31,7 +31,7 @@
       for="*"
       name="viewlet.professional_registration"
       manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
-      class=".viewlet.ProfessionnalRegistrationViewlet"
+      class=".viewlet.ProfessionalRegistrationViewlet"
       permission="zope.Public"
       layer="..interfaces.IRenocoproPolicyLayer"
       />
