@@ -5,7 +5,8 @@ Changelog
 1.0a16 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add viewlet for "register my company"
+  [vpiret]
 
 
 1.0a15 (2019-10-18)

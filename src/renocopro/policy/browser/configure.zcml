@@ -27,6 +27,15 @@
       layer="..interfaces.IRenocoproPolicyLayer"
       />
 
+  <browser:viewlet
+      for="*"
+      name="viewlet.professional_registration"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+      class=".viewlet.ProfessionnalRegistrationViewlet"
+      permission="zope.Public"
+      layer="..interfaces.IRenocoproPolicyLayer"
+      />
+
   <browser:page
     for="..content.interfaces.IRenocopro"
     name="gallery_view"

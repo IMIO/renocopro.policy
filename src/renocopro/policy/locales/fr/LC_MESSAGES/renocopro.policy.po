@@ -41,7 +41,7 @@ msgstr "Adresse de la copropriété"
 msgid "Back to created"
 msgstr "Retour à l'état 'Créé'"
 
-#: ../browser/configure.zcml:52
+#: ../browser/configure.zcml:61
 msgid "Behavior add image on the gallery"
 msgstr ""
 
@@ -182,6 +182,10 @@ msgstr ""
 #: ../content/templates/case_studies.pt:107
 msgid "Human relations"
 msgstr "Relations humaines"
+
+#: ../browser/templates/professionnal_registration_viewlet.pt:2
+msgid "I register my company"
+msgstr "J'inscris mon entreprise"
 
 #: ../fields/policy_checkbox_input.pt:76
 msgid "I validate the policy"
@@ -444,7 +448,7 @@ msgstr "Code postal"
 msgid "back_to_created"
 msgstr "Retour à l'état 'Créé'"
 
-#: ../browser/configure.zcml:52
+#: ../browser/configure.zcml:61
 msgid "behavior.AddOnTheGallery"
 msgstr ""
 

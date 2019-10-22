@@ -19,3 +19,8 @@ class CaseStudieViewlet(ViewletBase):
             if brain.getURL() != self.context.absolute_url():
                 brains.append(brain)
         return brains
+
+
+class ProfessionnalRegistrationViewlet(ViewletBase):
+
+    index = ViewPageTemplateFile("templates/professionnal_registration_viewlet.pt")

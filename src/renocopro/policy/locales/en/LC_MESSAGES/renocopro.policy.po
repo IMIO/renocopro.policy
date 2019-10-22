@@ -41,7 +41,7 @@ msgstr ""
 msgid "Back to created"
 msgstr ""
 
-#: ../browser/configure.zcml:52
+#: ../browser/configure.zcml:61
 msgid "Behavior add image on the gallery"
 msgstr ""
 
@@ -181,6 +181,10 @@ msgstr ""
 #: ../content/case_studies.py:108
 #: ../content/templates/case_studies.pt:107
 msgid "Human relations"
+msgstr ""
+
+#: ../browser/templates/professionnal_registration_viewlet.pt:2
+msgid "I register my company"
 msgstr ""
 
 #: ../fields/policy_checkbox_input.pt:76
@@ -444,7 +448,7 @@ msgstr ""
 msgid "back_to_created"
 msgstr ""
 
-#: ../browser/configure.zcml:52
+#: ../browser/configure.zcml:61
 msgid "behavior.AddOnTheGallery"
 msgstr ""
 

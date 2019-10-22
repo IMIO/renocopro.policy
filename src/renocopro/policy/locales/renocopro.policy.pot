@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-10-17 10:49+0000\n"
+"POT-Creation-Date: 2019-10-22 12:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgstr ""
 msgid "Back to created"
 msgstr ""
 
-#: ../browser/configure.zcml:52
+#: ../browser/configure.zcml:61
 msgid "Behavior add image on the gallery"
 msgstr ""
 
@@ -188,6 +188,10 @@ msgstr ""
 #: ../content/case_studies.py:108
 #: ../content/templates/case_studies.pt:107
 msgid "Human relations"
+msgstr ""
+
+#: ../browser/templates/professionnal_registration_viewlet.pt:2
+msgid "I register my company"
 msgstr ""
 
 #: ../fields/policy_checkbox_input.pt:76
@@ -451,7 +455,7 @@ msgstr ""
 msgid "back_to_created"
 msgstr ""
 
-#: ../browser/configure.zcml:52
+#: ../browser/configure.zcml:61
 msgid "behavior.AddOnTheGallery"
 msgstr ""
 
