@@ -173,7 +173,7 @@ def add_stucture(portal):
         _publish(obj)
 
     # Folder professionals
-    if "professionals" not in portal:
+    if "professionnels" not in portal:
         obj = create_content("Folder", _(u"Professionals"), portal)
         _activate_dashboard_navigation(obj, True, "/faceted/config/professionals.xml")
         set_constrain_types(obj, ["professional", "Image", "File"])

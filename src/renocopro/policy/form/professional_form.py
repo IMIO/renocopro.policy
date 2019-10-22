@@ -73,7 +73,7 @@ class ProfessionalForm(GroupForm, EditForm):
         )
 
     def send_request(self, data):
-        container = api.portal.get()["professionals"]
+        container = api.portal.get()["professionnels"]
         professional_obj = execute_under_admin(
             container,
             api.content.create,
