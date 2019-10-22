@@ -75,11 +75,11 @@ def translate_selected_taxonomy_item(context, taxonomy_id, item_id):
 
 
 # Set up regular expressions
-re_words = re.compile(r'<[^>]+?>|([^<>\s]+)', re.S)
-re_chars = re.compile(r'<[^>]+?>|(.)', re.S)
-re_tag = re.compile(r'<(/)?(\S+?)(?:(\s*/)|\s.*?)?>', re.S)
-re_newlines = re.compile(r'\r\n|\r')  # Used in normalize_newlines
-re_camel_case = re.compile(r'(((?<=[a-z])[A-Z])|([A-Z](?![A-Z]|$)))')
+re_words = re.compile(r"<[^>]+?>|([^<>\s]+)", re.S)
+re_chars = re.compile(r"<[^>]+?>|(.)", re.S)
+re_tag = re.compile(r"<(/)?(\S+?)(?:(\s*/)|\s.*?)?>", re.S)
+re_newlines = re.compile(r"\r\n|\r")  # Used in normalize_newlines
+re_camel_case = re.compile(r"(((?<=[a-z])[A-Z])|([A-Z](?![A-Z]|$)))")
 
 
 class Truncator:
@@ -99,7 +99,7 @@ class Truncator:
             # Don't append the truncation text if the current text already
             # ends in this.
             return text
-        return '%s%s' % (text, truncate)
+        return "%s%s" % (text, truncate)
 
     def chars(self, num, truncate=None, html=False):
         """
@@ -109,11 +109,11 @@ class Truncator:
         been truncated, defaulting to a translatable string of an ellipsis.
         """
         length = int(num)
-        text = unicodedata.normalize('NFC', self.text)
+        text = unicodedata.normalize("NFC", self.text)
 
         # Calculate the length to truncate to (max length - end_text length)
         truncate_len = length
-        for char in self.add_truncation_text('', truncate):
+        for char in self.add_truncation_text("", truncate):
             if not unicodedata.combining(char):
                 truncate_len -= 1
                 if truncate_len == 0:
@@ -136,8 +136,7 @@ class Truncator:
                 end_index = i
             if s_len > length:
                 # Return the truncated string
-                return self.add_truncation_text(text[:end_index or 0],
-                                                truncate)
+                return self.add_truncation_text(text[: end_index or 0], truncate)
 
         # Return the original string since no truncation was necessary
         return text
@@ -161,8 +160,8 @@ class Truncator:
         words = self.text.split()
         if len(words) > length:
             words = words[:length]
-            return self.add_truncation_text(' '.join(words), truncate)
-        return ' '.join(words)
+            return self.add_truncation_text(" ".join(words), truncate)
+        return " ".join(words)
 
     def _truncate_html(self, length, truncate, text, truncate_len, words):
         """
@@ -172,11 +171,18 @@ class Truncator:
         Preserve newlines in the HTML.
         """
         if words and length <= 0:
-            return ''
+            return ""
 
         html4_singlets = (
-            'br', 'col', 'link', 'base', 'img',
-            'param', 'area', 'hr', 'input'
+            "br",
+            "col",
+            "link",
+            "base",
+            "img",
+            "param",
+            "area",
+            "hr",
+            "input",
         )
 
         # Count non-HTML chars/words and keep note of open tags
@@ -218,7 +224,7 @@ class Truncator:
                 else:
                     # SGML: An end tag closes, back to the matching start tag,
                     # all unclosed intervening start tags with omitted end tags
-                    open_tags = open_tags[i + 1:]
+                    open_tags = open_tags[i + 1 :]
             else:
                 # Add it to the start of the open tags list
                 open_tags.insert(0, tagname)
@@ -226,11 +232,11 @@ class Truncator:
         if current_len <= length:
             return text
         out = text[:end_text_pos]
-        truncate_text = self.add_truncation_text('', truncate)
+        truncate_text = self.add_truncation_text("", truncate)
         if truncate_text:
             out += truncate_text
         # Close any tags still open
         for tag in open_tags:
-            out += '</%s>' % tag
+            out += "</%s>" % tag
         # Return string
         return out

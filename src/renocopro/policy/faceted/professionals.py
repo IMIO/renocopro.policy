@@ -12,4 +12,4 @@ class ProfessionalsView(BrowserView):
     def get_rich_description(self, pro):
         if pro.rich_description:
             truncator = Truncator(pro.rich_description.output.encode("utf8"))
-            return truncator.words(20, '<div>...</div>', html=True)
+            return truncator.words(20, "<div>...</div>", html=True)
