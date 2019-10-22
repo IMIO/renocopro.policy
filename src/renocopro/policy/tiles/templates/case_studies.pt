@@ -27,7 +27,7 @@
           <li class="items">
             <a href="" tal:attributes="href case/getURL">
               <div class="image-background"
-                   tal:attributes="style string:background-image:url(${case/getURL}/@@images/image/preview)"></div>
+                   tal:attributes="style string:background-image:url(${case/getURL}/@@images/image/actualite)"></div>
               <div class="flex-caption">
                 <span class="block" tal:content="case/Title"></span>
                 <div class="content">

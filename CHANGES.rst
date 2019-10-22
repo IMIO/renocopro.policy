@@ -24,6 +24,8 @@ Changelog
 
 - Add behavior for add image on the gallery
   [vpiret]
+- Change scale on tile RENOCOPRO-45
+  [AuroreMariscal]
 
 - Adapt template for map in faceted RENOCOPRO-39
   [AuroreMariscal]

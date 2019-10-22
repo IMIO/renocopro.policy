@@ -29,7 +29,7 @@
             <a href="" tal:attributes="href item/getURL">
               <div class="image-background"
                    tal:condition="image"
-                   tal:attributes="style string:background-image:url(${item/getURL}/@@images/image/preview)"></div>
+                   tal:attributes="style string:background-image:url(${item/getURL}/@@images/image/actualite)"></div>
               <div class="flex-caption">
                 <div class="content">
                   <div class="title" tal:content="item/Title"></div>
