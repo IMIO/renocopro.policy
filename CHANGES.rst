@@ -8,6 +8,9 @@ Changelog
 - Add viewlet for "register my company"
   [vpiret]
 
+- Change scale on tile RENOCOPRO-45
+  [AuroreMariscal]
+
 
 1.0a15 (2019-10-18)
 -------------------
@@ -24,8 +27,6 @@ Changelog
 
 - Add behavior for add image on the gallery
   [vpiret]
-- Change scale on tile RENOCOPRO-45
-  [AuroreMariscal]
 
 - Adapt template for map in faceted RENOCOPRO-39
   [AuroreMariscal]
