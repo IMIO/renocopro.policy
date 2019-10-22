@@ -40,7 +40,7 @@
                 <span class="photoAlbumEntryWrapper">
 
                  <img style="border: none" tal:condition="is_image"
-                      tal:attributes="src  string:${brain/getURL}/@@images/image"/>
+                      tal:attributes="src  string:${brain/getURL}/@@images/image/actualite"/>
                 </span>
                 <span class="photoAlbumEntryTitle"
                       tal:content="brain/pretty_title_or_id|string:">Title</span>

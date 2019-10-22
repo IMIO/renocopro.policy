@@ -5,6 +5,9 @@ Changelog
 1.0a16 (unreleased)
 -------------------
 
+- Change scale on news faceted RENOCOPRO-47
+  [AuroreMariscal]
+
 - Add viewlet for "register my company"
   [vpiret]
 
