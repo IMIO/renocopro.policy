@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a16 (unreleased)
+1.0a16 (2019-10-22)
 -------------------
 
 - Change scale on news faceted RENOCOPRO-47
