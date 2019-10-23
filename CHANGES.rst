@@ -5,6 +5,9 @@ Changelog
 1.0a17 (unreleased)
 -------------------
 
+- Disable left column portlet on event view
+  [vpiret]
+
 - Adapte "send mail" on professional creation
   [vpiret]
 
