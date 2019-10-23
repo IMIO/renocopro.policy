@@ -5,6 +5,9 @@ Changelog
 1.0a17 (unreleased)
 -------------------
 
+- Adapte "send mail" on professional creation
+  [vpiret]
+
 - Fix "register my company" button
   [vpiret]
 

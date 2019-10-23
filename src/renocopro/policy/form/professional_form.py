@@ -4,6 +4,7 @@ from plone import api
 from plone.supermodel import model
 from plone.app.contenttypes.behaviors.leadimage import ILeadImage
 from renocopro.policy import _
+from renocopro.policy import logger
 from renocopro.policy.content.professional import IProfessional
 from renocopro.policy.fields.policy_checkbox import policy_single_checkbox_field_widget
 from renocopro.policy.utils import execute_under_admin
@@ -66,11 +67,22 @@ class ProfessionalForm(GroupForm, EditForm):
             target_language=lang,
         )
 
-        api.portal.send_email(
-            recipient="foo@bar.com",
-            subject=translate(_(u"New professional submission"), target_language=lang),
-            body=body,
+        lang = api.portal.get_current_language()[:2]
+        email = api.portal.get_registry_record(
+            "renocopro.policy.browser.controlpanel.IRenocoproSettingsSchema.professional_manager_email",
+            default=None,
         )
+        if email is None:
+            logger.warn("missing email for professional notification")
+            return
+
+        list_mail = email.split(";")
+        for mail in list_mail:
+            api.portal.send_email(
+                recipient=mail,
+                subject=translate(_(u"New professional submission"), target_language=lang),
+                body=body,
+            )
 
     def send_request(self, data):
         container = api.portal.get()["professionnels"]
