@@ -76,9 +76,7 @@
                     <span class="status" tal:content="python: self.get_taxonomy_item(context, 'collective.taxonomy.legal_status', legal_status)"></span>
                     <div>
                       <ul>
-                        <li tal:repeat="activity activities">
-                          <span tal:content="python: self.get_taxonomy_item(context, 'collective.taxonomy.type_of_professional', activity)"></span>
-                        </li>
+                        <li tal:replace="structure python: self.get_activities(pro)"></li>
                       </ul>
                     </div>
                     <div class="description" tal:condition="rich_description">

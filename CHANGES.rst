@@ -5,6 +5,9 @@ Changelog
 1.0a17 (unreleased)
 -------------------
 
+- Fix display for activities on professionals
+  [vpiret]
+
 - Disable left column portlet on event view
   [vpiret]
 
