@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a17 (unreleased)
+1.0a17 (2019-10-23)
 -------------------
 
 - Fix display for activities on professionals
