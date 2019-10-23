@@ -5,7 +5,8 @@ Changelog
 1.0a17 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix "register my company" button
+  [vpiret]
 
 
 1.0a16 (2019-10-22)

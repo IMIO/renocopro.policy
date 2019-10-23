@@ -1,4 +1,4 @@
-<div>
+<div tal:condition="view/show_viewlet">
   <a href=""
      tal:attributes="href string: ${context/absolute_url}/professional_form"
      i18n:domain="renocopro.policy"

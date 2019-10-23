@@ -2,6 +2,11 @@
 
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.layout.viewlets import ViewletBase
+import zope.interface
+
+
+class IProfessionalRegistration(zope.interface.Interface):
+    pass
 
 
 class CaseStudieViewlet(ViewletBase):
@@ -24,3 +29,8 @@ class CaseStudieViewlet(ViewletBase):
 class ProfessionalRegistrationViewlet(ViewletBase):
 
     index = ViewPageTemplateFile("templates/professionnal_registration_viewlet.pt")
+
+    def show_viewlet(self):
+        if IProfessionalRegistration.providedBy(self.context):
+            return True
+        return False
