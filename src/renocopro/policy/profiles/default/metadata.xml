@@ -11,5 +11,6 @@
     <dependency>profile-collective.behavior.gallery:default</dependency>
     <dependency>profile-collective.easyform:default</dependency>
     <dependency>profile-collective.geolocationbehavior:default</dependency>
+    <dependency>profile-collective.recaptcha:default</dependency>
   </dependencies>
 </metadata>

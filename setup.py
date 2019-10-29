@@ -62,6 +62,7 @@ setup(
         "geopy",
         "collective.geolocationbehavior",
         "collective.faceted.map",
+        "collective.recaptcha",
     ],
     extras_require={
         "test": [
