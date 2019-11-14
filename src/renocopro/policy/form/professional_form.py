@@ -51,7 +51,28 @@ class ProfessionalForm(GroupForm, EditForm):
 
     groups = (DefaultGroup, ContactGroup)
     label = _(u"Professional")
+
+    _required_fields = (
+        "title",
+        "street",
+        "number",
+        "city",
+        "number",
+        "zip_code",
+        "vat",
+        "activity",
+        "validation",
+        "last_name",
+        "first_name",
+        "phone",
+    )
     ignoreContext = True
+
+    def update(self):
+        for group in self.groups:
+            for name, field in group.fields.items():
+                field.field.required = name in self._required_fields
+        super(ProfessionalForm, self).update()
 
     def send_mail(self, url):
         lang = api.portal.get_current_language()[:2]
@@ -80,7 +101,9 @@ class ProfessionalForm(GroupForm, EditForm):
         for mail in list_mail:
             api.portal.send_email(
                 recipient=mail,
-                subject=translate(_(u"New professional submission"), target_language=lang),
+                subject=translate(
+                    _(u"New professional submission"), target_language=lang
+                ),
                 body=body,
             )
 

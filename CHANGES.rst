@@ -5,6 +5,9 @@ Changelog
 1.0a18 (unreleased)
 -------------------
 
+- Update required fields on professinnal form
+  [vpiret]
+
 - Add recapcha depedencies
   [vpiret]
 
