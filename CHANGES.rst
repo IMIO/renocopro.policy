@@ -5,6 +5,9 @@ Changelog
 1.0a18 (unreleased)
 -------------------
 
+- Update de map fonctonality for use this on a desktop browser
+  [vpiret]
+
 - Update required fields on professinnal form
   [vpiret]
 

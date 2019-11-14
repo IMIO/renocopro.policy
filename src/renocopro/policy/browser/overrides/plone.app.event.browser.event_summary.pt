@@ -68,7 +68,7 @@
         <span itemprop="location"
               tal:condition="context/geolocation">
             <a tal:content="data/location"
-               tal:attributes="href string:geo:${context/geolocation/latitude},${context/geolocation/longitude}"/>
+               tal:attributes="href string:maps:?q=${context/geolocation/latitude},${context/geolocation/longitude}"/>
         </span>
       </li>
     </tal:cond>
