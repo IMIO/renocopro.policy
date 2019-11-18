@@ -67,9 +67,11 @@
                                  title title">
 
                 <div class="items-content">
-                  <div class="image" tal:condition="is_image">
+                  <div class="image">
                     <img style="border: none"
+                         tal:condition="is_image"
                          tal:attributes="src  string:${brain/getURL}/@@images/image"/>
+                    <img style="border: none" tal:condition="not: is_image" src="++plone++renocopro.policy/images/pro.png">
                   </div>
                   <div class="text">
                     <h4 tal:content="brain/pretty_title_or_id|string:">Title</h4>

@@ -5,6 +5,9 @@ Changelog
 1.0a18 (unreleased)
 -------------------
 
+- Add default image for professionnal RENOCOPRO-47
+  [AuroreMariscal]
+
 - Update de map fonctonality for use this on a desktop browser
   [vpiret]
 

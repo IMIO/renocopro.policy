@@ -16,9 +16,10 @@
     <div class="col-md-9">
       <div class="row">
         <div class="col-md-4">
-          <div class="rex_img_large_border" tal:condition="python: getattr(context, 'image', None)">
+          <div class="rex_img_large_border" tal:define="img python: getattr(context, 'image', None)">
             <div class="rex_img_large">
-              <img class="view img-responsive" src="" tal:attributes="src string: ${context/absolute_url}/@@images/image" />
+              <img tal:condition="img" class="view img-responsive" src="" tal:attributes="src string: ${context/absolute_url}/@@images/image" />
+              <img class="view img-responsive" tal:condition="not: img" src="++plone++renocopro.policy/images/pro.png">
             </div>
           </div>
         </div>
