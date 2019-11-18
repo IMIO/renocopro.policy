@@ -5,6 +5,9 @@ Changelog
 1.0a18 (unreleased)
 -------------------
 
+- Fix refresh on fancybox RENOCOPRO-49
+  [AuroreMariscal]
+
 - Add default image for professionnal RENOCOPRO-47
   [AuroreMariscal]
 

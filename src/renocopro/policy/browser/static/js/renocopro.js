@@ -5,6 +5,7 @@ jQuery(document).ready(function($){
   });
 
   $('[data-fancybox]').fancybox({
+    hash : false,
 
     beforeShow : function(e, instance) {
         caption = instance.opts.$orig.parent().find(".caption").html()
