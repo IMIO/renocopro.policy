@@ -63,6 +63,7 @@ setup(
         "collective.geolocationbehavior",
         "collective.faceted.map",
         "collective.recaptcha",
+        "imio.gdpr",
     ],
     extras_require={
         "test": [
