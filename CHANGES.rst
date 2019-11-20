@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a19 (unreleased)
+1.0a19 (2019-11-20)
 -------------------
 
 - Fix refresh on fancybox for case studies RENOCOPRO-49
