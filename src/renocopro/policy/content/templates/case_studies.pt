@@ -8,6 +8,10 @@
       tal:define="foo python:request.set('disable_plone.leftcolumn', 1)">
 <body>
 
+<metal:js fill-slot="javascript_head_slot">
+  <script tal:define="site_url context/@@plone_portal_state/portal_url" tal:attributes="src string:${site_url}/++plone++renocopro.policy/js/renocopro.js"></script>
+</metal:js>
+
 <metal:main fill-slot="main">
   <legend tal:content="context/Title"/>
 

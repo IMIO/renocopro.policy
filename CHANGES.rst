@@ -5,7 +5,8 @@ Changelog
 1.0a19 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix refresh on fancybox for case studies RENOCOPRO-49
+  [AuroreMariscal]
 
 
 1.0a18 (2019-11-19)
