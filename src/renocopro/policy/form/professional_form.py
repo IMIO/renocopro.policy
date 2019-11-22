@@ -138,6 +138,7 @@ class ProfessionalForm(GroupForm, EditForm):
             image=data["image"],
             activity=data["activity"],
             container=container,
+            allowed_users=[api.user.get_current().getId()],
         )
         self.request.response.redirect(
             "{0}/@@confirm".format(api.portal.get().absolute_url())

@@ -23,6 +23,12 @@
     handler=".professional.handle_location"
     />
 
+  <adapter
+    for="renocopro.policy.content.professional.IProfessional"
+    provides="borg.localrole.interfaces.ILocalRoleProvider"
+    factory=".adapters.LocalRoleAdapter"
+    />
+
   <browser:page
     for=".case_studies.ICaseStudies"
     name="view"

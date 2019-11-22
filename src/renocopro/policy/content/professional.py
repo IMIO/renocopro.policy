@@ -83,6 +83,17 @@ class IProfessional(model.Schema):
         required=False,
     )
 
+    form.read_permission(allowed_users="cmf.ManagePortal")
+    form.write_permission(allowed_users="cmf.ManagePortal")
+    allowed_users = schema.List(
+        title=_(u"Allowed users"),
+        description=_(u"List of users that can edit the professional"),
+        value_type=schema.Choice(
+            title=_(u"Allowed users"), vocabulary="plone.app.vocabularies.Users"
+        ),
+        required=False,
+    )
+
 
 class Professional(Container):
     implements(IProfessional)
