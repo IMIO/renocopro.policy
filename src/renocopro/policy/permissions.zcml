@@ -11,6 +11,11 @@
       title="Renocopro: Propose a professional"
       />
 
+    <permission
+      id="renocopro.EditProfessional"
+      title="Renocopro: Edit a professional"
+      />
+
   </configure>
 
 </configure>

@@ -1,11 +1,20 @@
 <?xml version="1.0"?>
 <rolemap>
+  <roles>
+    <role name="Professional Editor" />
+  </roles>
   <permissions>
     <permission name="Renocopro: Propose a professional"
                 acquire="False">
       <role name="Manager" />
       <role name="Site Administrator" />
       <role name="Authenticated" />
+    </permission>
+    <permission name="Renocopro: Edit a professional"
+                acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Professional Editor" />
     </permission>
   </permissions>
 </rolemap>
