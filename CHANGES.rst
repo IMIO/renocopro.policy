@@ -5,6 +5,9 @@ Changelog
 1.0a20 (unreleased)
 -------------------
 
+- Move map in professionnal view RENOCOPRO-52
+  [AuroreMariscal]
+
 - Improving the registration of a professional
   [vpiret]
 
