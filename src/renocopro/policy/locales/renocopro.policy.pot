@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-10-22 12:44+0000\n"
+"POT-Creation-Date: 2019-11-22 08:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgid "<div class=\"portalMessage error\"> <strong>x</strong> <span>x</span> </d
 msgstr ""
 
 #: ../content/case_studies.py:101
-#: ../content/templates/case_studies.pt:102
+#: ../content/templates/case_studies.pt:106
 msgid "Actor"
 msgstr ""
 
@@ -48,7 +48,7 @@ msgstr ""
 msgid "Back to created"
 msgstr ""
 
-#: ../browser/configure.zcml:61
+#: ../browser/configure.zcml:63
 msgid "Behavior add image on the gallery"
 msgstr ""
 
@@ -58,6 +58,10 @@ msgstr ""
 
 #: ../content/case_studies.py:23
 msgid "Building identity form"
+msgstr ""
+
+#: ../form/professional_form.py:168
+msgid "Captcha incorrect"
 msgstr ""
 
 #: ../profiles/default/types/case_studies.xml
@@ -79,7 +83,7 @@ msgid "Configuration for renocopro product"
 msgstr ""
 
 #: ../content/case_studies.py:54
-#: ../content/templates/case_studies.pt:37
+#: ../content/templates/case_studies.pt:41
 msgid "Construction year"
 msgstr ""
 
@@ -89,22 +93,22 @@ msgid "Contact details of the syndic"
 msgstr ""
 
 #: ../content/professional.py:50
-#: ../content/templates/professional.pt:77
-#: ../form/professional_form.py:45
+#: ../content/templates/professional.pt:78
+#: ../form/professional_form.py:57
 msgid "Contact person"
 msgstr ""
 
 #: ../content/case_studies.py:64
-#: ../content/templates/case_studies.pt:53
+#: ../content/templates/case_studies.pt:57
 msgid "Cost of renovation"
 msgstr ""
 
 #: ../content/case_studies.py:66
-#: ../content/templates/case_studies.pt:57
+#: ../content/templates/case_studies.pt:61
 msgid "Cost/m2"
 msgstr ""
 
-#: ../form/professional_form.py:24
+#: ../form/professional_form.py:33
 msgid "Default"
 msgstr ""
 
@@ -117,22 +121,22 @@ msgid "Describe the specific activities in the field of condominium renovation"
 msgstr ""
 
 #: ../content/case_studies.py:19
-#: ../content/templates/case_studies.pt:87
+#: ../content/templates/case_studies.pt:91
 msgid "Description"
 msgstr ""
 
 #: ../content/professional.py:39
-#: ../content/templates/professional.pt:49
+#: ../content/templates/professional.pt:50
 msgid "Description of specific activities"
 msgstr ""
 
 #: ../content/professional.py:33
-#: ../content/templates/professional.pt:45
+#: ../content/templates/professional.pt:46
 msgid "Description of the company's activity"
 msgstr ""
 
 #: ../content/case_studies.py:116
-#: ../content/templates/case_studies.pt:117
+#: ../content/templates/case_studies.pt:121
 msgid "Description of the systems"
 msgstr ""
 
@@ -145,8 +149,12 @@ msgid "Display map"
 msgstr ""
 
 #: ../content/case_studies.py:59
-#: ../content/templates/case_studies.pt:45
+#: ../content/templates/case_studies.pt:49
 msgid "Duration of the work"
+msgstr ""
+
+#: ../user_schema.py:20
+msgid "Email"
 msgstr ""
 
 #: ../browser/controlpanel.py:12
@@ -163,21 +171,22 @@ msgid "Error"
 msgstr ""
 
 #: ../content/case_studies.py:99
-#: ../content/templates/case_studies.pt:97
+#: ../content/templates/case_studies.pt:101
 msgid "Financing option"
 msgstr ""
 
 #: ../content/professional.py:56
+#: ../user_schema.py:19
 msgid "First name"
 msgstr ""
 
 #: ../content/case_studies.py:97
-#: ../content/templates/case_studies.pt:92
+#: ../content/templates/case_studies.pt:96
 msgid "Grants and subsidies"
 msgstr ""
 
 #: ../content/case_studies.py:62
-#: ../content/templates/case_studies.pt:49
+#: ../content/templates/case_studies.pt:53
 msgid "Heated floor area"
 msgstr ""
 
@@ -186,8 +195,12 @@ msgid "Hide map"
 msgstr ""
 
 #: ../content/case_studies.py:108
-#: ../content/templates/case_studies.pt:107
+#: ../content/templates/case_studies.pt:111
 msgid "Human relations"
+msgstr ""
+
+#: ../user_schema.py:52
+msgid "I create my account"
 msgstr ""
 
 #: ../browser/templates/professionnal_registration_viewlet.pt:2
@@ -207,11 +220,12 @@ msgstr ""
 msgid "Innovative aspects implemented"
 msgstr ""
 
-#: ../configure.zcml:38
+#: ../configure.zcml:39
 msgid "Installs the renocopro.policy add-on."
 msgstr ""
 
 #: ../content/professional.py:54
+#: ../user_schema.py:18
 msgid "Last name"
 msgstr ""
 
@@ -241,12 +255,12 @@ msgstr ""
 
 #: ../content/case_studies.py:40
 #: ../content/professional.py:46
-#: ../content/templates/case_studies.pt:25
+#: ../content/templates/case_studies.pt:29
 msgid "Location"
 msgstr ""
 
 #: ../content/professional.py:24
-#: ../content/templates/professional.pt:28
+#: ../content/templates/professional.pt:29
 msgid "Name of the company/organization"
 msgstr ""
 
@@ -254,7 +268,7 @@ msgstr ""
 msgid "Name of the project"
 msgstr ""
 
-#: ../form/professional_form.py:71
+#: ../form/professional_form.py:116
 msgid "New professional submission"
 msgstr ""
 
@@ -272,7 +286,7 @@ msgid "Number"
 msgstr ""
 
 #: ../content/case_studies.py:73
-#: ../content/templates/case_studies.pt:65
+#: ../content/templates/case_studies.pt:69
 msgid "Number of co-owners"
 msgstr ""
 
@@ -282,7 +296,7 @@ msgid "Number of element in slider"
 msgstr ""
 
 #: ../content/case_studies.py:69
-#: ../content/templates/case_studies.pt:61
+#: ../content/templates/case_studies.pt:65
 msgid "Number of housing units"
 msgstr ""
 
@@ -291,7 +305,7 @@ msgid "Other"
 msgstr ""
 
 #: ../content/case_studies.py:77
-#: ../content/templates/case_studies.pt:69
+#: ../content/templates/case_studies.pt:73
 #: ../setuphandlers.py:68
 msgid "Other functions"
 msgstr ""
@@ -312,7 +326,7 @@ msgstr ""
 msgid "Professinal Workflow"
 msgstr ""
 
-#: ../form/professional_form.py:52
+#: ../form/professional_form.py:64
 #: ../profiles/default/types/professional.xml
 msgid "Professional"
 msgstr ""
@@ -334,12 +348,16 @@ msgstr ""
 msgid "Realization"
 msgstr ""
 
+#: ../browser/templates/confirm.pt:13
+msgid "Registration of a professional"
+msgstr ""
+
 #: ../profiles/default/workflows/professional_workflow/definition.xml
 msgid "Remove"
 msgstr ""
 
 #: ../content/case_studies.py:121
-#: ../content/templates/case_studies.pt:122
+#: ../content/templates/case_studies.pt:126
 msgid "Renewable energies"
 msgstr ""
 
@@ -348,7 +366,7 @@ msgid "Renocopro Settings"
 msgstr ""
 
 #: ../content/case_studies.py:56
-#: ../content/templates/case_studies.pt:41
+#: ../content/templates/case_studies.pt:45
 msgid "Renovation year"
 msgstr ""
 
@@ -360,12 +378,12 @@ msgstr ""
 msgid "Select the folder of cases studies"
 msgstr ""
 
-#: ../form/professional_form.py:102
+#: ../form/professional_form.py:148
 msgid "Send"
 msgstr ""
 
 #: ../content/professional.py:78
-#: ../content/templates/professional.pt:32
+#: ../content/templates/professional.pt:33
 msgid "Specific activities in the field of condominium renovation"
 msgstr ""
 
@@ -379,7 +397,7 @@ msgid "Summarize the activities of your company"
 msgstr ""
 
 #: ../content/case_studies.py:123
-#: ../content/templates/case_studies.pt:127
+#: ../content/templates/case_studies.pt:131
 msgid "Sustainable aspects"
 msgstr ""
 
@@ -406,7 +424,7 @@ msgid "Title"
 msgstr ""
 
 #: ../content/case_studies.py:49
-#: ../content/templates/case_studies.pt:33
+#: ../content/templates/case_studies.pt:37
 #: ../setuphandlers.py:61
 msgid "Type of building"
 msgstr ""
@@ -416,12 +434,12 @@ msgid "Type of professional"
 msgstr ""
 
 #: ../content/case_studies.py:43
-#: ../content/templates/case_studies.pt:29
+#: ../content/templates/case_studies.pt:33
 #: ../setuphandlers.py:54
 msgid "Types of work"
 msgstr ""
 
-#: ../configure.zcml:47
+#: ../configure.zcml:48
 msgid "Uninstalls the renocopro.policy add-on."
 msgstr ""
 
@@ -429,8 +447,12 @@ msgstr ""
 msgid "VAT"
 msgstr ""
 
-#: ../form/professional_form.py:19
+#: ../form/professional_form.py:23
 msgid "Validation"
+msgstr ""
+
+#: ../browser/templates/confirm.pt:14
+msgid "We thank you for your registration and your interest in the platform and your participation in the energy renovation of condominiums. Your request will be analyzed by our services for verification before publication."
 msgstr ""
 
 #: ../profiles/default/workflows/professional_workflow/definition.xml
@@ -438,11 +460,11 @@ msgid "When the previous transition was performed"
 msgstr ""
 
 #: ../content/case_studies.py:104
-#: ../content/templates/case_studies.pt:112
+#: ../content/templates/case_studies.pt:116
 msgid "Work"
 msgstr ""
 
-#: ../form/professional_form.py:113
+#: ../form/professional_form.py:164
 msgid "You must validate the policy"
 msgstr ""
 
@@ -455,7 +477,7 @@ msgstr ""
 msgid "back_to_created"
 msgstr ""
 
-#: ../browser/configure.zcml:61
+#: ../browser/configure.zcml:63
 msgid "behavior.AddOnTheGallery"
 msgstr ""
 
@@ -464,13 +486,25 @@ msgid "created"
 msgstr ""
 
 #. Default: "A new professional has been created you can access it at the following url:\n              ${url}\n              "
-#: ../form/professional_form.py:59
+#: ../form/professional_form.py:92
 msgid "email_body_professional_submission"
 msgstr ""
 
 #. Default: "The professional ${name} received modifications in the fields:\n          ${fields}\n\n          you can access it at the following url:\n          ${url}\n          "
 #: ../content/event.py:30
 msgid "email_body_professionnal_modification"
+msgstr ""
+
+#: ../user_schema.py:32
+msgid "ex: Dupont"
+msgstr ""
+
+#: ../user_schema.py:35
+msgid "ex: Jean"
+msgstr ""
+
+#: ../user_schema.py:29
+msgid "ex: dupont@email.com"
 msgstr ""
 
 #: ../content/case_studies.py:117
@@ -489,11 +523,11 @@ msgstr ""
 msgid "removed"
 msgstr ""
 
-#: ../configure.zcml:38
+#: ../configure.zcml:39
 msgid "renocopro.policy"
 msgstr ""
 
-#: ../configure.zcml:47
+#: ../configure.zcml:48
 msgid "renocopro.policy (uninstall)"
 msgstr ""
 

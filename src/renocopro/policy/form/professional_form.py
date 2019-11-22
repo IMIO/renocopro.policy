@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
+from Acquisition import aq_inner
 from Products.statusmessages.interfaces import IStatusMessage
 from plone import api
 from plone.supermodel import model
 from plone.app.contenttypes.behaviors.leadimage import ILeadImage
+from plone.formwidget.recaptcha.widget import ReCaptchaFieldWidget
 from renocopro.policy import _
 from renocopro.policy import logger
 from renocopro.policy.content.professional import IProfessional
@@ -14,10 +16,13 @@ from z3c.form.form import EditForm
 from z3c.form.group import Group, GroupForm
 from zope import schema
 from zope.i18n import translate
+from zope.component import getMultiAdapter
 
 
 class IValidation(model.Schema):
     validation = schema.Bool(title=_(u"Validation"))
+
+    captcha = schema.TextLine(description=u"", required=False)
 
 
 class DefaultGroup(Group):
@@ -38,6 +43,9 @@ class DefaultGroup(Group):
     )
     fields = fields + Fields(ILeadImage).select("image")
     fields = fields + Fields(IValidation).select("validation")
+    fields = fields + Fields(IValidation).select("captcha")
+
+    fields["captcha"].widgetFactory = ReCaptchaFieldWidget
     fields["validation"].widgetFactory = policy_single_checkbox_field_widget
 
 
@@ -131,19 +139,29 @@ class ProfessionalForm(GroupForm, EditForm):
             activity=data["activity"],
             container=container,
         )
-        self.request.response.redirect(professional_obj.absolute_url())
+        self.request.response.redirect(
+            "{0}/@@confirm".format(api.portal.get().absolute_url())
+        )
         self.send_mail(professional_obj.absolute_url())
 
     @button.buttonAndHandler(_(u"Send"), name="send")
     def handleApply(self, action):
-        data, errors = self.extractData()
-        if data.get("validation"):
-            if errors:
-                self.status = self.formErrorsMessage
-                return
+        captcha = getMultiAdapter(
+            (aq_inner(self.context), self.request), name="recaptcha"
+        )
+        if captcha.verify():
+            data, errors = self.extractData()
+            if data.get("validation"):
+                if errors:
+                    self.status = self.formErrorsMessage
+                    return
 
-            self.send_request(data)
+                self.send_request(data)
+            else:
+                IStatusMessage(self.request).addStatusMessage(
+                    _(u"You must validate the policy"), "error"
+                )
         else:
             IStatusMessage(self.request).addStatusMessage(
-                _(u"You must validate the policy"), "error"
+                _(u"Captcha incorrect"), "captcha"
             )

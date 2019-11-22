@@ -63,7 +63,9 @@ setup(
         "collective.geolocationbehavior",
         "collective.faceted.map",
         "collective.recaptcha",
+        "plone.formwidget.recaptcha",
         "imio.gdpr",
+        "Products.PasswordStrength",
     ],
     extras_require={
         "test": [

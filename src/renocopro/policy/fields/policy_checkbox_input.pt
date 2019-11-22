@@ -77,7 +77,7 @@
   </label>
    <a href=""
        i18n:translate=""
-       tal:attributes="href view/get_policy_link">(Read policy)</a>
+       tal:attributes="href view/get_policy_link" target="_blank">(Read policy)</a>
  </span>
 </span>
 <input name="field-empty-marker" type="hidden" value="1"

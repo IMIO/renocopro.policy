@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="renocopro.policy">
+<body>
+
+<metal:main fill-slot="main">
+
+  <div class="bordered">
+      <h1 i18n:translate="">Registration of a professional</h1>
+      <p i18n:translate="">We thank you for your registration and your interest in the platform and your participation in the energy renovation of condominiums. Your request will be analyzed by our services for verification before publication.</p>
+  </div>
+</metal:main>
+
+</body>
+</html>

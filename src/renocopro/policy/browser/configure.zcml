@@ -62,5 +62,12 @@
       marker=".behaviors.IAddOnTheGallery"
       />
 
+  <browser:page
+    name="confirm"
+    for="*"
+    class=".confirm.ConfirmView"
+    template="templates/confirm.pt"
+    permission="zope2.View"
+    />
 
 </configure>

@@ -5,7 +5,8 @@ Changelog
 1.0a20 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Improving the registration of a professional
+  [vpiret]
 
 
 1.0a19 (2019-11-20)
