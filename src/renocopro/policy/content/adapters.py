@@ -30,10 +30,7 @@ class LocalRoleAdapter(object):
         """Grant permission for principal"""
         allowed_users = getattr(self.context, "allowed_users", []) or []
         if principal in allowed_users:
-            return (
-                "Reader",
-                "Professional Editor",
-            )
+            return ("Reader", "Professional Editor")
         return []
 
     def getAllRoles(self):
@@ -42,9 +39,6 @@ class LocalRoleAdapter(object):
             yield ("", ("",))
             raise StopIteration
         else:
-            permissions = (
-                "Reader",
-                "Professional Editor",
-            )
+            permissions = ("Reader", "Professional Editor")
             for allowed_user in self.context.allowed_users:
                 yield (allowed_user, permissions)

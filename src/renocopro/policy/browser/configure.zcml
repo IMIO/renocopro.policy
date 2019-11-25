@@ -70,4 +70,20 @@
     permission="zope2.View"
     />
 
+  <browser:page
+    name="professional_connection"
+    for="*"
+    class=".professional_connection.ProfessionalConnectionView"
+    template="templates/professional_connection.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    name="registration_information"
+    for="*"
+    class=".registration_information.RegistrationInformationView"
+    attribute="go_to_registration"
+    permission="zope2.View"
+    />
+
 </configure>

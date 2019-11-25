@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-11-22 08:27+0000\n"
+"POT-Creation-Date: 2019-11-25 13:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,9 +39,13 @@ msgstr ""
 msgid "Add on the gallery"
 msgstr ""
 
-#: ../content/professional.py:145
+#: ../content/professional.py:156
 #: ../content/realization.py:17
 msgid "Address of the co-ownership"
+msgstr ""
+
+#: ../content/professional.py:89
+msgid "Allowed users"
 msgstr ""
 
 #: ../profiles/default/workflows/professional_workflow/definition.xml
@@ -60,7 +64,7 @@ msgstr ""
 msgid "Building identity form"
 msgstr ""
 
-#: ../form/professional_form.py:168
+#: ../form/professional_form.py:167
 msgid "Captcha incorrect"
 msgstr ""
 
@@ -87,14 +91,14 @@ msgstr ""
 msgid "Construction year"
 msgstr ""
 
-#: ../content/professional.py:140
+#: ../content/professional.py:151
 #: ../content/realization.py:28
 msgid "Contact details of the syndic"
 msgstr ""
 
 #: ../content/professional.py:50
-#: ../content/templates/professional.pt:78
-#: ../form/professional_form.py:57
+#: ../content/templates/professional.pt:92
+#: ../form/professional_form.py:54
 msgid "Contact person"
 msgstr ""
 
@@ -108,7 +112,11 @@ msgstr ""
 msgid "Cost/m2"
 msgstr ""
 
-#: ../form/professional_form.py:33
+#: ../browser/templates/professional_connection.pt:18
+msgid "Create your account"
+msgstr ""
+
+#: ../form/professional_form.py:30
 msgid "Default"
 msgstr ""
 
@@ -215,7 +223,7 @@ msgstr ""
 msgid "If there are multiple email addresses, separate them with semicolons"
 msgstr ""
 
-#: ../content/professional.py:150
+#: ../content/professional.py:161
 #: ../content/realization.py:36
 msgid "Innovative aspects implemented"
 msgstr ""
@@ -249,6 +257,10 @@ msgstr ""
 msgid "Limit slider"
 msgstr ""
 
+#: ../content/professional.py:90
+msgid "List of users that can edit the professional"
+msgstr ""
+
 #: ../content/case_studies.py:104
 msgid "Listing of all work done"
 msgstr ""
@@ -257,6 +269,14 @@ msgstr ""
 #: ../content/professional.py:46
 #: ../content/templates/case_studies.pt:29
 msgid "Location"
+msgstr ""
+
+#: ../browser/templates/professional_connection.pt:17
+msgid "Login"
+msgstr ""
+
+#: ../browser/templates/professional_connection.pt:14
+msgid "Login or create your account to register your company"
 msgstr ""
 
 #: ../content/professional.py:24
@@ -268,7 +288,7 @@ msgstr ""
 msgid "Name of the project"
 msgstr ""
 
-#: ../form/professional_form.py:116
+#: ../form/professional_form.py:113
 msgid "New professional submission"
 msgstr ""
 
@@ -326,7 +346,7 @@ msgstr ""
 msgid "Professinal Workflow"
 msgstr ""
 
-#: ../form/professional_form.py:64
+#: ../form/professional_form.py:61
 #: ../profiles/default/types/professional.xml
 msgid "Professional"
 msgstr ""
@@ -349,6 +369,7 @@ msgid "Realization"
 msgstr ""
 
 #: ../browser/templates/confirm.pt:13
+#: ../browser/templates/professional_connection.pt:13
 msgid "Registration of a professional"
 msgstr ""
 
@@ -464,7 +485,7 @@ msgstr ""
 msgid "Work"
 msgstr ""
 
-#: ../form/professional_form.py:164
+#: ../form/professional_form.py:163
 msgid "You must validate the policy"
 msgstr ""
 
@@ -486,7 +507,7 @@ msgid "created"
 msgstr ""
 
 #. Default: "A new professional has been created you can access it at the following url:\n              ${url}\n              "
-#: ../form/professional_form.py:92
+#: ../form/professional_form.py:89
 msgid "email_body_professional_submission"
 msgstr ""
 

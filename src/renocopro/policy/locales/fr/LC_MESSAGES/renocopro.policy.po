@@ -32,10 +32,14 @@ msgstr "Acteur"
 msgid "Add on the gallery"
 msgstr "Ajouter à la galerie"
 
-#: ../content/professional.py:145
+#: ../content/professional.py:156
 #: ../content/realization.py:17
 msgid "Address of the co-ownership"
 msgstr "Adresse de la copropriété"
+
+#: ../content/professional.py:89
+msgid "Allowed users"
+msgstr ""
 
 #: ../profiles/default/workflows/professional_workflow/definition.xml
 msgid "Back to created"
@@ -53,7 +57,7 @@ msgstr "Retour à l'état 'Publié'"
 msgid "Building identity form"
 msgstr "Fiche d'identité du batîment"
 
-#: ../form/professional_form.py:168
+#: ../form/professional_form.py:167
 msgid "Captcha incorrect"
 msgstr ""
 
@@ -80,14 +84,14 @@ msgstr "Configuration du produit renocopro"
 msgid "Construction year"
 msgstr "Année de construction"
 
-#: ../content/professional.py:140
+#: ../content/professional.py:151
 #: ../content/realization.py:28
 msgid "Contact details of the syndic"
 msgstr "Coordonnées du syndic"
 
 #: ../content/professional.py:50
-#: ../content/templates/professional.pt:78
-#: ../form/professional_form.py:57
+#: ../content/templates/professional.pt:92
+#: ../form/professional_form.py:54
 msgid "Contact person"
 msgstr "Personne de contact"
 
@@ -101,7 +105,11 @@ msgstr "Coût de rénovation"
 msgid "Cost/m2"
 msgstr "Coût/m2"
 
-#: ../form/professional_form.py:33
+#: ../browser/templates/professional_connection.pt:18
+msgid "Create your account"
+msgstr "Créez votre compte"
+
+#: ../form/professional_form.py:30
 msgid "Default"
 msgstr "Défaut"
 
@@ -208,7 +216,7 @@ msgstr "Je valide la charte"
 msgid "If there are multiple email addresses, separate them with semicolons"
 msgstr "S'il y a plusieurs adresses mail, séparez-les par des points-virgules."
 
-#: ../content/professional.py:150
+#: ../content/professional.py:161
 #: ../content/realization.py:36
 msgid "Innovative aspects implemented"
 msgstr "Aspects innovants mis en oeuvre"
@@ -242,6 +250,10 @@ msgstr ""
 msgid "Limit slider"
 msgstr ""
 
+#: ../content/professional.py:90
+msgid "List of users that can edit the professional"
+msgstr ""
+
 #: ../content/case_studies.py:104
 msgid "Listing of all work done"
 msgstr "Listing de tous les travaux réalisés"
@@ -252,6 +264,14 @@ msgstr "Listing de tous les travaux réalisés"
 msgid "Location"
 msgstr "Localisation"
 
+#: ../browser/templates/professional_connection.pt:17
+msgid "Login"
+msgstr "Se connecter"
+
+#: ../browser/templates/professional_connection.pt:14
+msgid "Login or create your account to register your company"
+msgstr "Connectez-vous ou créez votre compte pour inscrire votre entreprise"
+
 #: ../content/professional.py:24
 #: ../content/templates/professional.pt:29
 msgid "Name of the company/organization"
@@ -261,7 +281,7 @@ msgstr "Nom de l'entreprise / organisme"
 msgid "Name of the project"
 msgstr "Nom de la réalisation"
 
-#: ../form/professional_form.py:116
+#: ../form/professional_form.py:113
 msgid "New professional submission"
 msgstr "Nouvelle soumission d'un professionnel"
 
@@ -319,7 +339,7 @@ msgstr "Transition précédente"
 msgid "Professinal Workflow"
 msgstr "Workflow des professionnels"
 
-#: ../form/professional_form.py:64
+#: ../form/professional_form.py:61
 #: ../profiles/default/types/professional.xml
 msgid "Professional"
 msgstr "Professionnel"
@@ -342,6 +362,7 @@ msgid "Realization"
 msgstr "Réalisation"
 
 #: ../browser/templates/confirm.pt:13
+#: ../browser/templates/professional_connection.pt:13
 msgid "Registration of a professional"
 msgstr "Inscription d'un professionnel"
 
@@ -457,7 +478,7 @@ msgstr ""
 msgid "Work"
 msgstr "Travaux"
 
-#: ../form/professional_form.py:164
+#: ../form/professional_form.py:163
 msgid "You must validate the policy"
 msgstr "Vous devez valider la charte"
 
@@ -479,7 +500,7 @@ msgid "created"
 msgstr "Créé"
 
 #. Default: "A new professional has been created you can access it at the following url:\n              ${url}\n              "
-#: ../form/professional_form.py:92
+#: ../form/professional_form.py:89
 msgid "email_body_professional_submission"
 msgstr ""
 "Un nouveau 'professionnel' a été créé, vous pouvez y accéder à l'adresse suivante :\n"

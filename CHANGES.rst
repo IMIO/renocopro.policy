@@ -5,6 +5,9 @@ Changelog
 1.0a20 (unreleased)
 -------------------
 
+- Add an intermediate page for not connected user
+  [vpiret]
+
 - Move map in event view RENOCOPRO-72
   [AuroreMariscal]
 
