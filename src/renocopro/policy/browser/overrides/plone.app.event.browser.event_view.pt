@@ -22,44 +22,49 @@
       <li itemprop="description" class="description" tal:content="data/description">description</li>
     </ul>
 
-    <tal:eventsummary replace="structure context/@@event_summary"/>
+    <div class="event-details">
+      <tal:eventsummary replace="structure context/@@event_summary"/>
+    </div>
 
     <div id="parent-fieldname-text" tal:condition="data/text">
       <tal:text content="structure data/text" />
     </div>
 
     <tal:if tal:condition="context/geolocation">
-    <div tal:define="popup context/Title;
-                     latitude context/geolocation/latitude;
-                     longitude context/geolocation/longitude"
-         tal:attributes='data-geojson string:{
-            "type": "FeatureCollection",
-            "features": [
-                {
-                    "type": "Feature",
-                    "id": 1,
-                    "properties": {
-                        "popup": "${popup}"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            ${longitude},
-                            ${latitude}
-                        ]
-                    }
-                }
-            ]}'
-         class="pat-leaflet"
-         data-pat-leaflet='
-          {
-            "fullscreencontrol": true,
-            "locatecontrol": false,
-            "zoomcontrol": true,
-            "minimap": false,
-            "geosearch": false
-          }'
-    ></div>
+
+    <div class="event-map">     
+      <div tal:define="popup context/Title;
+                        latitude context/geolocation/latitude;
+                        longitude context/geolocation/longitude"
+            tal:attributes='data-geojson string:{
+              "type": "FeatureCollection",
+              "features": [
+                  {
+                      "type": "Feature",
+                      "id": 1,
+                      "properties": {
+                          "popup": "${popup}"
+                      },
+                      "geometry": {
+                          "type": "Point",
+                          "coordinates": [
+                              ${longitude},
+                              ${latitude}
+                          ]
+                      }
+                  }
+              ]}'
+            class="pat-leaflet"
+            data-pat-leaflet='
+            {
+              "fullscreencontrol": true,
+              "locatecontrol": false,
+              "zoomcontrol": true,
+              "minimap": false,
+              "geosearch": false
+            }'
+      ></div>
+    </div>
     </tal:if>
 
   </div>

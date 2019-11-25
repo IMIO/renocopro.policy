@@ -5,10 +5,13 @@ Changelog
 1.0a20 (unreleased)
 -------------------
 
+- Move map in event view RENOCOPRO-72
+  [AuroreMariscal]
+
 - Add permission RENOCOPRO-74
   [AuroreMariscal]
 
-- Move map in professionnal view RENOCOPRO-52
+- Move map in professionnal view RENOCOPRO-72
   [AuroreMariscal]
 
 - Improving the registration of a professional
