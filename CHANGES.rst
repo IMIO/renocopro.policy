@@ -5,6 +5,9 @@ Changelog
 1.0a20 (unreleased)
 -------------------
 
+- Add permission RENOCOPRO-74
+  [AuroreMariscal]
+
 - Move map in professionnal view RENOCOPRO-52
   [AuroreMariscal]
 
