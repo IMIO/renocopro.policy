@@ -5,6 +5,9 @@ Changelog
 1.0a20 (unreleased)
 -------------------
 
+- Add send mail for user on professional registration
+  [vpiret]
+
 - Add an intermediate page for not connected user
   [vpiret]
 

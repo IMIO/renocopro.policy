@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-11-25 13:46+0000\n"
+"POT-Creation-Date: 2019-11-26 12:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,7 @@ msgstr ""
 msgid "Building identity form"
 msgstr ""
 
-#: ../form/professional_form.py:167
+#: ../form/professional_form.py:184
 msgid "Captcha incorrect"
 msgstr ""
 
@@ -288,7 +288,7 @@ msgstr ""
 msgid "Name of the project"
 msgstr ""
 
-#: ../form/professional_form.py:113
+#: ../form/professional_form.py:111
 msgid "New professional submission"
 msgstr ""
 
@@ -399,7 +399,7 @@ msgstr ""
 msgid "Select the folder of cases studies"
 msgstr ""
 
-#: ../form/professional_form.py:148
+#: ../form/professional_form.py:165
 msgid "Send"
 msgstr ""
 
@@ -485,7 +485,7 @@ msgstr ""
 msgid "Work"
 msgstr ""
 
-#: ../form/professional_form.py:163
+#: ../form/professional_form.py:180
 msgid "You must validate the policy"
 msgstr ""
 
@@ -509,6 +509,11 @@ msgstr ""
 #. Default: "A new professional has been created you can access it at the following url:\n              ${url}\n              "
 #: ../form/professional_form.py:89
 msgid "email_body_professional_submission"
+msgstr ""
+
+#. Default: "We thank you for your registration and your interest in the platform and your participation in the energy renovation of condominiums. Your request will be analyzed by our services for verification before publication.\n                \n                You can access your content at the following url:\n                ${url}\n                "
+#: ../form/professional_form.py:117
+msgid "email_body_professional_submission_user"
 msgstr ""
 
 #. Default: "The professional ${name} received modifications in the fields:\n          ${fields}\n\n          you can access it at the following url:\n          ${url}\n          "

@@ -95,8 +95,6 @@ class ProfessionalForm(GroupForm, EditForm):
             ),
             target_language=lang,
         )
-
-        lang = api.portal.get_current_language()[:2]
         email = api.portal.get_registry_record(
             "renocopro.policy.browser.controlpanel.IRenocoproSettingsSchema.professional_manager_email",
             default=None,
@@ -114,6 +112,25 @@ class ProfessionalForm(GroupForm, EditForm):
                 ),
                 body=body,
             )
+
+        body = translate(
+            _(
+                u"email_body_professional_submission_user",
+                default=u"""We thank you for your registration and your interest in the platform and your participation in the energy renovation of condominiums. Your request will be analyzed by our services for verification before publication.
+
+                You can access your content at the following url:
+                ${url}
+                """,
+                mapping={u"url": url},
+            ),
+            target_language=lang,
+        )
+        email = api.user.get_current().id
+        api.portal.send_email(
+            recipient=email,
+            subject=translate(_(u"New professional submission"), target_language=lang),
+            body=body,
+        )
 
     def send_request(self, data):
         container = api.portal.get()["professionnels"]
