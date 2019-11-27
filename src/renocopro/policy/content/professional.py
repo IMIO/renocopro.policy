@@ -51,27 +51,27 @@ class IProfessional(model.Schema):
         fields=["last_name", "first_name", "phone", "email"],
     )
 
-    last_name = schema.TextLine(title=_(u"Last name"), required=False)
+    last_name = schema.TextLine(title=_(u"Last name"), required=True)
 
-    first_name = schema.TextLine(title=_(u"First name"), required=False)
+    first_name = schema.TextLine(title=_(u"First name"), required=True)
 
-    number = schema.TextLine(title=_(u"Number"), required=False)
+    number = schema.TextLine(title=_(u"Number"), required=True)
 
-    street = schema.TextLine(title=_(u"Street"), required=False)
+    street = schema.TextLine(title=_(u"Street"), required=True)
 
-    city = schema.TextLine(title=_(u"City"), required=False)
+    city = schema.TextLine(title=_(u"City"), required=True)
 
-    zip_code = schema.Int(title=_(u"Zip code"), required=False)
+    zip_code = schema.Int(title=_(u"Zip code"), required=True)
 
     phone = schema.TextLine(
-        title=_(u"Phone / Mobile phone of the contact person"), required=False
+        title=_(u"Phone / Mobile phone of the contact person"), required=True
     )
 
     email = schema.Email(title=_(u"Email of the contact person"), required=False)
 
     website = schema.URI(title=_(u"website"), required=False)
 
-    vat = schema.TextLine(title=_(u"VAT"), required=False)
+    vat = schema.TextLine(title=_(u"VAT"), required=True)
 
     form.widget(activity=CheckBoxFieldWidget)
     activity = schema.List(
@@ -80,7 +80,8 @@ class IProfessional(model.Schema):
             title=_(u"Specific activities in the field of condominium renovation"),
             vocabulary=u"collective.taxonomy.type_of_professional",
         ),
-        required=False,
+        required=True,
+        min_length=1,
     )
 
     form.read_permission(allowed_users="cmf.ManagePortal")

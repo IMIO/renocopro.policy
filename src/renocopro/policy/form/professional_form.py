@@ -17,6 +17,7 @@ from z3c.form.group import Group, GroupForm
 from zope import schema
 from zope.i18n import translate
 from zope.component import getMultiAdapter
+from z3c.form.browser.checkbox import CheckBoxFieldWidget
 
 
 class IValidation(model.Schema):
@@ -47,6 +48,7 @@ class DefaultGroup(Group):
 
     fields["captcha"].widgetFactory = ReCaptchaFieldWidget
     fields["validation"].widgetFactory = policy_single_checkbox_field_widget
+    fields["activity"].widgetFactory = CheckBoxFieldWidget
 
 
 class ContactGroup(Group):
@@ -77,9 +79,6 @@ class ProfessionalForm(GroupForm, EditForm):
     ignoreContext = True
 
     def update(self):
-        for group in self.groups:
-            for name, field in group.fields.items():
-                field.field.required = name in self._required_fields
         super(ProfessionalForm, self).update()
 
     def send_mail(self, url):

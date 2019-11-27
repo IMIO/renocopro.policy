@@ -5,6 +5,12 @@ Changelog
 1.0a20 (unreleased)
 -------------------
 
+- Fix mandatory fields
+  [vpiret]
+
+- Send mail on user registration
+  [vpiret]
+
 - Add send mail for user on professional registration
   [vpiret]
 

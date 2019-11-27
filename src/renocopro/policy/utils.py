@@ -12,6 +12,8 @@ from Products.CMFPlone.utils import safe_unicode
 from collective.taxonomy.interfaces import ITaxonomy
 from plone import api
 from zope.component import getSiteManager
+from zope.i18n import translate
+from renocopro.policy import _
 
 
 class UnrestrictedUser(BaseUnrestrictedUser):
@@ -240,3 +242,25 @@ class Truncator:
             out += "</%s>" % tag
         # Return string
         return out
+
+
+def send_registration_mail(event):
+    lang = api.portal.get_current_language()[:2]
+    email = event.object._login
+    body = translate(
+        _(
+            u"email_registration_mail",
+            default=u"""TODO
+
+                    You can access legal notice at the following url:
+                    ${url}
+                    """,
+            mapping={u"url": u"https://www.reno-copro.liege.be/gdpr-view"},
+        ),
+        target_language=lang,
+    )
+    api.portal.send_email(
+        recipient=email,
+        subject=translate(_(u"Reno-copro registration"), target_language=lang),
+        body=body,
+    )

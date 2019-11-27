@@ -54,4 +54,9 @@
 
   <adapter factory=".converter.NoFormatIntegerDataConverter" />
 
+  <subscriber
+      for="Products.PluggableAuthService.interfaces.events.IPrincipalCreatedEvent"
+      handler=".utils.send_registration_mail"
+    />
+
 </configure>

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-11-26 12:06+0000\n"
+"POT-Creation-Date: 2019-11-27 08:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,12 +39,12 @@ msgstr ""
 msgid "Add on the gallery"
 msgstr ""
 
-#: ../content/professional.py:156
+#: ../content/professional.py:157
 #: ../content/realization.py:17
 msgid "Address of the co-ownership"
 msgstr ""
 
-#: ../content/professional.py:89
+#: ../content/professional.py:90
 msgid "Allowed users"
 msgstr ""
 
@@ -64,7 +64,7 @@ msgstr ""
 msgid "Building identity form"
 msgstr ""
 
-#: ../form/professional_form.py:184
+#: ../form/professional_form.py:182
 msgid "Captcha incorrect"
 msgstr ""
 
@@ -91,14 +91,14 @@ msgstr ""
 msgid "Construction year"
 msgstr ""
 
-#: ../content/professional.py:151
+#: ../content/professional.py:152
 #: ../content/realization.py:28
 msgid "Contact details of the syndic"
 msgstr ""
 
 #: ../content/professional.py:50
 #: ../content/templates/professional.pt:92
-#: ../form/professional_form.py:54
+#: ../form/professional_form.py:55
 msgid "Contact person"
 msgstr ""
 
@@ -116,7 +116,7 @@ msgstr ""
 msgid "Create your account"
 msgstr ""
 
-#: ../form/professional_form.py:30
+#: ../form/professional_form.py:31
 msgid "Default"
 msgstr ""
 
@@ -223,7 +223,7 @@ msgstr ""
 msgid "If there are multiple email addresses, separate them with semicolons"
 msgstr ""
 
-#: ../content/professional.py:161
+#: ../content/professional.py:162
 #: ../content/realization.py:36
 msgid "Innovative aspects implemented"
 msgstr ""
@@ -257,7 +257,7 @@ msgstr ""
 msgid "Limit slider"
 msgstr ""
 
-#: ../content/professional.py:90
+#: ../content/professional.py:91
 msgid "List of users that can edit the professional"
 msgstr ""
 
@@ -288,7 +288,7 @@ msgstr ""
 msgid "Name of the project"
 msgstr ""
 
-#: ../form/professional_form.py:111
+#: ../form/professional_form.py:109
 msgid "New professional submission"
 msgstr ""
 
@@ -346,7 +346,7 @@ msgstr ""
 msgid "Professinal Workflow"
 msgstr ""
 
-#: ../form/professional_form.py:61
+#: ../form/professional_form.py:62
 #: ../profiles/default/types/professional.xml
 msgid "Professional"
 msgstr ""
@@ -382,6 +382,10 @@ msgstr ""
 msgid "Renewable energies"
 msgstr ""
 
+#: ../utils.py:264
+msgid "Reno-copro registration"
+msgstr ""
+
 #: ../profiles/default/controlpanel.xml
 msgid "Renocopro Settings"
 msgstr ""
@@ -399,7 +403,7 @@ msgstr ""
 msgid "Select the folder of cases studies"
 msgstr ""
 
-#: ../form/professional_form.py:165
+#: ../form/professional_form.py:163
 msgid "Send"
 msgstr ""
 
@@ -468,7 +472,7 @@ msgstr ""
 msgid "VAT"
 msgstr ""
 
-#: ../form/professional_form.py:23
+#: ../form/professional_form.py:24
 msgid "Validation"
 msgstr ""
 
@@ -485,7 +489,7 @@ msgstr ""
 msgid "Work"
 msgstr ""
 
-#: ../form/professional_form.py:180
+#: ../form/professional_form.py:178
 msgid "You must validate the policy"
 msgstr ""
 
@@ -507,18 +511,23 @@ msgid "created"
 msgstr ""
 
 #. Default: "A new professional has been created you can access it at the following url:\n              ${url}\n              "
-#: ../form/professional_form.py:89
+#: ../form/professional_form.py:87
 msgid "email_body_professional_submission"
 msgstr ""
 
-#. Default: "We thank you for your registration and your interest in the platform and your participation in the energy renovation of condominiums. Your request will be analyzed by our services for verification before publication.\n                \n                You can access your content at the following url:\n                ${url}\n                "
-#: ../form/professional_form.py:117
+#. Default: "We thank you for your registration and your interest in the platform and your participation in the energy renovation of condominiums. Your request will be analyzed by our services for verification before publication.\n\n                You can access your content at the following url:\n                ${url}\n                "
+#: ../form/professional_form.py:115
 msgid "email_body_professional_submission_user"
 msgstr ""
 
 #. Default: "The professional ${name} received modifications in the fields:\n          ${fields}\n\n          you can access it at the following url:\n          ${url}\n          "
 #: ../content/event.py:30
 msgid "email_body_professionnal_modification"
+msgstr ""
+
+#. Default: "TODO\n\n                    You can access legal notice at the following url:\n                    ${url}\n                    "
+#: ../utils.py:251
+msgid "email_registration_mail"
 msgstr ""
 
 #: ../user_schema.py:32
