@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a20 (unreleased)
+1.0a20 (2019-11-28)
 -------------------
 
 - Improves the registration process for professionals
