@@ -5,7 +5,8 @@ Changelog
 1.0a21 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix MemberData Properties
+  [vpiret]
 
 
 1.0a20 (2019-11-28)

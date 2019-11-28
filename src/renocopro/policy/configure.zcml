@@ -59,4 +59,21 @@
       handler=".utils.send_registration_mail"
     />
 
+  <!-- adapt user schema -->
+  <adapter
+    factory=".user_schema.UserDataPanelExtender"
+    provides="plone.z3cform.fieldsets.interfaces.IFormExtender"
+    />
+
+  <adapter
+    factory=".user_schema.RegistrationPanelExtender"
+    provides="plone.z3cform.fieldsets.interfaces.IFormExtender"
+    />
+
+  <adapter
+    provides=".user_schema.IEnhancedUserDataSchema"
+    for="plone.app.layout.navigation.interfaces.INavigationRoot"
+    factory=".adapter.EnhancedUserDataSchemaAdapter"
+    />
+
 </configure>
