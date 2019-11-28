@@ -252,9 +252,9 @@ def send_registration_mail(event):
             u"email_registration_mail",
             default=u"""Hello,
 
-Thank you for your registration and your interest in the Reno-Copro platform. 
+Thank you for your registration and your interest in the Reno-Copro platform.
 
-If you have any questions, please do not hesitate to contact us ( ace.retrofitting@liege.be).  
+If you have any questions, please do not hesitate to contact us ( ace.retrofitting@liege.be).
 
 Yours sincerely""",
         ),
