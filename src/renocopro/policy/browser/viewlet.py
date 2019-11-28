@@ -34,3 +34,12 @@ class ProfessionalRegistrationViewlet(ViewletBase):
         if IProfessionalRegistration.providedBy(self.context):
             return True
         return False
+
+
+class ProfessionalActionsViewlet(ViewletBase):
+
+    index = ViewPageTemplateFile("templates/professional_control_viewlet.pt")
+
+    @property
+    def is_professional(self):
+        return self.context.portal_type == "professional"

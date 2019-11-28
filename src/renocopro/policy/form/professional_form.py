@@ -18,6 +18,7 @@ from zope import schema
 from zope.i18n import translate
 from zope.component import getMultiAdapter
 from z3c.form.browser.checkbox import CheckBoxFieldWidget
+from plone.dexterity.browser.edit import DefaultEditForm
 
 
 class IValidation(model.Schema):
@@ -182,3 +183,7 @@ class ProfessionalForm(GroupForm, EditForm):
             IStatusMessage(self.request).addStatusMessage(
                 _(u"Captcha incorrect"), "captcha"
             )
+
+
+class ProfessionalEditForm(DefaultEditForm):
+    pass

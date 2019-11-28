@@ -5,6 +5,9 @@ Changelog
 1.0a20 (unreleased)
 -------------------
 
+- Improves the registration process for professionals
+  [vpiret]
+
 - Fix mandatory fields
   [vpiret]
 

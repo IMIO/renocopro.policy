@@ -10,7 +10,7 @@
 <metal:js fill-slot="javascript_head_slot">
   <script tal:define="site_url context/@@plone_portal_state/portal_url" tal:attributes="src string:${site_url}/++plone++renocopro.policy/js/renocopro.js"></script>
 </metal:js>
-<metal:main fill-slot="main">
+<metal:content-core fill-slot="content-core">
 
   <div class="row">
     <div class="col-md-9">
@@ -106,7 +106,8 @@
       </ul>
 
   </div>
-</metal:main>
+  </div>
+</metal:content-core>
 
 </body>
 </html>

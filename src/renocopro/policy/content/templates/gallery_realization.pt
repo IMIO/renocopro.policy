@@ -3,7 +3,7 @@
      tal:condition="realizations"
      i18n:domain="renocopro.policy">
 
-    <div class="gallery-photo" data-slider="6">
+    <div class="gallery-photo " data-slider="6">
       <div class="flexslider flexslider-slider">
         <ul class="slides">
           <tal:case tal:repeat="realization realizations">

@@ -250,12 +250,13 @@ def send_registration_mail(event):
     body = translate(
         _(
             u"email_registration_mail",
-            default=u"""TODO
+            default=u"""Hello,
 
-                    You can access legal notice at the following url:
-                    ${url}
-                    """,
-            mapping={u"url": u"https://www.reno-copro.liege.be/gdpr-view"},
+Thank you for your registration and your interest in the Reno-Copro platform. 
+
+If you have any questions, please do not hesitate to contact us ( ace.retrofitting@liege.be).  
+
+Yours sincerely""",
         ),
         target_language=lang,
     )

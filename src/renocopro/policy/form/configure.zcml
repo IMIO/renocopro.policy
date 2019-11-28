@@ -13,4 +13,32 @@
     class=".professional_form.ProfessionalForm"
     />
 
+  <browser:page
+    for="renocopro.policy.content.professional.IProfessional"
+    name="edit_professional"
+    class=".professional_form.ProfessionalEditForm"
+    permission="renocopro.EditProfessional"
+    />
+
+  <browser:page
+    for="*"
+    name="realization_form"
+    permission="renocopro.ProposeProfessional"
+    class=".realization_form.RealizationForm"
+    />
+
+  <browser:page
+    for="*"
+    name="image_form"
+    permission="renocopro.ProposeProfessional"
+    class=".image_form.ImageForm"
+    />
+
+  <browser:page
+    for="renocopro.policy.content.realization.IRealization"
+    name="edit_realization"
+    class=".realization_form.RealizationEditForm"
+    permission="renocopro.EditProfessional"
+    />
+
 </configure>

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from AccessControl import getSecurityManager
 from plone import schema
 from plone import api
 from plone.app.textfield import RichText
@@ -162,6 +163,17 @@ class ProfessionalView(DefaultView):
                 structure, _(u"Innovative aspects implemented"), innovative.output
             )
 
+        if self.is_owner():
+            structure = (
+                u"{0}"
+                u'<input type="button" onclick="location.href=\'{1}/edit_realization\'" value="{2}" />'
+                u'<input type="button" onclick="location.href=\'{1}/image_form\'" value="{3}" />'.format(
+                    structure,
+                    real.absolute_url(),
+                    _(u"Edit realization"),
+                    _(u"Add image"),
+                )
+            )
         return structure
 
     def pretty_address(self, num, street, city, zip_code):
@@ -214,3 +226,7 @@ class ProfessionalView(DefaultView):
             self.context.location.longitude,
             self.context.location.latitude,
         )
+
+    def is_owner(self):
+        sm = getSecurityManager()
+        return sm.checkPermission("Renocopro: Edit a professional", self.context)

@@ -38,6 +38,15 @@
       layer="..interfaces.IRenocoproPolicyLayer"
       />
 
+  <browser:viewlet
+      for="renocopro.policy.content.professional.IProfessional"
+      name="viewlet.professional_actions"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
+      class=".viewlet.ProfessionalActionsViewlet"
+      permission="renocopro.EditProfessional"
+      layer="..interfaces.IRenocoproPolicyLayer"
+      />
+
   <browser:page
     for="..content.interfaces.IRenocopro"
     name="gallery_view"

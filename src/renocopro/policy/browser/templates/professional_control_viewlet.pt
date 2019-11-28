@@ -1,0 +1,14 @@
+<div class="buttons-professionnal" tal:condition="python: view.is_professional or view.is_realization">
+  <a class="button-professionnal"
+     href=""
+     tal:condition="view/is_professional"
+     tal:attributes="href string: ${context/absolute_url}/edit_professional"
+     i18n:domain="renocopro.policy"
+     i18n:translate="">Edit professional</a>
+  <a href=""
+     class="button-professionnal"
+     tal:condition="view/is_professional"
+     tal:attributes="href string: ${context/absolute_url}/realization_form"
+     i18n:domain="renocopro.policy"
+     i18n:translate="">Add a realization</a>
+</div>
