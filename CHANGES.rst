@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a21 (unreleased)
+1.0a21 (2019-12-03)
 -------------------
 
 - Fix MemberData Properties
