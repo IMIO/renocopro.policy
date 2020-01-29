@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a22 (unreleased)
+1.0a22 (2020-01-29)
 -------------------
 
 - Add collective.excelexport and adapte exportable
