@@ -32,7 +32,7 @@ msgstr ""
 msgid "Add a realization"
 msgstr ""
 
-#: ../content/professional.py:171
+#: ../content/professional.py:174
 #: ../form/image_form.py:23
 msgid "Add image"
 msgstr ""
@@ -170,7 +170,7 @@ msgstr ""
 msgid "Edit professional"
 msgstr ""
 
-#: ../content/professional.py:171
+#: ../content/professional.py:173
 msgid "Edit realization"
 msgstr ""
 
@@ -245,7 +245,7 @@ msgstr ""
 msgid "Innovative aspects implemented"
 msgstr ""
 
-#: ../configure.zcml:39
+#: ../configure.zcml:40
 msgid "Installs the renocopro.policy add-on."
 msgstr ""
 
@@ -421,7 +421,7 @@ msgstr ""
 msgid "Select the folder of cases studies"
 msgstr ""
 
-#: ../form/image_form.py:46
+#: ../form/image_form.py:41
 #: ../form/professional_form.py:165
 #: ../form/realization_form.py:57
 msgid "Send"
@@ -484,7 +484,7 @@ msgstr ""
 msgid "Types of work"
 msgstr ""
 
-#: ../configure.zcml:48
+#: ../configure.zcml:49
 msgid "Uninstalls the renocopro.policy add-on."
 msgstr ""
 
@@ -545,7 +545,7 @@ msgstr ""
 msgid "email_body_professionnal_modification"
 msgstr ""
 
-#. Default: "Hello,\n\nThank you for your registration and your interest in the Reno-Copro platform. \n\nIf you have any questions, please do not hesitate to contact us ( ace.retrofitting@liege.be).  \n\nYours sincerely"
+#. Default: "Hello,\n\nThank you for your registration and your interest in the Reno-Copro platform.\n\nIf you have any questions, please do not hesitate to contact us ( ace.retrofitting@liege.be).\n\nYours sincerely"
 #: ../utils.py:251
 msgid "email_registration_mail"
 msgstr ""
@@ -578,11 +578,11 @@ msgstr ""
 msgid "removed"
 msgstr ""
 
-#: ../configure.zcml:39
+#: ../configure.zcml:40
 msgid "renocopro.policy"
 msgstr ""
 
-#: ../configure.zcml:48
+#: ../configure.zcml:49
 msgid "renocopro.policy (uninstall)"
 msgstr ""
 
