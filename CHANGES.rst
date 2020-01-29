@@ -5,7 +5,8 @@ Changelog
 1.0a22 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add collective.excelexport and adapte exportable
+  [vpiret]
 
 
 1.0a21 (2019-12-03)

@@ -66,6 +66,7 @@ setup(
         "plone.formwidget.recaptcha",
         "imio.gdpr",
         "Products.PasswordStrength",
+        "collective.excelexport",
     ],
     extras_require={
         "test": [

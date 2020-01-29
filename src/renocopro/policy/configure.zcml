@@ -28,6 +28,7 @@
   <include package=".form" />
   <include package=".fields" />
   <include package=".portlets" />
+  <include package=".export" />
 
   <genericsetup:registerProfile
       name="default"
