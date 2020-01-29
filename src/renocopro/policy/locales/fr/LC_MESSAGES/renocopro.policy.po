@@ -30,12 +30,12 @@ msgstr "Acteur"
 
 #: ../browser/templates/professional_control_viewlet.pt:8
 msgid "Add a realization"
-msgstr "Ajoute une réalisation"
+msgstr "Ajouter une réalisation"
 
 #: ../content/professional.py:174
 #: ../form/image_form.py:23
 msgid "Add image"
-msgstr "Ajoute une image"
+msgstr "Ajouter une image"
 
 #: ../browser/behaviors.py:16
 msgid "Add on the gallery"
