@@ -34,6 +34,7 @@ class ImageForm(Form):
             type="Image",
             title=data["title"],
             image=data["image"],
+            description=data["description"],
             container=container,
         )
         self.request.response.redirect(self.context.aq_parent.absolute_url())

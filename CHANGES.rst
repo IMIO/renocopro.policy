@@ -5,6 +5,9 @@ Changelog
 1.0a23 (unreleased)
 -------------------
 
+- Add images fields on realisation form
+  [vpiret]
+
 - Fix professional view
   [vpiret]
 
