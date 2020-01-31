@@ -201,7 +201,19 @@ class ProfessionalView(DefaultView):
         return address
 
     def pretty_contact(self, last_name, first_name):
-        return (u"{0} {1}".format(last_name, first_name)).lstrip()
+        ln = last_name if last_name else ""
+        fn = first_name if first_name else ""
+        return (u"{0} {1}".format(ln, fn)).lstrip()
+
+    def contact_person(self):
+        if (
+            self.context.last_name
+            or self.context.first_name
+            or self.context.phone
+            or self.context.email
+        ):
+            return True
+        return False
 
     def geojson(self):
         return """{

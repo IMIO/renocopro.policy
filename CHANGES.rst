@@ -5,7 +5,8 @@ Changelog
 1.0a23 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix professional view
+  [vpiret]
 
 
 1.0a22 (2020-01-29)

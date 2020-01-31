@@ -89,7 +89,7 @@
           <span tal:content="context/vat"></span>
         </li>
         <li>
-          <div i18n:translate="" class="label">Contact person</div>
+          <div i18n:translate="" tal:condition="view/contact_person" class="label">Contact person</div>
           <ul tal:define="last_name context/last_name;
                           first_name context/first_name">
             <li tal:condition="python: view.pretty_contact(last_name,first_name)">
