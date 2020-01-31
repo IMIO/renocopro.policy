@@ -5,6 +5,9 @@ Changelog
 1.0a23 (unreleased)
 -------------------
 
+- Add buttons for edit realization on professional view
+  [vpiret]
+
 - Add images fields on realisation form
   [vpiret]
 

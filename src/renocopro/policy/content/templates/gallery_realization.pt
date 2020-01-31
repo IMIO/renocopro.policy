@@ -24,6 +24,16 @@
               <div class="caption" style="display: none;"
                    tal:content="structure python:view.get_info_real(realization)"></div>
             </a>
+            <a href=""
+               class="button"
+               i18n:translate
+               tal:condition="view/is_owner"
+               tal:attributes="href string:${realization/absolute_url}/edit_realization">Edit realization</a>
+            <a href=""
+               class="button"
+               i18n:translate
+               tal:condition="view/is_owner"
+               tal:attributes="href string:${realization/absolute_url}/image_form">Add image</a>
             <div style="display: none;"
                  tal:repeat="real_img python: view.get_images(realization)">
               <a href=""
