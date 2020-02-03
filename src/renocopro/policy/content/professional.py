@@ -163,17 +163,6 @@ class ProfessionalView(DefaultView):
                 structure, _(u"Innovative aspects implemented"), innovative.output
             )
 
-        if self.is_owner():
-            structure = (
-                u"{0}"
-                u'<input type="button" onclick="location.href=\'{1}/edit_realization\'" value="{2}" />'
-                u'<input type="button" onclick="location.href=\'{1}/image_form\'" value="{3}" />'.format(
-                    structure,
-                    real.absolute_url(),
-                    _(u"Edit realization"),
-                    _(u"Add image"),
-                )
-            )
         return structure
 
     def pretty_address(self, num, street, city, zip_code):
