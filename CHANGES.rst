@@ -5,7 +5,8 @@ Changelog
 1.0a24 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix pot file
+  [vpiret]
 
 
 1.0a23 (2020-02-03)
