@@ -53,7 +53,7 @@ msgstr ""
 
 #: ../form/realization_form.py:78
 msgid "An image must contain at least one title and one file"
-msgstr ""
+msgstr "Une image doit contenir un titre et un fichier"
 
 #: ../profiles/default/workflows/professional_workflow/definition.xml
 msgid "Back to created"
@@ -203,7 +203,7 @@ msgstr "Description des travaux réalisés"
 
 #: ../faceted/templates/professionals.pt:24
 msgid "Display map"
-msgstr ""
+msgstr "Afficher la carte"
 
 #: ../content/case_studies.py:59
 #: ../content/templates/case_studies.pt:49
@@ -233,7 +233,7 @@ msgstr "Email de la personne de contact"
 #: ../tiles/templates/case_studies.pt:15
 #: ../tiles/templates/folder_collection.pt:16
 msgid "Error"
-msgstr ""
+msgstr "Erreur"
 
 #: ../content/case_studies.py:99
 #: ../content/templates/case_studies.pt:101
@@ -257,7 +257,7 @@ msgstr "Surface de plancher chauffé"
 
 #: ../faceted/templates/professionals.pt:23
 msgid "Hide map"
-msgstr ""
+msgstr "Cacher la carte"
 
 #: ../content/case_studies.py:108
 #: ../content/templates/case_studies.pt:111
@@ -326,7 +326,7 @@ msgstr ""
 
 #: ../form/realization_form.py:98
 msgid "Images of the realization"
-msgstr ""
+msgstr "Images de la réalisation"
 
 #: ../content/professional.py:163
 #: ../content/realization.py:36
@@ -350,12 +350,12 @@ msgstr "Statut juridique"
 #: ../tiles/case_studies.py:32
 #: ../tiles/folder_collection.py:29
 msgid "Limit"
-msgstr ""
+msgstr "Limite"
 
 #: ../tiles/case_studies.py:33
 #: ../tiles/folder_collection.py:30
 msgid "Limit Search Results"
-msgstr ""
+msgstr "Limiter les résultats de la recherche"
 
 #: ../tiles/case_studies.py:40
 #: ../tiles/folder_collection.py:37
@@ -364,7 +364,7 @@ msgstr ""
 
 #: ../content/professional.py:92
 msgid "List of users that can edit the professional"
-msgstr ""
+msgstr "Liste des utilisateurs qui peuvent éditer le professionnel"
 
 #: ../content/case_studies.py:104
 msgid "Listing of all work done"
@@ -544,7 +544,7 @@ msgstr ""
 
 #: ../tiles/templates/case_studies.pt:16
 msgid "The selected contains no case studie"
-msgstr ""
+msgstr "La sélection ne contient aucune étude de cas"
 
 #: ../tiles/templates/folder_collection.pt:17
 msgid "The selected contains no item studie"
@@ -558,43 +558,43 @@ msgstr "Titre"
 
 #: ../form/realization_form.py:21
 msgid "Title Image 1"
-msgstr ""
+msgstr "Titre Image 1"
 
 #: ../form/realization_form.py:57
 msgid "Title Image 10"
-msgstr ""
+msgstr "Titre Image 10"
 
 #: ../form/realization_form.py:25
 msgid "Title Image 2"
-msgstr ""
+msgstr "Titre Image 2"
 
 #: ../form/realization_form.py:29
 msgid "Title Image 3"
-msgstr ""
+msgstr "Titre Image 3"
 
 #: ../form/realization_form.py:33
 msgid "Title Image 4"
-msgstr ""
+msgstr "Titre Image 4"
 
 #: ../form/realization_form.py:37
 msgid "Title Image 5"
-msgstr ""
+msgstr "Titre Image 5"
 
 #: ../form/realization_form.py:41
 msgid "Title Image 6"
-msgstr ""
+msgstr "Titre Image 6"
 
 #: ../form/realization_form.py:45
 msgid "Title Image 7"
-msgstr ""
+msgstr "Titre Image 7"
 
 #: ../form/realization_form.py:49
 msgid "Title Image 8"
-msgstr ""
+msgstr Titre Image 8
 
 #: ../form/realization_form.py:53
 msgid "Title Image 9"
-msgstr ""
+msgstr "Titre Image 9"
 
 #: ../content/case_studies.py:49
 #: ../content/templates/case_studies.pt:37
