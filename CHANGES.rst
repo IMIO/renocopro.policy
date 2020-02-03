@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a23 (unreleased)
+1.0a23 (2020-02-03)
 -------------------
 
 - Add translation
