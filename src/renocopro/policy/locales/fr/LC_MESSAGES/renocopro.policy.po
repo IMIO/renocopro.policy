@@ -32,6 +32,7 @@ msgstr "Acteur"
 msgid "Add a realization"
 msgstr "Ajouter une réalisation"
 
+#: ../content/templates/gallery_realization.pt:32
 #: ../form/image_form.py:23
 msgid "Add image"
 msgstr "Ajouter une image"
@@ -212,6 +213,10 @@ msgstr "Durée des travaux"
 #: ../browser/templates/professional_control_viewlet.pt:2
 msgid "Edit professional"
 msgstr "Editer professionnel"
+
+#: ../content/templates/gallery_realization.pt:27
+msgid "Edit realization"
+msgstr "Editer réalisation"
 
 #: ../user_schema.py:20
 msgid "Email"
