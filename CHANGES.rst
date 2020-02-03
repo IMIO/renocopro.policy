@@ -5,6 +5,9 @@ Changelog
 1.0a23 (unreleased)
 -------------------
 
+- Add translation
+  [vpiret]
+
 - Add buttons for edit realization on professional view
   [vpiret]
 

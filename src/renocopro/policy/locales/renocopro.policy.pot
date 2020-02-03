@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-02-03 08:45+0000\n"
+"POT-Creation-Date: 2020-02-03 10:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,6 @@ msgstr ""
 msgid "Add a realization"
 msgstr ""
 
-#: ../content/professional.py:174
 #: ../form/image_form.py:23
 msgid "Add image"
 msgstr ""
@@ -219,10 +218,6 @@ msgstr ""
 
 #: ../browser/templates/professional_control_viewlet.pt:2
 msgid "Edit professional"
-msgstr ""
-
-#: ../content/professional.py:173
-msgid "Edit realization"
 msgstr ""
 
 #: ../user_schema.py:20

@@ -32,7 +32,6 @@ msgstr ""
 msgid "Add a realization"
 msgstr ""
 
-#: ../content/professional.py:174
 #: ../form/image_form.py:23
 msgid "Add image"
 msgstr ""
@@ -212,10 +211,6 @@ msgstr ""
 
 #: ../browser/templates/professional_control_viewlet.pt:2
 msgid "Edit professional"
-msgstr ""
-
-#: ../content/professional.py:173
-msgid "Edit realization"
 msgstr ""
 
 #: ../user_schema.py:20
