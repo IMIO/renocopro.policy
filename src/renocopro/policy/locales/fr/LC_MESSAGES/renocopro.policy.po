@@ -43,12 +43,16 @@ msgstr "Ajouter à la galerie"
 
 #: ../content/professional.py:158
 #: ../content/realization.py:17
-#: ../form/realization_form.py:26
+#: ../form/realization_form.py:92
 msgid "Address of the co-ownership"
 msgstr "Adresse de la copropriété"
 
 #: ../content/professional.py:91
 msgid "Allowed users"
+msgstr ""
+
+#: ../form/realization_form.py:78
+msgid "An image must contain at least one title and one file"
 msgstr ""
 
 #: ../profiles/default/workflows/professional_workflow/definition.xml
@@ -120,7 +124,7 @@ msgid "Create your account"
 msgstr "Créez votre compte"
 
 #: ../form/professional_form.py:32
-#: ../form/realization_form.py:17
+#: ../form/realization_form.py:83
 msgid "Default"
 msgstr "Défaut"
 
@@ -137,6 +141,46 @@ msgstr "Décrivez les activités spécifiques dans le domaine de la rénovation 
 #: ../form/image_form.py:17
 msgid "Description"
 msgstr "Description"
+
+#: ../form/realization_form.py:22
+msgid "Description Image 1"
+msgstr ""
+
+#: ../form/realization_form.py:58
+msgid "Description Image 10"
+msgstr ""
+
+#: ../form/realization_form.py:26
+msgid "Description Image 2"
+msgstr ""
+
+#: ../form/realization_form.py:30
+msgid "Description Image 3"
+msgstr ""
+
+#: ../form/realization_form.py:34
+msgid "Description Image 4"
+msgstr ""
+
+#: ../form/realization_form.py:38
+msgid "Description Image 5"
+msgstr ""
+
+#: ../form/realization_form.py:42
+msgid "Description Image 6"
+msgstr ""
+
+#: ../form/realization_form.py:46
+msgid "Description Image 7"
+msgstr ""
+
+#: ../form/realization_form.py:50
+msgid "Description Image 8"
+msgstr ""
+
+#: ../form/realization_form.py:54
+msgid "Description Image 9"
+msgstr ""
 
 #: ../content/professional.py:40
 #: ../content/templates/professional.pt:50
@@ -238,6 +282,50 @@ msgstr "S'il y a plusieurs adresses mail, séparez-les par des points-virgules."
 
 #: ../form/image_form.py:18
 msgid "Image"
+msgstr ""
+
+#: ../form/realization_form.py:23
+msgid "Image 1"
+msgstr ""
+
+#: ../form/realization_form.py:59
+msgid "Image 10"
+msgstr ""
+
+#: ../form/realization_form.py:27
+msgid "Image 2"
+msgstr ""
+
+#: ../form/realization_form.py:31
+msgid "Image 3"
+msgstr ""
+
+#: ../form/realization_form.py:35
+msgid "Image 4"
+msgstr ""
+
+#: ../form/realization_form.py:39
+msgid "Image 5"
+msgstr ""
+
+#: ../form/realization_form.py:43
+msgid "Image 6"
+msgstr ""
+
+#: ../form/realization_form.py:47
+msgid "Image 7"
+msgstr ""
+
+#: ../form/realization_form.py:51
+msgid "Image 8"
+msgstr ""
+
+#: ../form/realization_form.py:55
+msgid "Image 9"
+msgstr ""
+
+#: ../form/realization_form.py:98
+msgid "Images of the realization"
 msgstr ""
 
 #: ../content/professional.py:163
@@ -381,7 +469,7 @@ msgstr "Permet d'accéder à l'historique du workflow"
 msgid "Publish"
 msgstr "Publié"
 
-#: ../form/realization_form.py:33
+#: ../form/realization_form.py:105
 #: ../profiles/default/types/realization.xml
 msgid "Realization"
 msgstr "Réalisation"
@@ -421,9 +509,9 @@ msgstr ""
 msgid "Select the folder of cases studies"
 msgstr ""
 
-#: ../form/image_form.py:41
+#: ../form/image_form.py:42
 #: ../form/professional_form.py:165
-#: ../form/realization_form.py:57
+#: ../form/realization_form.py:164
 msgid "Send"
 msgstr "Envoyer"
 
@@ -467,6 +555,46 @@ msgstr ""
 #: ../tiles/case_studies.py:18
 msgid "Title"
 msgstr "Titre"
+
+#: ../form/realization_form.py:21
+msgid "Title Image 1"
+msgstr ""
+
+#: ../form/realization_form.py:57
+msgid "Title Image 10"
+msgstr ""
+
+#: ../form/realization_form.py:25
+msgid "Title Image 2"
+msgstr ""
+
+#: ../form/realization_form.py:29
+msgid "Title Image 3"
+msgstr ""
+
+#: ../form/realization_form.py:33
+msgid "Title Image 4"
+msgstr ""
+
+#: ../form/realization_form.py:37
+msgid "Title Image 5"
+msgstr ""
+
+#: ../form/realization_form.py:41
+msgid "Title Image 6"
+msgstr ""
+
+#: ../form/realization_form.py:45
+msgid "Title Image 7"
+msgstr ""
+
+#: ../form/realization_form.py:49
+msgid "Title Image 8"
+msgstr ""
+
+#: ../form/realization_form.py:53
+msgid "Title Image 9"
+msgstr ""
 
 #: ../content/case_studies.py:49
 #: ../content/templates/case_studies.pt:37
