@@ -590,7 +590,7 @@ msgstr "Titre Image 7"
 
 #: ../form/realization_form.py:49
 msgid "Title Image 8"
-msgstr ""
+msgstr "Titre Image 8"
 
 #: ../form/realization_form.py:53
 msgid "Title Image 9"
