@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a24 (unreleased)
+1.0a24 (2020-02-03)
 -------------------
 
 - Nothing changed yet.
